@@ -1,0 +1,7 @@
+2024-03-26T21:54:44.506Z [31merror[39m: Error: Waitlist validation failed: email: Path `email` is required., ip: Path `ip` is required.
+    at C:\source\apps\everybitcoin\api\src\modules\waitlist\waitlist.controller.ts:27:11
+    at Generator.throw (<anonymous>)
+    at rejected (C:\source\apps\everybitcoin\api\src\modules\waitlist\waitlist.controller.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-03-26T22:01:30.427Z [31merror[39m: Validation Failed
+2024-03-26T22:01:52.263Z [31merror[39m: Validation Failed

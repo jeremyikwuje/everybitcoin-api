@@ -1,0 +1,36 @@
+2024-03-26T21:50:34.478Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T21:50:37.525Z [32minfo[39m: Connected to app-db
+2024-03-26T21:54:26.262Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T21:54:29.164Z [32minfo[39m: Connected to app-db
+2024-03-26T21:54:44.506Z [31merror[39m: Error: Waitlist validation failed: email: Path `email` is required., ip: Path `ip` is required.
+    at C:\source\apps\everybitcoin\api\src\modules\waitlist\waitlist.controller.ts:27:11
+    at Generator.throw (<anonymous>)
+    at rejected (C:\source\apps\everybitcoin\api\src\modules\waitlist\waitlist.controller.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-03-26T21:56:47.530Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T21:56:50.759Z [32minfo[39m: Connected to app-db
+2024-03-26T21:59:51.729Z [32minfo[39m: Closing DB connections
+2024-03-26T22:00:17.153Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T22:00:20.080Z [32minfo[39m: Connected to app-db
+2024-03-26T22:01:22.446Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T22:01:25.521Z [32minfo[39m: Connected to app-db
+2024-03-26T22:01:30.427Z [31merror[39m: Validation Failed
+2024-03-26T22:01:52.263Z [31merror[39m: Validation Failed
+2024-03-26T22:11:55.160Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T22:11:57.742Z [32minfo[39m: Connected to app-db
+2024-03-26T22:13:14.356Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T22:13:17.041Z [32minfo[39m: Connected to app-db
+2024-03-26T22:14:23.616Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T22:14:26.538Z [32minfo[39m: Connected to app-db
+2024-03-26T22:17:50.410Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T22:17:53.280Z [32minfo[39m: Connected to app-db
+2024-03-26T22:18:14.722Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T22:18:17.165Z [32minfo[39m: Connected to app-db
+2024-03-26T22:19:16.482Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T22:19:19.939Z [32minfo[39m: Connected to app-db
+2024-03-26T22:20:25.080Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T22:20:29.651Z [32minfo[39m: Connected to app-db
+2024-03-26T22:21:21.598Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T22:21:24.165Z [32minfo[39m: Connected to app-db
+2024-03-26T22:31:45.670Z [32minfo[39m: Server running on port http://localhost:4000
+2024-03-26T22:31:48.933Z [32minfo[39m: Connected to app-db
