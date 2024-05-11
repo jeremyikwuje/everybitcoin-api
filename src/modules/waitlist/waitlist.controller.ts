@@ -17,8 +17,8 @@ export const add = async (req: any, res: any) => {
     if (existingUser) {
       return ApiResponse.success(
         res,
-        `You're already on the waitlist`,
-        { existingUser }
+        'You\'re already on the waitlist',
+        { existingUser },
       );
     }
 
@@ -48,7 +48,7 @@ export const getAllMembers = async (req: any, res: any) => {
     return ApiResponse.success(
       res,
       'Retrieved waitlist',
-      { count, members }
+      { count, members },
     );
   } catch (error) {
     return ApiResponse.error(res, 500, 'Error retrieving waitlist');

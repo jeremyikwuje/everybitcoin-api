@@ -37,7 +37,7 @@ const WaitlistSchema = new mongoose.Schema({
   },
 }, {
   timestamps: true,
-  collection: 'waitlists'
+  collection: 'waitlists',
 });
 
 // Create a virtual field to calculate the count of referrals

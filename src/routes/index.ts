@@ -1,5 +1,9 @@
 import { Router, Request, Response } from 'express';
-import waitlistRouter from '../modules/waitlist/waitlist.routes';
+import WaitlistRoutes from '../modules/waitlist/waitlist.routes';
+import ExchangeRoutes from '../modules/exchanges/exchange.routes';
+import TickerRoutes from '../modules/tickers/ticker.routes';
+import CurrencyRoutes from '../modules/currencies/currency.routes';
+import CronjobRoutes from '../modules/cronjobs/cronjob.routes';
 
 const router = Router();
 
@@ -9,8 +13,29 @@ router.use(
 );
 
 router.use(
-    '/waitlist',
-    waitlistRouter,
-)
+  '/waitlist',
+  WaitlistRoutes,
+);
+
+router.use(
+  '/exchanges',
+  ExchangeRoutes,
+);
+
+router.use(
+  '/tickers',
+  TickerRoutes,
+);
+
+router.use(
+  '/currencies',
+  CurrencyRoutes,
+);
+
+router.use(
+  '/cronjobs',
+  CronjobRoutes,
+);
+
 
 export default router;

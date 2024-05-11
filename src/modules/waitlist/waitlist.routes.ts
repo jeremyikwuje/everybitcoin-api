@@ -13,8 +13,8 @@ router.post(
 );
 
 router.get(
-    '/get_all_members',
-    asyncWrapper(WaitlistController.getAllMembers),
+  '/get_all_members',
+  asyncWrapper(WaitlistController.getAllMembers),
 );
 
 export default router;

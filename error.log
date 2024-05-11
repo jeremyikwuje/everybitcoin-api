@@ -5,3 +5,79 @@
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
 2024-03-26T22:01:30.427Z [31merror[39m: Validation Failed
 2024-03-26T22:01:52.263Z [31merror[39m: Validation Failed
+2024-04-24T03:15:24.903Z [31merror[39m: Validation Failed
+2024-04-24T03:16:00.830Z [31merror[39m: Validation Failed
+2024-04-24T03:16:29.315Z [31merror[39m: ValidationError: exchanges validation failed: twitter_handle: Path `twitter_handle` is required.
+    at model.Document.invalidate (C:\source\apps\everybitcoin\api\node_modules\mongoose\lib\document.js:3200:32)
+    at C:\source\apps\everybitcoin\api\node_modules\mongoose\lib\document.js:2993:17
+    at C:\source\apps\everybitcoin\api\node_modules\mongoose\lib\schemaType.js:1370:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-04-24T03:17:27.960Z [31merror[39m: ValidationError: exchanges validation failed: twitter_handle: Path `twitter_handle` is required.
+    at model.Document.invalidate (C:\source\apps\everybitcoin\api\node_modules\mongoose\lib\document.js:3200:32)
+    at C:\source\apps\everybitcoin\api\node_modules\mongoose\lib\document.js:2993:17
+    at C:\source\apps\everybitcoin\api\node_modules\mongoose\lib\schemaType.js:1370:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-04-24T03:19:15.411Z [31merror[39m: ValidationError: exchanges validation failed: twitter_handle: Path `twitter_handle` is required.
+    at model.Document.invalidate (C:\source\apps\everybitcoin\api\node_modules\mongoose\lib\document.js:3200:32)
+    at C:\source\apps\everybitcoin\api\node_modules\mongoose\lib\document.js:2993:17
+    at C:\source\apps\everybitcoin\api\node_modules\mongoose\lib\schemaType.js:1370:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-04-24T03:22:35.799Z [31merror[39m: Validation Failed
+2024-04-25T07:20:50.693Z [31merror[39m: Validation Failed
+2024-04-25T07:29:40.714Z [31merror[39m: Validation Failed
+2024-04-25T07:30:03.157Z [31merror[39m: RangeError: Invalid status code: No ticker found
+    at ServerResponse.writeHead (node:_http_server:352:11)
+    at ServerResponse.writeHead (C:\source\apps\everybitcoin\api\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:338:8)
+    at ServerResponse.end (C:\source\apps\everybitcoin\api\node_modules\compression\index.js:103:14)
+    at ServerResponse.send (C:\source\apps\everybitcoin\api\node_modules\express\lib\response.js:233:10)
+    at ServerResponse.json (C:\source\apps\everybitcoin\api\node_modules\express\lib\response.js:279:15)
+    at Function.ApiResponse.error (C:\source\apps\everybitcoin\api\src\utils\api-response.ts:21:29)
+    at C:\source\apps\everybitcoin\api\src\modules\tickers\ticker.controller.ts:126:32
+    at Generator.throw (<anonymous>)
+    at rejected (C:\source\apps\everybitcoin\api\src\modules\tickers\ticker.controller.ts:6:65)
+2024-04-25T07:40:48.470Z [31merror[39m: Validation Failed
+2024-04-25T07:42:47.988Z [31merror[39m: Validation Failed
+2024-04-25T07:43:46.447Z [31merror[39m: Validation Failed
+2024-04-25T07:56:34.463Z [31merror[39m: Validation Failed
+2024-04-25T07:57:48.596Z [31merror[39m: Validation Failed
+2024-04-25T08:03:39.485Z [31merror[39m: Validation Failed
+2024-05-09T21:15:09.440Z [31merror[39m: Error connecting to DB app-db: queryTxt ESERVFAIL palremit0.8lck9ch.mongodb.net
+2024-05-09T21:17:19.687Z [31merror[39m: Error connecting to DB app-db: connect EACCES 54.80.213.142:27017
+2024-05-09T21:22:02.974Z [31merror[39m: Error connecting to DB app-db: querySrv ETIMEOUT _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-05-09T21:38:41.711Z [31merror[39m: Validation Failed
+2024-05-09T21:50:15.345Z [31merror[39m: Validation Failed
+2024-05-09T23:48:28.708Z [31merror[39m: Error connecting to DB app-db: querySrv ETIMEOUT _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-05-09T23:51:26.391Z [31merror[39m: Error connecting to DB app-db: connect EACCES 54.80.213.142:27017
+2024-05-09T23:53:53.748Z [31merror[39m: Error connecting to DB app-db: connect EACCES 54.225.32.117:27017
+2024-05-09T23:59:58.390Z [31merror[39m: Error connecting to DB app-db: connect EACCES 23.20.166.85:27017
+2024-05-10T00:04:09.285Z [31merror[39m: Operation `tickers.find()` buffering timed out after 10000ms
+2024-05-10T00:06:35.185Z [31merror[39m: Error connecting to DB app-db: connect EACCES 54.80.213.142:27017
+2024-05-10T00:07:41.910Z [31merror[39m: Error connecting to DB app-db: connect EACCES 54.80.213.142:27017
+2024-05-10T00:10:17.523Z [31merror[39m: Error connecting to DB app-db: connect EACCES 54.80.213.142:27017
+2024-05-11T06:25:53.422Z [31merror[39m: Validation Failed
+2024-05-11T06:34:58.757Z [31merror[39m: Validation Failed
+2024-05-11T06:50:00.642Z [31merror[39m: Error connecting to DB app-db: read ECONNRESET
+2024-05-11T09:44:47.688Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'amount')
+    at C:\source\apps\everybitcoin\api\src\integrations\coinbase\coinbase.ts:64:32
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\source\apps\everybitcoin\api\src\integrations\coinbase\coinbase.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-11T11:20:19.527Z [31merror[39m: Request failed with status code 403
+2024-05-11T11:20:19.532Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'error')
+    at C:\source\apps\everybitcoin\api\src\integrations\bybit\bybit.ts:22:21
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\source\apps\everybitcoin\api\src\integrations\bybit\bybit.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-11T11:22:42.552Z [31merror[39m: Request failed with status code 403
+2024-05-11T11:22:42.557Z [31merror[39m: TypeError: Cannot read properties of undefined (reading 'list')
+    at C:\source\apps\everybitcoin\api\src\integrations\bybit\bybit.ts:29:39
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\source\apps\everybitcoin\api\src\integrations\bybit\bybit.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-11T11:25:13.586Z [31merror[39m: Request failed with status code 403
+2024-05-11T11:25:13.592Z [31merror[39m: Error: Unable to retrieve price data
+    at C:\source\apps\everybitcoin\api\src\integrations\bybit\bybit.ts:57:15
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\source\apps\everybitcoin\api\src\integrations\bybit\bybit.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)

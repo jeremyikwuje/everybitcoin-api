@@ -14,6 +14,31 @@ const Config = {
   db: [
     { name: MongoDBName.AppDB, uri: process.env.APP_DB },
   ],
+  exchanges: [
+    'binance',
+    'bybit',
+    'bitget',
+    'bitfinix',
+    'blockchain',
+    'bitstamp',
+    'bithumb',
+    'bitmart',
+    'bitso',
+    'bisq',
+    'coinmarketcap',
+    'coingecko',
+    'coinbase',
+    'coinmama',
+    'etoro',
+    'gemini',
+    'htx_houbi',
+    'kraken',
+    'kucoin',
+    'noones',
+    'okx',
+    'robinhood',
+    'uphold',
+  ],
 };
 
 export default Config;

@@ -1,8 +1,6 @@
-import { NOT_FOUND } from 'http-status';
+import { generateFromEmail } from 'unique-username-generator';
 import APIError from '../../utils/api-error';
 import Waitlist from './waitlist.model';
-
-import { generateFromEmail } from 'unique-username-generator';
 
 export const addUserToWaitlist = async (
   email: string,
@@ -11,11 +9,10 @@ export const addUserToWaitlist = async (
   device:string,
 ) => {
   try {
-
     // generate unique username
     let referralCode = generateFromEmail(email);
 
-    while(true) {
+    while (true) {
       // if username does not exist
       const existingUser = await Waitlist.findOne({ referralCode });
       if (!existingUser) {
@@ -31,7 +28,7 @@ export const addUserToWaitlist = async (
       ip,
       country,
       device,
-      referralCode
+      referralCode,
     });
 
     // Save the waitlist entry to the database
