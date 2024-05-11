@@ -1,4 +1,3 @@
-import { forEach } from "lodash";
 import Binance from "../../integrations/binance/binance";
 import logger from "../../logger/logger";
 import ApiResponse from "../../utils/api-response";
@@ -6,7 +5,7 @@ import { get_ticker, update_ticker } from "../tickers/ticker.service";
 import { CoinbaseMethods } from "../../integrations/coinbase/coinbase";
 import { BybitMethods } from "../../integrations/bybit/bybit";
 import { BlockchainMethods } from "../../integrations/blockchain/blockchain";
-import { bitfinex_get_btc_price } from "../../integrations/api-connector";
+import { bitfinex_get_btc_price, okx_get_btc_price } from "../../integrations/api-connector";
 
 export const update_btc_usd_ticker = async (req: any, res: any) => {
 
@@ -35,6 +34,10 @@ export const update_btc_usd_ticker = async (req: any, res: any) => {
         {
             exchange: 'bitfinex',
             price: bitfinex_get_btc_price('USD')
+        },
+        {
+            exchange: 'okx',
+            price: okx_get_btc_price('USD')
         }
     ];
     
