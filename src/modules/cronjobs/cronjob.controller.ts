@@ -5,6 +5,7 @@ import ApiResponse from "../../utils/api-response";
 import { get_ticker, update_ticker } from "../tickers/ticker.service";
 import { CoinbaseMethods } from "../../integrations/coinbase/coinbase";
 import { BybitMethods } from "../../integrations/bybit/bybit";
+import { BlockchainMethods } from "../../integrations/blockchain/blockchain";
 
 export const update_btc_usd_ticker = async (req: any, res: any) => {
 
@@ -25,28 +26,38 @@ export const update_btc_usd_ticker = async (req: any, res: any) => {
         {
             exchange: 'bybit',
             price: BybitMethods.get_price('BTCUSDT')
+        },
+        {
+            exchange: 'blockchain',
+            price: BlockchainMethods.get_btc_price('USD')
         }
     ];
     
     await Promise.all(exchangeRates.map(async (value) => {
-        const rate: any = await value.price;
-        const exchange_code = value.exchange.toLowerCase();
+        try {
+            const rate: any = await value.price;
+            const exchange_code = value.exchange.toLowerCase();
 
-        let index = exchanges.findIndex((ex: any) => ex.code === exchange_code);
-        if (index !== -1) {
-            logger.info(
-                `index: ${index} | exchange: ${exchange_code} | buy: ${rate.buy} | sell: ${rate.sell}`
-            );
+            let index = exchanges.findIndex((ex: any) => ex.code === exchange_code);
+            if (index !== -1) {
+                logger.info(
+                    `index: ${index} | exchange: ${exchange_code} | buy: ${rate.buy} | sell: ${rate.sell}`
+                );
 
-            let exchange = exchanges[index];
-            if (exchange.code) {
-                exchanges.splice(index, 1);
+                let exchange = exchanges[index];
+                if (exchange.code) {
+                    exchanges.splice(index, 1);
 
-                exchange.price = rate.buy;
-                exchange.price_sell = rate.sell;
-                exchanges.push(exchange);
-            } 
+                    exchange.price = rate.buy;
+                    exchange.price_sell = rate.sell;
+                    exchanges.push(exchange);
+                } 
+            }
+        } 
+        catch(e: any) {
+            return;
         }
+        
     }));
 
     await update_ticker('btc-usd', { exchanges });

@@ -78,4 +78,3 @@ export const BybitMethods = {
     get_ticker_data,
     get_price,
 }
-
