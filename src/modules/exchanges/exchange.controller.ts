@@ -141,7 +141,7 @@ export default class ExchangeController {
       return ApiResponse.success(
         res,
         'Successful',
-        exchanges,
+        { total: exchanges.length, exchanges },
       );
     } catch (error: any) {
       return ApiResponse.error(
