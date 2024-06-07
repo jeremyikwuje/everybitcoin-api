@@ -1,4 +1,6 @@
-# everybitcoin-api
+**Everybitcoin** is the ultimate app for Bitcoin investors, simplifying the process of tracking and managing your investments. With Everybitcoin, you can easily monitor your buys, sells, profits, and losses, all in one place. The app connects to over 20 exchanges, providing a clear graphical display of your investment positions, so you always know whether you're in profit or loss. Don't just hope for Bitcoin to reach $200K—stay informed and in control with Everybitcoin.
+
+This source code connects to the following exchanges and gets realtime bitcoin price and user data.
 
 1. binance
 2. coinbase
@@ -13,11 +15,10 @@
 11. okx
 12. blockchain
 13. bitstamp
-14. etoro
-15. robinhood
-16. bithumb
-17. bitmart
-18. bitso
-19. coinmama
-20. uphold
-21. bisq
+14. robinhood
+15. bithumb
+16. bitmart
+17. bitso
+18. coinmama
+19. uphold
+20. bisq
