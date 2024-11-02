@@ -11,7 +11,7 @@ router.post(
 
 router.post(
   '/update_prices',
-  asyncWrapper(CronjobController.update_prices),
+  asyncWrapper(CronjobController.save_prices),
 );
 
 router.post(

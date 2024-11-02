@@ -536,7 +536,7 @@ export const noones = async (
   if (base_currency === Currency.BTC) {
     rate = Number(data.rate_BTC || 0);
   }
-  
+
   return {
     buy: rate * 1.01,
     sell: rate - (rate * 0.01),

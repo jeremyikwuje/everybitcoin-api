@@ -1,19 +1,11 @@
-import logger from '../../logger/logger';
 import ApiResponse from '../../utils/api-response';
 import {
-  get_ticker_average_price,
-  update_exchange_prices_in_tickers,
-  update_ticker,
-} from '../tickers/ticker.service';
-import {
-  add_new_price,
-  get_last_day_price,
-  get_last_hour_price,
-  get_last_month_price,
-  get_last_week_price,
-  get_recent_price,
+  save_prices_from_tickers,
+  update_prices_on_tickers,
 } from '../prices/price.service';
-import { percentage_difference } from '../../utils/utilities';
+import {
+  update_exchange_prices_in_tickers,
+} from '../tickers/ticker.service';
 
 export const update_exchange_rates_in_tickers = async (
   req: any,
@@ -29,93 +21,25 @@ export const update_exchange_rates_in_tickers = async (
   );
 };
 
-export const update_prices = async (req: any, res: any) => {
+export const save_prices = async (req: any, res: any) => {
   // get rates from monierate api
-  const symbols = ['BTC-USD'];
-  const prices = await get_ticker_average_price(symbols);
-  console.log(prices);
-
-  const rates: any = [];
-  await Promise.all(symbols.map(async (symbol) => {
-    const price = prices[symbol];
-
-    try {
-      // insert new rate to rates collection
-      const add_price = await add_new_price({
-        ticker: symbol,
-        price: price.average,
-        market: 'exchanges',
-      });
-
-      rates.push(add_price);
-    } catch (error: any) {
-      logger.info(`Unable to add price for ${symbol} to database: ${error.message}`);
-    }
-  }));
+  const prices = await save_prices_from_tickers();
 
   return ApiResponse.success(
     res,
     'Successful',
-    {
-      rates,
-    },
+    prices,
   );
 };
 
 export const update_tickers = async (req: any, res: any) => {
-  const symbols = ['BTC-USD'];
-
-  const rates: any = [];
-  await Promise.all(symbols.map(async (symbol) => {
-    // get most recent rate
-    const price = await get_recent_price(symbol);
-    const price_1hr = await get_last_hour_price(symbol);
-    const price_24hr = await get_last_day_price(symbol);
-    const price_7d = await get_last_week_price(symbol);
-    const price_30d = await get_last_month_price(symbol);
-
-    const price_change_percent_1hr = percentage_difference(price, price_1hr);
-    const price_change_percent_24hr = percentage_difference(price, price_24hr);
-    const price_change_percent_7d = percentage_difference(price, price_7d);
-    const price_change_percent_30d = percentage_difference(price, price_30d);
-
-    try {
-      await update_ticker(symbol, {
-        price,
-        price_1hr,
-        price_24hr,
-        price_7d,
-        price_30d,
-
-        price_change_percent_1hr,
-        price_change_percent_24hr,
-        price_change_percent_7d,
-        price_change_percent_30d,
-      });
-
-      rates.push({
-        symbol,
-        price,
-        price_1hr,
-        price_24hr,
-        price_7d,
-        price_30d,
-
-        price_change_percent_1hr,
-        price_change_percent_24hr,
-        price_change_percent_7d,
-        price_change_percent_30d,
-      });
-    } catch (error: any) {
-      logger.error(error.message || `Unable to update ${symbol} ticker`);
-    }
-  }));
+  const prices = await update_prices_on_tickers();
 
   return ApiResponse.success(
     res,
     'Successful',
     {
-      rates,
+      prices,
     },
   );
 };

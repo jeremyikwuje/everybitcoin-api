@@ -2473,3 +2473,105 @@
 2024-11-02T16:13:02.491Z [32minfo[39m: Updating kucoin BTC-USD rate: 74234.93 buy | 65319.797 sell
 2024-11-02T16:13:02.522Z [32minfo[39m: Updating noones BTC-USD rate: 70115.21 buy | 68726.79 sell
 2024-11-02T16:13:12.978Z [32minfo[39m: Closing DB connections
+2024-11-02T17:07:09.939Z [32minfo[39m: Server running on port http://localhost:4000
+2024-11-02T17:07:09.941Z [32minfo[39m: Cron started successfully as at Sat Nov 02 2024 18:07:09 GMT+0100 (West Africa Standard Time)
+2024-11-02T17:07:13.231Z [32minfo[39m: Connected to app-db
+2024-11-02T17:07:29.596Z [32minfo[39m: Server running on port http://localhost:4000
+2024-11-02T17:07:29.598Z [32minfo[39m: Cron started successfully as at Sat Nov 02 2024 18:07:29 GMT+0100 (West Africa Standard Time)
+2024-11-02T17:07:32.268Z [32minfo[39m: Connected to app-db
+2024-11-02T17:08:01.558Z [32minfo[39m: Updating luno BTC-USD rate: 69506.42 buy | 69309.35 sell
+2024-11-02T17:08:01.836Z [32minfo[39m: Updating kraken BTC-USD rate: 69545.6 buy | 69545.5 sell
+2024-11-02T17:08:01.872Z [32minfo[39m: Updating coinbase BTC-USD rate: 69515.235 buy | 69515.645 sell
+2024-11-02T17:08:02.099Z [32minfo[39m: Updating okx BTC-USD rate: 69500.3 buy | 69500.3 sell
+2024-11-02T17:08:02.100Z [32minfo[39m: Updating blockchain BTC-USD rate: 69492.70326615706 buy | 69492.70326615706 sell
+2024-11-02T17:08:02.202Z [31merror[39m: Request failed with status code 403
+2024-11-02T17:08:02.202Z [32minfo[39m: Updating coindcx BTC-USD rate: 0 buy | 0 sell
+2024-11-02T17:08:02.205Z [32minfo[39m: Updating kraken BTC-USD rate: 69545.6 buy | 69545.5 sell
+2024-11-02T17:08:02.206Z [31merror[39m: Request failed with status code 403
+2024-11-02T17:08:02.206Z [32minfo[39m: Updating coindcx BTC-USD rate: 0 buy | 0 sell
+2024-11-02T17:08:02.228Z [32minfo[39m: Updating coinbase BTC-USD rate: 69515.235 buy | 69515.645 sell
+2024-11-02T17:08:02.256Z [32minfo[39m: Updating blockchain BTC-USD rate: 69492.70326615706 buy | 69492.70326615706 sell
+2024-11-02T17:08:02.295Z [32minfo[39m: Updating luno BTC-USD rate: 69506.42 buy | 69309.36 sell
+2024-11-02T17:08:02.321Z [32minfo[39m: Updating bitfinex BTC-USD rate: 69496 buy | 69495 sell
+2024-11-02T17:08:02.358Z [32minfo[39m: Updating okx BTC-USD rate: 69501.5 buy | 69501.5 sell
+2024-11-02T17:08:02.402Z [32minfo[39m: Updating bitfinex BTC-USD rate: 69496 buy | 69495 sell
+2024-11-02T17:08:02.405Z [32minfo[39m: Updating kucoin BTC-USD rate: 74379.18 buy | 65446.731999999996 sell
+2024-11-02T17:08:02.597Z [32minfo[39m: Updating noones BTC-USD rate: 70163.185 buy | 68773.815 sell
+2024-11-02T17:08:03.093Z [32minfo[39m: Updating noones BTC-USD rate: 70163.185 buy | 68773.815 sell
+2024-11-02T17:08:03.256Z [32minfo[39m: Updating kucoin BTC-USD rate: 74379.18 buy | 65446.731999999996 sell
+2024-11-02T17:08:51.652Z [32minfo[39m: Server running on port http://localhost:4000
+2024-11-02T17:08:51.654Z [32minfo[39m: Cron started successfully as at Sat Nov 02 2024 18:08:51 GMT+0100 (West Africa Standard Time)
+2024-11-02T17:08:55.734Z [32minfo[39m: Server running on port http://localhost:4000
+2024-11-02T17:08:55.736Z [32minfo[39m: Cron started successfully as at Sat Nov 02 2024 18:08:55 GMT+0100 (West Africa Standard Time)
+2024-11-02T17:08:59.923Z [32minfo[39m: Server running on port http://localhost:4000
+2024-11-02T17:08:59.925Z [32minfo[39m: Cron started successfully as at Sat Nov 02 2024 18:08:59 GMT+0100 (West Africa Standard Time)
+2024-11-02T17:09:02.417Z [32minfo[39m: Connected to app-db
+2024-11-02T17:09:03.081Z [31merror[39m: Request failed with status code 403
+2024-11-02T17:09:03.081Z [32minfo[39m: Updating coindcx BTC-USD rate: 0 buy | 0 sell
+2024-11-02T17:09:03.169Z [31merror[39m: Request failed with status code 403
+2024-11-02T17:09:03.170Z [32minfo[39m: Updating coindcx BTC-USD rate: 0 buy | 0 sell
+2024-11-02T17:09:03.171Z [32minfo[39m: Updating kraken BTC-USD rate: 69545.6 buy | 69545.5 sell
+2024-11-02T17:09:03.175Z [32minfo[39m: Updating luno BTC-USD rate: 69506.29 buy | 69309.42 sell
+2024-11-02T17:09:03.177Z [32minfo[39m: Updating kraken BTC-USD rate: 69545.6 buy | 69545.5 sell
+2024-11-02T17:09:03.185Z [32minfo[39m: Updating blockchain BTC-USD rate: 69492.70326615706 buy | 69492.70326615706 sell
+2024-11-02T17:09:03.186Z [32minfo[39m: Updating blockchain BTC-USD rate: 69492.70326615706 buy | 69492.70326615706 sell
+2024-11-02T17:09:03.187Z [32minfo[39m: Updating luno BTC-USD rate: 69506.29 buy | 69309.42 sell
+2024-11-02T17:09:03.389Z [32minfo[39m: Updating coinbase BTC-USD rate: 69506.91 buy | 69506.91 sell
+2024-11-02T17:09:03.390Z [32minfo[39m: Updating bitfinex BTC-USD rate: 69496 buy | 69495 sell
+2024-11-02T17:09:03.391Z [32minfo[39m: Updating bitfinex BTC-USD rate: 69496 buy | 69495 sell
+2024-11-02T17:09:03.391Z [32minfo[39m: Updating coinbase BTC-USD rate: 69506.91 buy | 69506.91 sell
+2024-11-02T17:09:03.392Z [32minfo[39m: Updating okx BTC-USD rate: 69495.4 buy | 69495.4 sell
+2024-11-02T17:09:03.393Z [32minfo[39m: Updating okx BTC-USD rate: 69495.4 buy | 69495.4 sell
+2024-11-02T17:09:03.868Z [32minfo[39m: Updating kucoin BTC-USD rate: 74377.09 buy | 65444.888 sell
+2024-11-02T17:09:04.013Z [32minfo[39m: Updating kucoin BTC-USD rate: 74377.09 buy | 65444.888 sell
+2024-11-02T17:09:04.209Z [32minfo[39m: Updating noones BTC-USD rate: 70163.185 buy | 68773.815 sell
+2024-11-02T17:09:04.408Z [32minfo[39m: Updating noones BTC-USD rate: 70163.185 buy | 68773.815 sell
+2024-11-02T17:09:08.220Z [32minfo[39m: Server running on port http://localhost:4000
+2024-11-02T17:09:08.222Z [32minfo[39m: Cron started successfully as at Sat Nov 02 2024 18:09:08 GMT+0100 (West Africa Standard Time)
+2024-11-02T17:09:10.725Z [32minfo[39m: Server running on port http://localhost:4000
+2024-11-02T17:09:10.726Z [32minfo[39m: Cron started successfully as at Sat Nov 02 2024 18:09:10 GMT+0100 (West Africa Standard Time)
+2024-11-02T17:09:13.389Z [32minfo[39m: Connected to app-db
+2024-11-02T17:09:16.503Z [32minfo[39m: Server running on port http://localhost:4000
+2024-11-02T17:09:16.504Z [32minfo[39m: Cron started successfully as at Sat Nov 02 2024 18:09:16 GMT+0100 (West Africa Standard Time)
+2024-11-02T17:09:20.002Z [32minfo[39m: Server running on port http://localhost:4000
+2024-11-02T17:09:20.004Z [32minfo[39m: Cron started successfully as at Sat Nov 02 2024 18:09:20 GMT+0100 (West Africa Standard Time)
+2024-11-02T17:09:22.516Z [32minfo[39m: Connected to app-db
+2024-11-02T17:09:30.853Z [32minfo[39m: Updating luno BTC-USD rate: 69506.25 buy | 69309.42 sell
+2024-11-02T17:09:30.855Z [32minfo[39m: Updating kraken BTC-USD rate: 69545.6 buy | 69545.5 sell
+2024-11-02T17:09:30.910Z [32minfo[39m: Updating coinbase BTC-USD rate: 69497.395 buy | 69497.395 sell
+2024-11-02T17:09:30.914Z [32minfo[39m: Updating blockchain BTC-USD rate: 69492.70326615706 buy | 69492.70326615706 sell
+2024-11-02T17:09:31.003Z [31merror[39m: Request failed with status code 403
+2024-11-02T17:09:31.004Z [32minfo[39m: Updating coindcx BTC-USD rate: 0 buy | 0 sell
+2024-11-02T17:09:31.004Z [32minfo[39m: Updating coinbase BTC-USD rate: 69497.395 buy | 69497.395 sell
+2024-11-02T17:09:31.007Z [32minfo[39m: Updating kraken BTC-USD rate: 69545.6 buy | 69545.5 sell
+2024-11-02T17:09:31.008Z [31merror[39m: Request failed with status code 403
+2024-11-02T17:09:31.008Z [32minfo[39m: Updating coindcx BTC-USD rate: 0 buy | 0 sell
+2024-11-02T17:09:31.055Z [32minfo[39m: Updating blockchain BTC-USD rate: 69492.70326615706 buy | 69492.70326615706 sell
+2024-11-02T17:09:31.058Z [32minfo[39m: Updating luno BTC-USD rate: 69506.25 buy | 69309.42 sell
+2024-11-02T17:09:31.112Z [32minfo[39m: Updating bitfinex BTC-USD rate: 69496 buy | 69495 sell
+2024-11-02T17:09:31.187Z [32minfo[39m: Updating okx BTC-USD rate: 69489.7 buy | 69489.7 sell
+2024-11-02T17:09:31.244Z [32minfo[39m: Updating bitfinex BTC-USD rate: 69496 buy | 69495 sell
+2024-11-02T17:09:31.249Z [32minfo[39m: Updating okx BTC-USD rate: 69489.7 buy | 69489.7 sell
+2024-11-02T17:09:31.516Z [32minfo[39m: Updating kucoin BTC-USD rate: 74370.84 buy | 65439.387 sell
+2024-11-02T17:09:31.862Z [32minfo[39m: Updating kucoin BTC-USD rate: 74370.84 buy | 65439.387 sell
+2024-11-02T17:09:32.189Z [32minfo[39m: Updating noones BTC-USD rate: 70163.185 buy | 68773.815 sell
+2024-11-02T17:09:32.526Z [32minfo[39m: Updating noones BTC-USD rate: 70163.185 buy | 68773.815 sell
+2024-11-02T17:10:00.754Z [32minfo[39m: Updating bitfinex BTC-USD rate: 69496 buy | 69495 sell
+2024-11-02T17:10:00.755Z [32minfo[39m: Updating luno BTC-USD rate: 69506.21 buy | 69309.45 sell
+2024-11-02T17:10:00.756Z [32minfo[39m: Updating bitfinex BTC-USD rate: 69496 buy | 69495 sell
+2024-11-02T17:10:00.758Z [32minfo[39m: Updating kraken BTC-USD rate: 69545.6 buy | 69545.5 sell
+2024-11-02T17:10:00.760Z [32minfo[39m: Updating kraken BTC-USD rate: 69545.6 buy | 69545.5 sell
+2024-11-02T17:10:00.765Z [32minfo[39m: Updating luno BTC-USD rate: 69506.21 buy | 69309.45 sell
+2024-11-02T17:10:00.940Z [32minfo[39m: Updating blockchain BTC-USD rate: 69492.70326615706 buy | 69492.70326615706 sell
+2024-11-02T17:10:01.028Z [32minfo[39m: Updating blockchain BTC-USD rate: 69492.70326615706 buy | 69492.70326615706 sell
+2024-11-02T17:10:01.064Z [32minfo[39m: Updating noones BTC-USD rate: 70163.185 buy | 68773.815 sell
+2024-11-02T17:10:01.114Z [32minfo[39m: Updating okx BTC-USD rate: 69490.9 buy | 69490.9 sell
+2024-11-02T17:10:01.117Z [32minfo[39m: Updating okx BTC-USD rate: 69491 buy | 69491 sell
+2024-11-02T17:10:01.121Z [32minfo[39m: Updating coinbase BTC-USD rate: 69507.765 buy | 69506.03 sell
+2024-11-02T17:10:01.122Z [32minfo[39m: Updating coinbase BTC-USD rate: 69507.765 buy | 69506.03 sell
+2024-11-02T17:10:01.132Z [32minfo[39m: Updating noones BTC-USD rate: 70163.185 buy | 68773.815 sell
+2024-11-02T17:10:01.740Z [32minfo[39m: Updating kucoin BTC-USD rate: 74363.66 buy | 65433.06999999999 sell
+2024-11-02T17:10:01.811Z [32minfo[39m: Updating coindcx BTC-USD rate: 69530.01 buy | 69530 sell
+2024-11-02T17:10:01.821Z [32minfo[39m: Updating coindcx BTC-USD rate: 69530.01 buy | 69530 sell
+2024-11-02T17:10:02.573Z [32minfo[39m: Updating kucoin BTC-USD rate: 74363.66 buy | 65433.06999999999 sell
+2024-11-02T17:10:06.780Z [32minfo[39m: Closing DB connections

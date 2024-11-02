@@ -5,6 +5,10 @@ import Config from '../config/config';
 import {
   update_exchange_prices_in_tickers,
 } from '../modules/tickers/ticker.service';
+import {
+  save_prices_from_tickers,
+  update_prices_on_tickers,
+} from '../modules/prices/price.service';
 
 interface Job {
   cronTime: string;
@@ -38,7 +42,9 @@ async function start() {
   }
 
   const jobs = [
-    { cronTime: '* * * * *', fn: () => update_exchange_prices_in_tickers() },
+    { cronTime: '*/30 * * * * *', fn: () => update_exchange_prices_in_tickers() },
+    { cronTime: '*/40 * * * * *', fn: () => save_prices_from_tickers() },
+    { cronTime: '*/45 * * * * *', fn: () => update_prices_on_tickers() },
   ];
 
   await runCronJobs(jobs);

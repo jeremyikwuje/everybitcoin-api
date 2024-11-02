@@ -59,7 +59,7 @@ export const get_coinex_p2p_average_rate = async (
 
   // Limit the middleRangePrices to only 5 prices
   middleRangePrices = middleRangePrices.slice(0, 5);
-  
+
   const total_prices = middleRangePrices.reduce((sum: number, price: number) => sum + price, 0);
   const average_price = total_prices / middleRangePrices.length;
 
