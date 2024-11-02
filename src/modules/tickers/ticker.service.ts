@@ -3,6 +3,8 @@ import APIError from '../../utils/api-error';
 import Ticker from './ticker.model';
 import logger from '../../logger/logger';
 import { tickerDTO, tickerExchangeDTO } from './ticker.enums';
+import Time from '../../utils/time';
+import { get_exchange_rate } from '../../integrations/rates/changer.method';
 
 export const add_new_ticker = async (symbol: string) => {
   const ticker = await Ticker.findOne({ symbol });
@@ -46,7 +48,7 @@ export const get_ticker = async (symbol: string) => {
 
 export const get_tickers = async (
   ticker_symbols: string[],
-  is_active: boolean
+  is_active: boolean,
 ) => {
   try {
     // get tickers from database
@@ -83,7 +85,7 @@ export const get_all_tickers = async (limit: number = 30) => {
 
 export const update_ticker = async (
   symbol: string,
-  entry: tickerDTO
+  entry: tickerDTO,
 ) => {
   const ticker = await get_ticker(symbol);
   if (!ticker) {
@@ -161,7 +163,7 @@ export const activate_tickers = async (ticker_symbols: []) => {
 export const deactivate_ticker = async (symbol: string) => {
   const ticker = update_ticker(symbol, { is_active: false });
   return ticker;
-}
+};
 
 export const deactivate_tickers = async (ticker_symbols: []) => {
   // deactivate all tickers from database
@@ -230,8 +232,6 @@ export const update_ticker_exchange = async (
       exchange_to_update[key] = entry_obj[key];
     });
 
-    console.log(exchange_to_update.updated_at);
-
     updated_exchanges[exchange_index] = exchange_to_update;
   }
 
@@ -253,45 +253,8 @@ export const update_ticker_exchange = async (
   return updated_exchanges[exchange_index];
 };
 
-export const get_ticker_average_price = async (
-  ticker_symbols: string[]
-) => {
-  // get all pairs
-  const pairs = await get_tickers(ticker_symbols, true);
-  
-  let result: any = {};
-  
-  await Promise.all(pairs.map( async (ticker) => {
-    const exchanges = ticker.exchanges;
-
-    let average = await calculate_averate_price_of_exchanges(exchanges);
-    
-    if (average <= 0) {
-      // get the market changer rate
-      const market = exchanges.find(
-        (exchange) => exchange.code === 'market'
-      );
-
-      if (!market) {
-        average = 0;
-      }
-      else {
-        average = market.price_buy || market.price_sell || 0;
-      }
-    }
-
-    result[ticker.symbol] = {
-      symbol: ticker.symbol,
-      average: average,
-      updated_at: ticker.updatedAt,
-    };
-  }));
-
-  return result;
-};
-
 export const calculate_averate_price_of_exchanges = async (
-  exchanges: any
+  exchanges: any,
 ) => {
   let total = 0;
   let count = 0;
@@ -299,9 +262,117 @@ export const calculate_averate_price_of_exchanges = async (
   await Promise.all(exchanges.map(async (exchange: any) => {
     if (exchange.price_buy > 0 || exchange.price_sell > 0) {
       total += exchange.price_buy || exchange.price_sell;
-      count++;
+      count += 1;
     }
   }));
 
   return total / count;
-}
+};
+
+export const get_ticker_average_price = async (
+  ticker_symbols: string[],
+) => {
+  // get all pairs
+  const pairs = await get_tickers(ticker_symbols, true);
+
+  const result: any = {};
+
+  await Promise.all(pairs.map(async (ticker) => {
+    const { exchanges } = ticker;
+
+    let average = await calculate_averate_price_of_exchanges(exchanges);
+
+    if (average <= 0) {
+      // get the market changer rate
+      const market = exchanges.find(
+        (exchange) => exchange.code === 'market',
+      );
+
+      if (!market) {
+        average = 0;
+      } else {
+        average = market.price_buy || market.price_sell || 0;
+      }
+    }
+
+    result[ticker.symbol] = {
+      symbol: ticker.symbol,
+      average,
+      updated_at: ticker.updatedAt,
+    };
+  }));
+
+  return result;
+};
+
+export const update_exchange_prices_in_tickers = async () => {
+  // get all exchanges of btc-usd
+  const symbols = ['BTC-USD'];
+
+  const exchanges_updated: any = [];
+  const iterate_symbols = symbols.map(async (symbol) => {
+    const split_symbol = symbol.split('-');
+    const base = split_symbol[0];
+    const quote = split_symbol[1];
+
+    try {
+      const ticker = await get_ticker(symbol);
+      const { exchanges } = ticker;
+
+      let updated_exchanges: any = exchanges;
+      const promise = exchanges.map(async (exchange: any) => {
+        try {
+          const { code: exchange_code } = exchange;
+          const {
+            buy,
+            sell,
+          } = await get_exchange_rate(
+            exchange_code,
+            base,
+            quote,
+          ); // Assuming get_exchange_rates is a function that fetches rates
+
+          logger.info(`Updating ${exchange_code} ${symbol} rate: ${buy} buy | ${sell} sell`);
+
+          if (buy > 0 || sell > 0) {
+            const updated_properties = {
+              code: exchange_code,
+              price_buy: buy,
+              price_sell: sell,
+              updated_at: new Date(Time.now()),
+            };
+
+            updated_exchanges = update_ticker_exchange_props(
+              exchanges,
+              exchange_code,
+              updated_properties,
+            );
+
+            exchanges_updated.push(updated_properties);
+          }
+
+          return true;
+        } catch (error: any) {
+          logger.error(
+            error.message
+                || `Unable to get exchange rate: ${exchange.code}`,
+          );
+
+          return exchange;
+        }
+      });
+
+      await Promise.all(promise);
+      await update_ticker(symbol, { exchanges: updated_exchanges });
+
+      return true;
+    } catch (error) {
+      logger.error(`Error processing pair code ${symbol}:`, error);
+      return false;
+    }
+  });
+
+  await Promise.all(iterate_symbols);
+
+  return exchanges_updated;
+};

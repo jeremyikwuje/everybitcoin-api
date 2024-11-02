@@ -8,6 +8,7 @@ import config from './config/config';
 import errorHandler from './middlewares/error-handler.middleware';
 import logger from './logger/logger';
 import dbConnections from './database';
+import { cron } from './crons';
 
 const app = express();
 
@@ -23,6 +24,10 @@ Object.entries(dbConnections).forEach((dbConnection) => {
   connection.on('connected', () => {
     logger.info(`Connected to ${name}`);
   });
+
+  cron
+    .start()
+    .then(() => logger.info(`Cron started successfully as at ${new Date()}`));
 
   connection.on('error', (err: any) => {
     logger.error(`Error connecting to DB ${name}:`, err);

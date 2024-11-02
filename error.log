@@ -444,3 +444,92 @@
 2024-11-02T00:17:14.002Z [31merror[39m: No ticker found
 2024-11-02T00:17:14.183Z [31merror[39m: No ticker found
 2024-11-02T00:17:14.589Z [31merror[39m: No ticker found
+2024-11-02T12:54:11.343Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:54:14.684Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:54:29.502Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:54:36.905Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:54:50.931Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:55:13.906Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:55:17.149Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:55:21.658Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:55:27.415Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:55:30.322Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:55:34.083Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:55:38.141Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:55:55.207Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:57:05.629Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:57:07.843Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:57:10.179Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:57:37.304Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:57:51.414Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:57:53.553Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:58:01.690Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:58:06.732Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:58:13.261Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:58:18.100Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:59:15.424Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:59:39.669Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T12:59:56.034Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:00:04.557Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:00:34.815Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:00:46.650Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:00:49.710Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:00:56.753Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:01:03.984Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:01:46.444Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:01:52.241Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:02:11.734Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:02:28.690Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:03:08.580Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:03:19.041Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:03:23.497Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:03:36.132Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:03:42.737Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:04:43.410Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T13:05:05.283Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-02T15:14:21.043Z [31merror[39m: Request failed with status code 403
+2024-11-02T15:25:12.034Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.075Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.227Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.237Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.238Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.239Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.239Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.242Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.321Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.438Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.460Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.462Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.463Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.465Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.465Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.468Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.468Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.469Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.469Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.519Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.554Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.685Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.687Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.701Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.703Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.704Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.704Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.705Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.706Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.706Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.707Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.754Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.780Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.928Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.932Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.932Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.933Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.933Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.934Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.935Z [31merror[39m: No ticker found
+2024-11-02T15:25:12.938Z [31merror[39m: No ticker found
+2024-11-02T15:25:15.038Z [31merror[39m: No ticker found
+2024-11-02T15:25:15.438Z [31merror[39m: No ticker found
+2024-11-02T15:25:15.477Z [31merror[39m: No ticker found
+2024-11-02T16:07:00.954Z [31merror[39m: Request failed with status code 403

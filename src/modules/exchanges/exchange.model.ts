@@ -1,7 +1,9 @@
 import mongoose from 'mongoose';
 import dbConnections from '../../database';
 import { MongoDBName } from '../../config/config';
-import { address_format, custody_options, mobile_os, network_supported, wallet_access, wallet_key_types } from './exchange.enums';
+import {
+  address_format, custody_options, mobile_os, network_supported, wallet_access, wallet_key_types,
+} from './exchange.enums';
 
 // Define the schema for the waitlist
 const ExchangeSchema = new mongoose.Schema({

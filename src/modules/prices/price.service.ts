@@ -3,8 +3,6 @@ import { subDays, subHours, subMonths } from 'date-fns';
 import APIError from '../../utils/api-error';
 import Price from './price.model';
 import logger from '../../logger/logger';
-import { get_ticker } from '../tickers/ticker.service';
-import Money from '../../utils/money';
 
 interface priceDTO {
   ticker?: string;
@@ -197,4 +195,3 @@ export const delete_price_by_ticker = async (ticker: string) => {
 
   return delete_prices;
 };
-

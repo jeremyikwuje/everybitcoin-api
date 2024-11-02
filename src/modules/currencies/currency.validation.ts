@@ -37,9 +37,9 @@ export const CurrencyValidation = {
     body: Joi.object({
       fields: Joi.object({
         name: Joi.string().optional(),
-        description: Joi.string().optional(),        
+        description: Joi.string().optional(),
         symbol: Joi.string().optional(),
-        icon: Joi.string().optional()
+        icon: Joi.string().optional(),
       }).required(),
     }),
   },

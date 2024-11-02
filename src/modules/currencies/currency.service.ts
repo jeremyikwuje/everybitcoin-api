@@ -18,27 +18,26 @@ interface currencyDTO {
 export const convert_currency = async (
   from: string,
   to: string,
-  amount: number
+  amount: number,
 ) => {
+  const from_currency = from.toUpperCase();
+  const to_currency = to.toUpperCase();
 
-  let converted_amount = 0;
-  let ticker_symbol = '';
+  let conversion = 0;
+  let ticker = null;
 
   try {
-    ticker_symbol = `${from}-${to}`.toUpperCase();
-    const ticker = await get_ticker(ticker_symbol);
-
-    const price = Number(ticker.price);
-    converted_amount = Number(amount) * price;
+    const ticker_symbol = `${from_currency}-${to_currency}`;
+    ticker = await get_ticker(ticker_symbol);
+    conversion = Number(amount) * Number(ticker.price);
   } catch (error: any) {
     try {
-      ticker_symbol = `${to}-${from}`.toUpperCase();
-      const ticker = await get_ticker(ticker_symbol);
+      const ticker_symbol = `${to_currency}-${from_currency}`;
+      ticker = await get_ticker(ticker_symbol);
+      conversion = Number(amount) / Number(ticker.price);
+    } catch (err: any) {
+      logger.error(err.message || 'Unable to convert currency');
 
-      const price = Number(ticker.price);
-      converted_amount = Number(amount) / price;
-    }
-    catch (error: any) {
       throw new APIError(
         'No ticker found',
         NOT_FOUND,
@@ -46,10 +45,14 @@ export const convert_currency = async (
     }
   }
 
-  converted_amount = Money.format_currency_amount(
-    converted_amount,
-    to
+  conversion = Money.format_currency_amount(
+    conversion,
+    to_currency,
   );
+  const [
+    base,
+    quote,
+  ] = ticker.symbol.split('-');
 
   return {
     from,
@@ -57,24 +60,64 @@ export const convert_currency = async (
     amount,
     result: {
       currency: {
-        value: converted_amount,
-        unit: to,
+        value: conversion,
+        unit: to_currency,
       },
       denomination: {
-        value: Money.to_denomination(converted_amount, to),
-        unit: Currencies.find((c) => c.code === to)?.denomination_short || '',
+        value: Money.to_denomination(conversion, to_currency),
+        unit: Currencies.find(
+          (c) => c.code === to_currency,
+        )?.denomination_short || '',
       },
-      ticker: ticker_symbol,
-    }
+      ticker: {
+        symbol: ticker.symbol,
+        price: {
+          value: Money.format_currency_amount(
+            Number(ticker.price),
+            quote,
+          ),
+          unit: quote,
+        },
+        inverse_price: {
+          value: Money.format_currency_amount(
+            1 / Number(ticker.price),
+            base,
+          ),
+          unit: base,
+          denomination: {
+            value: Money.to_denomination(
+              1 / Number(ticker.price),
+              base,
+            ),
+            unit: Currencies.find(
+              (c) => c.code === base,
+            )?.denomination_short || '',
+          },
+        },
+      },
+    },
   };
-}
-  
-  
+};
 
+export const get_currency = async (code: string) => {
+  // get currency from database
+  const currency = await Currency.findOne({
+    code,
+  });
+
+  if (!currency) {
+    throw new APIError(
+      'No currency found',
+      NOT_FOUND,
+    );
+  }
+
+  return currency;
+};
 
 export const add_new_currency = async (currency: currencyDTO) => {
-  const get_currency = await Currency.findOne({ code: currency.code });
-  if (get_currency) {
+  const existing_currency = await Currency.findOne({ code: currency.code });
+  if (existing_currency) {
     throw new APIError(
       'currency already exists',
       CONFLICT,
@@ -112,22 +155,6 @@ export const update_currency = async (code: string, entry: currencyDTO) => {
     throw new APIError(
       'Unable to update currency',
       NOT_MODIFIED,
-    );
-  }
-
-  return currency;
-};
-
-export const get_currency = async (code: string) => {
-  // get currency from database
-  const currency = await Currency.findOne({
-    code,
-  });
-
-  if (!currency) {
-    throw new APIError(
-      'No currency found',
-      NOT_FOUND,
     );
   }
 
@@ -196,10 +223,11 @@ export const delete_currencies = async (currency_codes: []) => {
   return currencies;
 };
 
-export const activate_currency = async (code: string) =>
-
-// activate currency from database
-  update_currency(code, { is_active: true });
+export const activate_currency = async (code: string) => {
+  // activate currency from database
+  const currency = update_currency(code, { is_active: true });
+  return currency;
+};
 
 export const activate_currencies = async (currency_codes: []) => {
   // activate all currencies from database
@@ -217,7 +245,10 @@ export const activate_currencies = async (currency_codes: []) => {
   return currencies;
 };
 
-export const deactivate_currency = async (code: string) => update_currency(code, { is_active: false });
+export const deactivate_currency = async (code: string) => {
+  const currency = update_currency(code, { is_active: false });
+  return currency;
+};
 
 export const deactivate_currencies = async (currency_codes: []) => {
   // deactivate all currencies from database

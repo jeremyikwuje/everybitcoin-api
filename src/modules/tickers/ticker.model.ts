@@ -260,7 +260,7 @@ const TickerSchema = new mongoose.Schema({
 // Create a model using the schema
 const Ticker = dbConnections[MongoDBName.AppDB].model(
   'tickers',
-  TickerSchema
+  TickerSchema,
 );
 
 export default Ticker;

@@ -1,40 +1,38 @@
-import APIError from "../../utils/api-error";
-import { request_api } from "../api-connector";
+import { request_api } from '../api-connector';
 
 export const get_coinex_p2p_average_rate = async (
   base: string = 'USDT',
   quote: string = 'NGN',
-  side: string = 'BUY'
+  side: string = 'BUY',
 ) => {
-
   let base_currency = base;
-  let quote_currency = quote;
+  const quote_currency = quote;
   let sort = 'DESC';
 
   if (base_currency === 'USD') {
     base_currency = 'USDT';
   }
   if (side === 'BUY') {
-    sort = 'ASC'
+    sort = 'ASC';
   }
 
-  const url = `https://www.coinex.com/res/p2p/advertising`;
+  const url = 'https://www.coinex.com/res/p2p/advertising';
   const payload = JSON.stringify({
-    "adv_type": side,
-    "base": base_currency.toUpperCase(),
-    "quote": quote_currency.toUpperCase(),
-    "amount": 0,
-    "pay_channel_ids": [],
-    "sort_by": "PRICE",
-    "sort_type": sort,
-    "user_preferences": [],
-    "page": 1,
-    "limit": 45
+    adv_type: side,
+    base: base_currency.toUpperCase(),
+    quote: quote_currency.toUpperCase(),
+    amount: 0,
+    pay_channel_ids: [],
+    sort_by: 'PRICE',
+    sort_type: sort,
+    user_preferences: [],
+    page: 1,
+    limit: 45,
   });
 
   // Add your request logic here, for example using axios
-  const response = await request_api(url, 'POST', { 
-    'Content-Type': 'application/json'
+  const response = await request_api(url, 'POST', {
+    'Content-Type': 'application/json',
   }, payload);
 
   if (response.error) {
@@ -44,8 +42,7 @@ export const get_coinex_p2p_average_rate = async (
   const items = response.data.items || [];
   // Filter out merchants with completion rate less than 0.8
   const filtered_items = items.filter(
-    (item: any) => 
-      item.merchant.completion_rate >= 0.8
+    (item: any) => item.merchant.completion_rate >= 0.8,
   );
 
   const prices = filtered_items.map((item: any) => Number(item.price));
@@ -62,9 +59,7 @@ export const get_coinex_p2p_average_rate = async (
 
   // Limit the middleRangePrices to only 5 prices
   middleRangePrices = middleRangePrices.slice(0, 5);
-
-  console.log(middleRangePrices);
-
+  
   const total_prices = middleRangePrices.reduce((sum: number, price: number) => sum + price, 0);
   const average_price = total_prices / middleRangePrices.length;
 

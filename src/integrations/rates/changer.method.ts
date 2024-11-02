@@ -1,5 +1,7 @@
 import { pair_supported_in_exchange } from '../exchange.currencies';
-import { bitfinex, blockchain, kraken, kucoin, PriceMethods, yellowcard } from './price.methods';
+import {
+  PriceMethods,
+} from './price.methods';
 
 // Mapping of exchanges to their respective methods and supported currencies
 const exchanges_methods: any = {

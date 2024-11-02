@@ -60,7 +60,7 @@ export const get_xe_rates = async (base: string = 'USD') => {
       return rates;
     }
 
-    logger.info(`Using cached XE rates`);
+    logger.info('Using cached XE rates');
     return Number(cache.get(key));
   } catch (error) {
     logger.error(`Error in XE rates: ${error}`);

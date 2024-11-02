@@ -8,7 +8,6 @@ import { get_pairs_rate } from '../pairs/pair.service';
 import { ERROR_MESSAGE } from '../../constants';
 
 export default class rateController {
-
   static latest = async (req: any, res: any) => {
     try {
       const {
@@ -31,8 +30,8 @@ export default class rateController {
         error.message || ERROR_MESSAGE,
       );
     }
-  }
-  
+  };
+
   static get_rates = async (req: any, res: any) => {
     try {
       const {

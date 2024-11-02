@@ -1,20 +1,3 @@
-export const pair_supported_in_exchange = (
-  exchange_code: string,
-  symbol: string,
-) => {
-  const exchanges_currency = exchanges_currencies[exchange_code] || null;
-  if (!exchanges_currency) {
-    throw new Error(`Invalid exchange code: ${exchange_code}`);
-  }
-  const exchange_ticker_symbols = exchanges_currency.ticker_symbols || [];
-  console.log(symbol);
-  if (!exchange_ticker_symbols.includes(symbol)) {
-    return false;
-  }
-
-  return true;
-};
-
 export const exchanges_currencies: any = {
   kraken: {
     currencies: ['BTC', 'USDT', 'USD', 'EUR', 'GBP'],
@@ -116,4 +99,20 @@ export const exchanges_currencies: any = {
     currencies: ['BTC', 'USD', 'USDT', 'USDC'],
     ticker_symbols: ['BTC-USD', 'BTC-USDT', 'BTC-USDC'],
   },
+};
+
+export const pair_supported_in_exchange = (
+  exchange_code: string,
+  symbol: string,
+) => {
+  const exchanges_currency = exchanges_currencies[exchange_code] || null;
+  if (!exchanges_currency) {
+    throw new Error(`Invalid exchange code: ${exchange_code}`);
+  }
+  const exchange_ticker_symbols = exchanges_currency.ticker_symbols || [];
+  if (!exchange_ticker_symbols.includes(symbol)) {
+    return false;
+  }
+
+  return true;
 };

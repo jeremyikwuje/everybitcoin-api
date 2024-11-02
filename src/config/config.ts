@@ -8,6 +8,7 @@ dotenv.config();
 
 const Config = {
   env: process.env.NODE_ENV || 'testnet',
+  enableCronJobs: process.env.ENABLE_CRON_JOBS === 'true',
   port: process.env.PORT || 5000,
   publicUrl: String(process.env.PUBLIC_URL),
   mongooseDebug: process.env.DEBUG_MONGOOSE,

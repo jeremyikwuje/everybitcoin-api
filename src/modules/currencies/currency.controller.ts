@@ -2,8 +2,6 @@ import { BAD_REQUEST, CONFLICT } from 'http-status';
 import ApiResponse from '../../utils/api-response';
 import {
   add_new_currency,
-  activate_currency,
-  deactivate_currency,
   delete_currency,
   get_currency,
   get_all_currencies,
@@ -13,7 +11,6 @@ import {
 import APIError from '../../utils/api-error';
 
 export default class CurrencyController {
-
   static add_currency = async (req: any, res: any) => {
     try {
       const {
@@ -27,7 +24,7 @@ export default class CurrencyController {
         code,
         name,
         symbol,
-        description
+        description,
       });
 
       return ApiResponse.success(res, 'Successful', new_currency);
@@ -86,7 +83,6 @@ export default class CurrencyController {
         code,
       } = req.query;
 
-
       const deleted_currency = await delete_currency(code);
       if (!deleted_currency) {
         throw new APIError(
@@ -142,6 +138,50 @@ export default class CurrencyController {
     }
   };
 
+  static activate_currency = async (req: any, res: any) => {
+    try {
+      const {
+        code,
+      } = req.query;
+
+      const currency = await update_currency(code, { is_active: true });
+
+      return ApiResponse.success(
+        res,
+        'Successful',
+        currency,
+      );
+    } catch (error: any) {
+      return ApiResponse.error(
+        res,
+        error.statusCode || BAD_REQUEST,
+        error.message || 'Unable to activate currency',
+      );
+    }
+  };
+
+  static deactivate_currency = async (req: any, res: any) => {
+    try {
+      const {
+        code,
+      } = req.query;
+
+      const currency = await update_currency(code, { is_active: false });
+
+      return ApiResponse.success(
+        res,
+        'Successful',
+        currency,
+      );
+    } catch (error: any) {
+      return ApiResponse.error(
+        res,
+        error.statusCode || BAD_REQUEST,
+        error.message || 'Unable to deactivate currency',
+      );
+    }
+  };
+
   static convert_currency = async (req: any, res: any) => {
     try {
       const {
@@ -153,7 +193,7 @@ export default class CurrencyController {
       const conversion = await convert_currency(
         from,
         to,
-        amount
+        amount,
       );
 
       return ApiResponse.success(
@@ -168,5 +208,5 @@ export default class CurrencyController {
         error.message || 'Unable to convert currency',
       );
     }
-  }
+  };
 }

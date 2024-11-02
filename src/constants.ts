@@ -1,4 +1,3 @@
-
 export const supported_markets = ['exchanges', 'mid-market', 'bank'];
 
 export const CountryCodeByCurrency: any = {
@@ -50,15 +49,15 @@ export const CountryCodeByCurrency: any = {
 };
 
 export const threeCountryCodeByCurrency: any = {
-  'NGN': 'NGA',
-  'KES': 'KEN',
-  'USD': 'USA',
-  'EUR': [ 'FRA', 'BEL'],
-  'GBP': 'GBR',
-  'CAD': 'CAN',
-  'AUD': 'AUS',
-  'JPY': 'JPN',
-}
+  NGN: 'NGA',
+  KES: 'KEN',
+  USD: 'USA',
+  EUR: ['FRA', 'BEL'],
+  GBP: 'GBR',
+  CAD: 'CAN',
+  AUD: 'AUS',
+  JPY: 'JPN',
+};
 
 export enum Currency {
   BTC = 'BTC',
@@ -125,4 +124,4 @@ export const Currencies = [
     denomination_short: 'Sen',
     denomination_divisor: 1,
   },
-]
+];

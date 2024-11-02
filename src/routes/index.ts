@@ -37,5 +37,4 @@ router.use(
   CronjobRoutes,
 );
 
-
 export default router;

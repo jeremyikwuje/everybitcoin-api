@@ -1,5 +1,4 @@
 import axios from 'axios';
-import logger from '../../logger/logger';
 
 type CoinId = 1 | 2;
 type Currency = 15 | 16;
@@ -14,7 +13,11 @@ const HuobiCurrencyCodes: any = {
   NGN: 15,
 };
 
-const get_huobi_p2p_orders = async (coinId: CoinId, tradeType: TradeType, currency: Currency) => {
+const get_huobi_p2p_orders = async (
+  coinId: CoinId,
+  tradeType: TradeType,
+  currency: Currency,
+) => {
   const url = 'https://www.htx.com/-/x/otc/v1/data/trade-market';
   const params = {
     coinId,
@@ -44,6 +47,7 @@ const get_huobi_p2p_orders = async (coinId: CoinId, tradeType: TradeType, curren
     return response.data.data;
   } catch (error) {
     console.error('Error getting Huobi P2P exchange rate', error);
+    return [];
   }
 };
 

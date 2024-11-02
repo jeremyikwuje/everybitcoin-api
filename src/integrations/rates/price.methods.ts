@@ -1,5 +1,6 @@
 import axios from 'axios';
 import NodeCache from 'node-cache';
+import { randomInt } from 'node:crypto';
 import { NoonesMethods } from '../noones/noones';
 import { request_api } from '../api-connector';
 import APIError from '../../utils/api-error';
@@ -8,7 +9,6 @@ import { get_paxful_rate } from '../paxful/paxful';
 import { get_huobi_p2p_rates } from '../houbi/huobi';
 import Kucoin from '../kucoin/kucoin';
 import { get_xe_rates } from '../xe/xe';
-import { randomInt } from 'node:crypto';
 import { get_coinex_p2p_average_rate } from '../coinex/coinex.integration';
 import { CountryCodeByCurrency, Currency } from '../../constants';
 import { CoinbaseMethods } from '../coinbase/coinbase';
@@ -21,39 +21,39 @@ const cache = new NodeCache({
 
 export const bitfinex = async (
   base: string = Currency.BTC,
-  quote: string = Currency.USD
+  quote: string = Currency.USD,
 ) => {
   const BITFINIX_API_URL = 'https://api-pub.bitfinex.com/v2';
   const symbol = `t${base}${quote}`;
   const data = await request_api(
-      `${BITFINIX_API_URL}/ticker/${symbol}`,
-      'GET'
+    `${BITFINIX_API_URL}/ticker/${symbol}`,
+    'GET',
   );
 
   if (data.error) {
     throw new APIError(
-      `Unable to get Bitfinex Bitcoin price to ${quote}`
-    )
+      `Unable to get Bitfinex Bitcoin price to ${quote}`,
+    );
   }
 
   return {
-      buy: Number(data[2]),
-      sell: Number(data[0]),
-  }
-}
+    buy: Number(data[2]),
+    sell: Number(data[0]),
+  };
+};
 
 export const bitmama = async (
   base_currency: string = Currency.BTC,
-  quote_currency: string = Currency.USD,
+  quote_currency: string = Currency.USDT,
 ) => {
   try {
-    let base = base_currency.toLowerCase();
+    const base = base_currency.toUpperCase();
+    let quote = quote_currency.toUpperCase();
 
-    if (base === 'usd') {
-      base = 'usdc';
+    if (quote === Currency.USD) {
+      quote = Currency.USDT.toUpperCase();
     }
 
-    const quote = quote_currency.toLowerCase();
     const ticker = `${base}${quote}`.toLowerCase();
 
     let payload: any = {
@@ -85,12 +85,15 @@ export const bitmama = async (
 };
 
 export const bitnob = async (
-  base: string = Currency.BTC,
-  quote = Currency.USD,
+  base_currency: string = Currency.BTC,
+  quote_currency: string = Currency.USD,
 ) => {
   try {
-    if (base === 'USDT') {
-      base = 'USD';
+    const base = base_currency.toUpperCase();
+    let quote = quote_currency.toUpperCase();
+
+    if (quote === Currency.USDT) {
+      quote = Currency.USD;
     }
 
     logger.info(`bitnob ${base} ${quote}`);
@@ -126,17 +129,24 @@ export const bitnob = async (
 };
 
 export const binance = async (
-  base = Currency.BTC,
-  quote = Currency.USD,
+  base_currency = Currency.BTC,
+  quote_currency = Currency.USDT,
 ) => {
   try {
+    const base = base_currency.toUpperCase();
+    let quote = quote_currency.toUpperCase();
+
+    if (quote === Currency.USD) {
+      quote = Currency.USDT;
+    }
+
     const pair = `${base}${quote}`.toUpperCase();
     const req = axios.get(`https://api.binance.com/api/v3/ticker/price?symbol=${pair}`);
     const response = (await req).data;
 
-    return { 
+    return {
       buy: Number(response.price || 0),
-      sell: Number(response.price || 0) - 1
+      sell: Number(response.price || 0) - 1,
     };
   } catch (err: any) {
     logger.error(err.message);
@@ -162,12 +172,15 @@ export const binance = async (
 // };
 
 export const bybit = async (
-  base: string = 'USDT',
-  quote: string = Currency.USD,
+  base_currency: string = Currency.BTC,
+  quote_currency: string = Currency.USDT,
 ) => {
   try {
-    if (base.toUpperCase() === 'USD') {
-      base = 'usdt';
+    const base = base_currency.toUpperCase();
+    let quote = quote_currency.toUpperCase();
+
+    if (quote === Currency.USD) {
+      quote = Currency.USDT;
     }
 
     const pair = `${base}${quote}`.toLowerCase();
@@ -201,15 +214,18 @@ export const blockchain = async (
     logger.error(err.message || 'Error occured while getting Coinbase price');
     return { buy: 0, sell: 0 };
   }
-}
+};
 
 export const cash_in = async (
-  base: string = Currency.BTC,
-  quote: string = Currency.USD,
+  base_currency: string = Currency.BTC,
+  quote_currency: string = Currency.USD,
 ) => {
   try {
-    if (base === 'USDT') {
-      base = 'USD';
+    const base = base_currency.toUpperCase();
+    let quote = quote_currency.toUpperCase();
+
+    if (quote === Currency.USDT) {
+      quote = Currency.USD;
     }
 
     const pair = `${base}${quote}`.toUpperCase();
@@ -234,12 +250,15 @@ export const cash_in = async (
 };
 
 export const cashwyre = async (
-  base: string = Currency.BTC,
-  quote: string = Currency.USD,
+  base_currency: string = Currency.BTC,
+  quote_currency: string = Currency.USD,
 ) => {
   try {
-    if (base === 'USDT') {
-      base = 'USD';
+    const base = base_currency.toUpperCase();
+    let quote = quote_currency.toUpperCase();
+
+    if (quote === Currency.USDT) {
+      quote = Currency.USD;
     }
 
     const pair = `${base}${quote}`.toUpperCase();
@@ -269,11 +288,11 @@ export const cashwyre = async (
 
 export const coinbase = async (
   base: string = Currency.BTC,
-  quote: string = Currency.USD,
+  quote: string = Currency.USDT,
 ) => {
   try {
     const ticker_symbol = `${base}-${quote}`.toUpperCase();
-    const rate = await CoinbaseMethods.get_prices(ticker_symbol)
+    const rate = await CoinbaseMethods.get_prices(ticker_symbol);
 
     return {
       buy: rate.buy,
@@ -283,7 +302,7 @@ export const coinbase = async (
     logger.error(err.message || 'Error occured while getting Coinbase price');
     return { buy: 0, sell: 0 };
   }
-}
+};
 
 export const coinprofile = async (
   base: string = 'USDT',
@@ -323,9 +342,8 @@ export const coindcx = async (
   quote: string = Currency.USDT,
 ) => {
   try {
-
-    let base_currency = (base === 'BTC') ? 'BTC' : base;
-    let quote_currency = (quote === 'USD') ? 'USDT' : quote;
+    const base_currency = (base === 'BTC') ? 'BTC' : base;
+    const quote_currency = (quote === 'USD') ? 'USDT' : quote;
 
     const ticker_symbol = `${base_currency}${quote_currency}`.toUpperCase();
     const response = await axios.get(
@@ -334,18 +352,18 @@ export const coindcx = async (
     );
 
     const ticker = response.data.find(
-      (t: any) => t.market === ticker_symbol
+      (t: any) => t.market === ticker_symbol,
     ) || { ask: 0, bid: 0 };
 
-    return { 
+    return {
       buy: Number(ticker.ask),
-      sell: Number(ticker.bid)
+      sell: Number(ticker.bid),
     };
   } catch (err: any) {
     logger.error(err.message || 'Error occured while getting coindcx price');
     return { buy: 0, sell: 0 };
   }
-}
+};
 
 export const coinex = async (
   base: string = 'USDT',
@@ -354,9 +372,8 @@ export const coinex = async (
   try {
     const buy = await get_coinex_p2p_average_rate(base, quote, 'BUY');
     const sell = await get_coinex_p2p_average_rate(base, quote, 'SELL');
-    
-    return { buy, sell };
 
+    return { buy, sell };
   } catch (err: any) {
     logger.error(err.message || 'Error occured while getting coinprofile price');
     return { buy: 0, sell: 0 };
@@ -364,15 +381,17 @@ export const coinex = async (
 };
 
 export const jackocoins = async (
-  base: string = 'USDT',
-  quote: string = Currency.USD,
+  base_currency: string = Currency.BTC,
+  quote_currency: string = Currency.USD,
 ) => {
   try {
-    if (base.toUpperCase() === 'USD') {
-      base = 'USDT';
+    const base = base_currency.toUpperCase();
+    let quote = quote_currency.toUpperCase();
+
+    if (quote === Currency.USD) {
+      quote = Currency.USDT;
     }
 
-    logger.info(`jackocoins ${base} ${quote}`);
     const url = 'https://api.jackocoins.com/v1/app/rates';
     const params = {
       page: 1,
@@ -389,7 +408,7 @@ export const jackocoins = async (
     }));
 
     // find the rate from the rate by symbol
-    const rate = rates.find((r: any) => r.symbol === base.toUpperCase());
+    const rate = rates.find((r: any) => r.symbol === base);
 
     return {
       buy: 0,
@@ -423,14 +442,14 @@ export const kraken = async (
   quote: string = Currency.USDT,
 ) => {
   try {
-    let base_currency = (base === 'BTC') ? 'XBT' : base;
-    let quote_currecy = (quote === 'USD') ? 'USDT' : quote;
-    const ticker_symbol = `${base_currency}${quote_currecy}`.toUpperCase();
+    const base_currency = (base === 'BTC') ? 'XBT' : base;
+    const quote_currency = (quote === 'USD') ? 'USDT' : quote;
+    const ticker_symbol = `${base_currency}${quote_currency}`.toUpperCase();
 
     const response = await axios.get(
-      `https://api.kraken.com/0/public/Ticker?pair=${ticker_symbol}`
+      `https://api.kraken.com/0/public/Ticker?pair=${ticker_symbol}`,
     );
-    let ticker = response.data.result[ticker_symbol];
+    const ticker = response.data.result[ticker_symbol];
 
     const rate = {
       buy: Number(ticker.a[0]),
@@ -442,18 +461,21 @@ export const kraken = async (
     logger.info(err.message);
     return { buy: 0, sell: 0 };
   }
-}
+};
 
 export const htx_huobi = async (
-  base = 'USDT',
-  quote = Currency.USD,
+  base_currency = Currency.BTC,
+  quote_currency = Currency.USDT,
 ) => {
   try {
-    if (base.toUpperCase() === 'USD') {
-      base = 'USDT';
+    const base = base_currency.toUpperCase();
+    let quote = quote_currency.toUpperCase();
+
+    if (quote === Currency.USD) {
+      quote = Currency.USDT.toUpperCase();
     }
 
-    const rate = await get_huobi_p2p_rates(base.toUpperCase(), quote.toUpperCase());
+    const rate = await get_huobi_p2p_rates(base, quote);
     return rate;
   } catch (err: any) {
     logger.info(err.message);
@@ -463,22 +485,24 @@ export const htx_huobi = async (
 
 export const luno = async (
   base_currency: string = Currency.BTC,
-  quote_currecy: string = Currency.USD,
+  quote_currency: string = Currency.USD,
 ) => {
   try {
-    let base = (base_currency == Currency.BTC) ? 'XBT' : base_currency;
-    base = (base == Currency.USD) ? Currency.USDC : base;
-    let quote = (quote_currecy == Currency.USD) ? Currency.USDC : quote_currecy;
-    
+    // if base_currency is BTC changed to XBT
+    let base = (base_currency === Currency.BTC) ? 'XBT' : base_currency;
+    base = (base === Currency.USD) ? Currency.USDC : base;
+
+    const quote = (quote_currency === Currency.USD) ? Currency.USDC : quote_currency;
+
     const pair_code = `${base}${quote}`.toUpperCase();
     const req = axios.get(`https://api.luno.com/api/1/tickers?pair=${pair_code}`);
     const rate = (await req).data;
     const tickers = rate.tickers || [];
     const pair = tickers.find((p: any) => p.pair === pair_code) || { ask: 0, bid: 0 };
 
-    return { 
+    return {
       buy: Number(`${pair.ask || 0}`),
-      sell: Number(`${pair.bid || 0}`)
+      sell: Number(`${pair.bid || 0}`),
     };
   } catch (err: any) {
     logger.error(err.message || 'Error occured while getting Luno price');
@@ -512,9 +536,7 @@ export const noones = async (
   if (base_currency === Currency.BTC) {
     rate = Number(data.rate_BTC || 0);
   }
-
-  console.log('Noones rate', rate);
-
+  
   return {
     buy: rate * 1.01,
     sell: rate - (rate * 0.01),
@@ -523,37 +545,37 @@ export const noones = async (
 
 export const okx = async (
   base: string = Currency.BTC,
-  quote: string = Currency.USD
+  quote: string = Currency.USD,
 ) => {
   const OKX_API_URL = 'https://www.okx.com/api/v5/public';
   const inst_id = `${base}-${quote}-SWAP`.toUpperCase();
   const response = await request_api(
-      `${OKX_API_URL}/mark-price?instType=SWAP&instId=${inst_id}`,
-      'GET'
+    `${OKX_API_URL}/mark-price?instType=SWAP&instId=${inst_id}`,
+    'GET',
   );
 
   if (response.error) {
-      throw new APIError(
-        `Unable to get OKX Bitcoin price in ${quote}`
-      )
+    throw new APIError(
+      `Unable to get OKX Bitcoin price in ${quote}`,
+    );
   }
-  
-  const data = response.data[0]
+
+  const data = response.data[0];
 
   return {
-      buy: Number(data.markPx || 0),
-      sell: Number(data.markPx || 0),
-  }
-}
+    buy: Number(data.markPx || 0),
+    sell: Number(data.markPx || 0),
+  };
+};
 
 export const paxful = async (
-  base = 'USDT',
-  quote = Currency.USD
+  base_currency = 'USDT',
+  quote_currency = Currency.USD,
 ) => {
   try {
     const rate = { buy: 0, sell: 0 };
-    const response = await get_paxful_rate(quote);
-    rate.buy = Number(response.rate[base.toLowerCase()] || 0);
+    const response = await get_paxful_rate(quote_currency);
+    rate.buy = Number(response.rate[base_currency.toLowerCase()] || 0);
     rate.sell = rate.buy - (rate.buy * 0.005);
 
     return rate;
@@ -591,12 +613,15 @@ export const palremit = async (
 };
 
 export const remitano = async (
-  base: string = 'USDT',
-  quote: string = Currency.USD,
+  base_currency: string = Currency.BTC,
+  quote_currency: string = Currency.USDT,
 ) => {
   try {
-    if (base.toUpperCase() === 'USD') {
-      base = 'USDT';
+    const base = base_currency.toUpperCase();
+    let quote = quote_currency.toUpperCase();
+
+    if (quote === Currency.USD) {
+      quote = Currency.USDT.toUpperCase();
     }
 
     const country = CountryCodeByCurrency[quote].toLowerCase();
@@ -613,19 +638,25 @@ export const remitano = async (
       );
     }
 
-    return { buy: response[country][ask] || 0, sell: response[country][bid] || 0 };
+    return {
+      buy: response[country][ask] || 0,
+      sell: response[country][bid] || 0,
+    };
   } catch (err: any) {
     return { buy: 0, sell: 0 };
   }
 };
 
 export const quidax = async (
-  base: string = 'USDT',
-  quote: string = Currency.USD,
+  base_currency: string = Currency.BTC,
+  quote_currency: string = Currency.USDT,
 ) => {
   try {
-    if (base.toUpperCase() === 'USD') {
-      base = 'usdt';
+    const base = base_currency.toUpperCase();
+    let quote = quote_currency.toUpperCase();
+
+    if (quote === Currency.USD) {
+      quote = Currency.USDT;
     }
 
     const pair = `${base}${quote}`.toLowerCase();
@@ -732,5 +763,5 @@ export const PriceMethods = {
   paxful,
   quidax,
   remitano,
-  yellowcard
+  yellowcard,
 };

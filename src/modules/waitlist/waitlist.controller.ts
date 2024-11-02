@@ -1,7 +1,7 @@
 import APIError from '../../utils/api-error';
 import ApiResponse from '../../utils/api-response';
 import Waitlist from './waitlist.model';
-import { addUserToWaitlist } from './waitlist.service';
+import { add_user_to_waitlist } from './waitlist.service';
 
 export const add = async (req: any, res: any) => {
   try {
@@ -22,7 +22,7 @@ export const add = async (req: any, res: any) => {
       );
     }
 
-    const result = await addUserToWaitlist(
+    const result = await add_user_to_waitlist(
       email,
       ip,
       country,
