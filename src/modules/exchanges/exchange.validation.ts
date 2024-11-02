@@ -3,13 +3,13 @@ import { Joi } from 'express-validation';
 export const ExchangeValidation = {
   activate_exchange: {
     query: Joi.object({
-      code: Joi.string().required(),
+      code: Joi.string().required().lowercase(),
     }),
   },
   add_exchange: {
     body: Joi.object({
       name: Joi.string().required(),
-      code: Joi.string().required(),
+      code: Joi.string().required().lowercase(),
       icon: Joi.string().required(),
       bio: Joi.string().required(),
       link: Joi.string().required(),
@@ -18,27 +18,27 @@ export const ExchangeValidation = {
   },
   deactivate_exchange: {
     query: Joi.object({
-      code: Joi.string().required(),
+      code: Joi.string().required().lowercase(),
     }),
   },
   delete_exchange: {
     query: Joi.object({
-      code: Joi.string().required(),
+      code: Joi.string().required().lowercase(),
     }),
   },
   get_exchange: {
     query: Joi.object({
-      code: Joi.string().required(),
+      code: Joi.string().required().lowercase(),
     }),
   },
   update_exchange: {
     query: Joi.object({
-      code: Joi.string().required(),
+      code: Joi.string().required().lowercase(),
     }),
     body: Joi.object({
       fields: Joi.object({
         name: Joi.string().optional(),
-        code: Joi.string().optional(),
+        code: Joi.string().optional().lowercase(),
         icon: Joi.number().optional(),
         bio: Joi.string().optional(),
         link: Joi.string().optional(),

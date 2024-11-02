@@ -57,4 +57,16 @@ router.post(
   asyncWrapper(TickerController.add_exchange_to_ticker),
 );
 
+router.post(
+  '/remove_exchange_from_ticker',
+  validateSchema(TickerValidation.remove_exchange_from_ticker),
+  asyncWrapper(TickerController.remove_exchange_from_ticker),
+);
+
+router.post(
+  '/update_exchange_in_ticker',
+  validateSchema(TickerValidation.update_exchange_in_ticker),
+  asyncWrapper(TickerController.update_exchange_in_ticker),
+);
+
 export default router;

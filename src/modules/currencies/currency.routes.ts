@@ -34,4 +34,10 @@ router.post(
   asyncWrapper(CurrencyController.delete_currency),
 );
 
+router.post(
+  '/convert_currency',
+  validateSchema(CurrencyValidation.convert_currency),
+  asyncWrapper(CurrencyController.convert_currency),
+);
+
 export default router;

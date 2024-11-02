@@ -1,54 +1,7 @@
 import mongoose from 'mongoose';
 import dbConnections from '../../database';
 import { MongoDBName } from '../../config/config';
-
-export const ticker_symbols = [
-  'btc-usd', // United States
-  'btc-eur', // European Union
-  'btc-jpy', // Japan
-  'btc-gbp', // United Kingdom
-  'btc-aud', // Australia
-  'btc-cad', // Canada
-  'btc-cny', // China
-  'btc-inr', // India
-  'btc-brl', // Brazil
-  'btc-zar', // South Africa
-  'btc-try', // Turkey
-  'btc-chf', // Switzerland
-  'btc-sek', // Sweden
-  'btc-nzd', // New Zealand
-  'btc-pln', // Poland
-  'btc-ngn', // Nigeria
-  'btc-ars', // Argentina
-  'btc-nok', // Norway
-  'btc-twd', // Taiwan
-  'btc-egp', // Egypt
-  'btc-cop', // Colombia
-  'btc-thb', // Thailand
-  'btc-myr', // Malaysia
-  'btc-clp', // Chile
-  'btc-pkr', // Pakistan
-  'btc-ron', // Romania
-  'btc-czk', // Czech Republic
-  'btc-php', // Philippines
-  'btc-vnd', // Vietnam
-  'btc-bdt', // Bangladesh
-  'btc-huf', // Hungary
-  'btc-per', // Peru
-  'btc-ghs', // Ghana
-  'btc-ils', // Israel
-  'btc-dkk', // Denmark
-  'btc-kwd', // Kuwait
-  'btc-qar', // Qatar
-  'btc-omr', // Oman
-  'btc-bhd', // Bahrain
-  'btc-aed', // United Arab Emirates
-  'btc-sgd', // Singapore
-  'btc-hkd', // Hong Kong
-  'btc-uah', // Ukraine
-  'btc-kes', // Kenya
-  'btc-ugx', // Uganda
-];
+import { ticker_symbols } from './ticker.enums';
 
 // Define the schema for the waitlist
 const TickerSchema = new mongoose.Schema({
@@ -58,7 +11,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     unique: true,
     trim: true,
-    lowercase: true,
+    uppercase: true,
   },
   is_active: {
     type: Boolean,
@@ -74,7 +27,7 @@ const TickerSchema = new mongoose.Schema({
           trim: true,
           lowercase: true,
         },
-        price: {
+        price_buy: {
           type: Number,
           required: false,
           default: 0,
@@ -84,17 +37,17 @@ const TickerSchema = new mongoose.Schema({
           required: false,
           default: 0,
         },
-        price_change: {
+        price_1hr: {
           type: Number,
           required: false,
           default: 0,
         },
-        price_change_percent: {
+        price_change_percent_1hr: {
           type: Number,
           required: false,
           default: 0,
         },
-        price_change_24hr: {
+        price_24hr: {
           type: Number,
           required: false,
           default: 0,
@@ -104,7 +57,7 @@ const TickerSchema = new mongoose.Schema({
           required: false,
           default: 0,
         },
-        price_change_7d: {
+        price_7d: {
           type: Number,
           required: false,
           default: 0,
@@ -114,7 +67,7 @@ const TickerSchema = new mongoose.Schema({
           required: false,
           default: 0,
         },
-        price_change_30d: {
+        price_30d: {
           type: Number,
           required: false,
           default: 0,
@@ -124,7 +77,7 @@ const TickerSchema = new mongoose.Schema({
           required: false,
           default: 0,
         },
-        price_change_90d: {
+        price_90d: {
           type: Number,
           required: false,
           default: 0,
@@ -134,7 +87,7 @@ const TickerSchema = new mongoose.Schema({
           required: false,
           default: 0,
         },
-        price_change_180d: {
+        price_180d: {
           type: Number,
           required: false,
           default: 0,
@@ -144,7 +97,7 @@ const TickerSchema = new mongoose.Schema({
           required: false,
           default: 0,
         },
-        price_change_1yr: {
+        price_1yr: {
           type: Number,
           required: false,
           default: 0,
@@ -153,6 +106,11 @@ const TickerSchema = new mongoose.Schema({
           type: Number,
           required: false,
           default: 0,
+        },
+        updated_at: {
+          type: Date,
+          required: false,
+          default: Date.now,
         },
       },
     ],
@@ -164,17 +122,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change: {
-    type: Number,
-    required: true,
-    default: 0,
-  },
-  price_change_percent: {
-    type: Number,
-    required: true,
-    default: 0,
-  },
-  price_change_30min: {
+  price_30min: {
     type: Number,
     required: true,
     default: 0,
@@ -184,7 +132,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change_1hr: {
+  price_1hr: {
     type: Number,
     required: true,
     default: 0,
@@ -194,7 +142,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change_24hr: {
+  price_24hr: {
     type: Number,
     required: true,
     default: 0,
@@ -204,7 +152,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change_7d: {
+  price_7d: {
     type: Number,
     required: true,
     default: 0,
@@ -214,7 +162,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change_30d: {
+  price_30d: {
     type: Number,
     required: true,
     default: 0,
@@ -224,7 +172,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change_60d: {
+  price_60d: {
     type: Number,
     required: true,
     default: 0,
@@ -234,7 +182,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change_90d: {
+  price_90d: {
     type: Number,
     required: true,
     default: 0,
@@ -244,7 +192,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change_180d: {
+  price_180d: {
     type: Number,
     required: true,
     default: 0,
@@ -254,7 +202,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change_1yr: {
+  price_1yr: {
     type: Number,
     required: true,
     default: 0,
@@ -264,7 +212,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change_2yr: {
+  price_2yr: {
     type: Number,
     required: true,
     default: 0,
@@ -274,7 +222,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change_3yr: {
+  price_3yr: {
     type: Number,
     required: true,
     default: 0,
@@ -284,7 +232,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change_5yr: {
+  price_5yr: {
     type: Number,
     required: true,
     default: 0,
@@ -294,7 +242,7 @@ const TickerSchema = new mongoose.Schema({
     required: true,
     default: 0,
   },
-  price_change_10yr: {
+  price_10yr: {
     type: Number,
     required: true,
     default: 0,
@@ -310,6 +258,9 @@ const TickerSchema = new mongoose.Schema({
 });
 
 // Create a model using the schema
-const Ticker = dbConnections[MongoDBName.AppDB].model('tickers', TickerSchema);
+const Ticker = dbConnections[MongoDBName.AppDB].model(
+  'tickers',
+  TickerSchema
+);
 
 export default Ticker;

@@ -91,3 +91,356 @@
 2024-05-11T11:59:24.409Z [31merror[39m: Request failed with status code 403
 2024-05-11T12:33:35.958Z [31merror[39m: Request failed with status code 403
 2024-05-11T13:07:19.172Z [31merror[39m: Request failed with status code 403
+2024-10-31T15:47:08.326Z [31merror[39m: Validation Failed
+2024-10-31T21:52:29.285Z [31merror[39m: Request failed with status code 403
+2024-10-31T22:44:33.494Z [31merror[39m: No ticker found
+2024-10-31T22:44:33.590Z [31merror[39m: No ticker found
+2024-10-31T22:44:33.625Z [31merror[39m: No ticker found
+2024-10-31T22:44:33.770Z [31merror[39m: No ticker found
+2024-10-31T22:44:33.771Z [31merror[39m: No ticker found
+2024-10-31T22:44:33.790Z [31merror[39m: No ticker found
+2024-10-31T22:44:33.815Z [31merror[39m: No ticker found
+2024-10-31T22:44:33.831Z [31merror[39m: No ticker found
+2024-10-31T22:44:33.848Z [31merror[39m: No ticker found
+2024-10-31T22:44:33.934Z [31merror[39m: No ticker found
+2024-10-31T22:44:33.986Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.037Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.073Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.080Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.091Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.092Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.124Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.137Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.158Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.161Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.234Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.258Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.305Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.361Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.390Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.392Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.405Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.425Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.438Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.454Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.487Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.488Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.585Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.680Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.682Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.720Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.736Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.737Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.738Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.770Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.771Z [31merror[39m: No ticker found
+2024-10-31T22:44:34.772Z [31merror[39m: No ticker found
+2024-10-31T22:44:35.023Z [31merror[39m: No ticker found
+2024-10-31T22:44:35.587Z [31merror[39m: Cast to Number failed for value "NaN" (type number) at path "price_change_percent_1hr"
+2024-10-31T22:44:35.654Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.201Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.410Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.418Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.420Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.446Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.456Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.457Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.517Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.526Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.573Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.745Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.765Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.766Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.767Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.782Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.794Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.795Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.841Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.850Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.852Z [31merror[39m: No ticker found
+2024-10-31T22:47:20.906Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.070Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.074Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.106Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.107Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.110Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.122Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.132Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.134Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.172Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.173Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.174Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.272Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.398Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.399Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.443Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.445Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.460Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.461Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.466Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.532Z [31merror[39m: No ticker found
+2024-10-31T22:47:21.755Z [31merror[39m: No ticker found
+2024-10-31T22:47:22.301Z [31merror[39m: No ticker found
+2024-10-31T22:47:22.756Z [31merror[39m: No ticker found
+2024-11-01T13:52:48.175Z [31merror[39m: Error processing pair code BTCUSD: No ticker found
+2024-11-01T13:54:17.355Z [31merror[39m: Unable to get exchange rate: undefined
+2024-11-01T13:54:17.356Z [31merror[39m: Unable to get exchange rate: undefined
+2024-11-01T13:54:17.356Z [31merror[39m: Unable to get exchange rate: undefined
+2024-11-01T13:54:17.357Z [31merror[39m: Unable to get exchange rate: undefined
+2024-11-01T13:54:17.358Z [31merror[39m: Unable to get exchange rate: undefined
+2024-11-01T13:54:17.358Z [31merror[39m: Unable to get exchange rate: undefined
+2024-11-01T13:54:17.358Z [31merror[39m: Unable to get exchange rate: undefined
+2024-11-01T13:54:17.358Z [31merror[39m: Unable to get exchange rate: undefined
+2024-11-01T13:54:17.359Z [31merror[39m: Unable to get exchange rate: undefined
+2024-11-01T13:54:17.359Z [31merror[39m: Unable to get exchange rate: undefined
+2024-11-01T13:55:43.612Z [31merror[39m: Unable to get exchange rate: kraken
+2024-11-01T13:55:43.613Z [31merror[39m: Unable to get exchange rate: etoro
+2024-11-01T13:55:43.613Z [31merror[39m: Unable to get exchange rate: luno
+2024-11-01T13:55:43.614Z [31merror[39m: Unable to get exchange rate: kucoin
+2024-11-01T13:55:43.614Z [31merror[39m: Unable to get exchange rate: noones
+2024-11-01T13:55:43.614Z [31merror[39m: Unable to get exchange rate: gemini
+2024-11-01T13:55:43.615Z [31merror[39m: Unable to get exchange rate: coinbase
+2024-11-01T13:55:43.615Z [31merror[39m: Unable to get exchange rate: blockchain
+2024-11-01T13:55:43.615Z [31merror[39m: Unable to get exchange rate: okx
+2024-11-01T13:55:43.616Z [31merror[39m: Unable to get exchange rate: bitfinex
+2024-11-01T13:55:44.753Z [31merror[39m: Unable to get exchange rate: kraken
+2024-11-01T13:55:44.754Z [31merror[39m: Unable to get exchange rate: etoro
+2024-11-01T13:55:44.754Z [31merror[39m: Unable to get exchange rate: luno
+2024-11-01T13:55:44.754Z [31merror[39m: Unable to get exchange rate: kucoin
+2024-11-01T13:55:44.755Z [31merror[39m: Unable to get exchange rate: noones
+2024-11-01T13:55:44.755Z [31merror[39m: Unable to get exchange rate: gemini
+2024-11-01T13:55:44.755Z [31merror[39m: Unable to get exchange rate: coinbase
+2024-11-01T13:55:44.755Z [31merror[39m: Unable to get exchange rate: blockchain
+2024-11-01T13:55:44.755Z [31merror[39m: Unable to get exchange rate: okx
+2024-11-01T13:55:44.755Z [31merror[39m: Unable to get exchange rate: bitfinex
+2024-11-01T13:57:20.875Z [31merror[39m: Exchange kraken not found
+2024-11-01T13:57:20.875Z [31merror[39m: Exchange etoro not found
+2024-11-01T13:57:20.876Z [31merror[39m: Invalid exchange code: luno
+2024-11-01T13:57:20.876Z [31merror[39m: The pair BTC_USD not supported by kucoin
+2024-11-01T13:57:20.876Z [31merror[39m: The pair BTC_USD not supported by noones
+2024-11-01T13:57:20.877Z [31merror[39m: Exchange gemini not found
+2024-11-01T13:57:20.877Z [31merror[39m: The pair BTC_USD not supported by coinbase
+2024-11-01T13:57:20.877Z [31merror[39m: The pair BTC_USD not supported by blockchain
+2024-11-01T13:57:20.877Z [31merror[39m: The pair BTC_USD not supported by okx
+2024-11-01T13:57:20.878Z [31merror[39m: Invalid exchange code: bitfinex
+2024-11-01T13:57:50.553Z [31merror[39m: Exchange kraken not found
+2024-11-01T13:57:50.553Z [31merror[39m: Exchange etoro not found
+2024-11-01T13:57:50.554Z [31merror[39m: Invalid exchange code: luno
+2024-11-01T13:57:50.554Z [31merror[39m: The pair BTC-USD not supported by kucoin
+2024-11-01T13:57:50.555Z [31merror[39m: The pair BTC-USD not supported by noones
+2024-11-01T13:57:50.555Z [31merror[39m: Exchange gemini not found
+2024-11-01T13:57:50.555Z [31merror[39m: The pair BTC-USD not supported by coinbase
+2024-11-01T13:57:50.555Z [31merror[39m: The pair BTC-USD not supported by blockchain
+2024-11-01T13:57:50.556Z [31merror[39m: The pair BTC-USD not supported by okx
+2024-11-01T13:57:50.556Z [31merror[39m: Invalid exchange code: bitfinex
+2024-11-01T14:00:31.260Z [31merror[39m: Exchange kraken not found
+2024-11-01T14:00:31.261Z [31merror[39m: Exchange etoro not found
+2024-11-01T14:00:31.261Z [31merror[39m: Invalid exchange code: luno
+2024-11-01T14:00:31.262Z [31merror[39m: The pair BTC-USD not supported by kucoin
+2024-11-01T14:00:31.262Z [31merror[39m: The pair BTC-USD not supported by noones
+2024-11-01T14:00:31.262Z [31merror[39m: Exchange gemini not found
+2024-11-01T14:00:31.262Z [31merror[39m: The pair BTC-USD not supported by coinbase
+2024-11-01T14:00:31.262Z [31merror[39m: The pair BTC-USD not supported by blockchain
+2024-11-01T14:00:31.263Z [31merror[39m: The pair BTC-USD not supported by okx
+2024-11-01T14:00:31.263Z [31merror[39m: Invalid exchange code: bitfinex
+2024-11-01T14:03:24.925Z [31merror[39m: Exchange kraken not found
+2024-11-01T14:03:24.925Z [31merror[39m: Exchange etoro not found
+2024-11-01T14:03:24.926Z [31merror[39m: Invalid exchange code: luno
+2024-11-01T14:03:24.927Z [31merror[39m: The symbol BTC-USD not supported by kucoin
+2024-11-01T14:03:24.928Z [31merror[39m: The symbol BTC-USD not supported by noones
+2024-11-01T14:03:24.928Z [31merror[39m: Exchange gemini not found
+2024-11-01T14:03:24.928Z [31merror[39m: The symbol BTC-USD not supported by coinbase
+2024-11-01T14:03:24.928Z [31merror[39m: The symbol BTC-USD not supported by blockchain
+2024-11-01T14:03:24.929Z [31merror[39m: The symbol BTC-USD not supported by okx
+2024-11-01T14:03:24.929Z [31merror[39m: Invalid exchange code: bitfinex
+2024-11-01T14:04:35.727Z [31merror[39m: Exchange kraken not found
+2024-11-01T14:04:35.728Z [31merror[39m: Exchange etoro not found
+2024-11-01T14:04:35.728Z [31merror[39m: Invalid exchange code: luno
+2024-11-01T14:04:35.730Z [31merror[39m: The symbol BTC-USD not supported by kucoin
+2024-11-01T14:04:35.730Z [31merror[39m: The symbol BTC-USD not supported by noones
+2024-11-01T14:04:35.730Z [31merror[39m: Exchange gemini not found
+2024-11-01T14:04:35.731Z [31merror[39m: The symbol BTC-USD not supported by coinbase
+2024-11-01T14:04:35.731Z [31merror[39m: The symbol BTC-USD not supported by blockchain
+2024-11-01T14:04:35.731Z [31merror[39m: The symbol BTC-USD not supported by okx
+2024-11-01T14:04:35.732Z [31merror[39m: Invalid exchange code: bitfinex
+2024-11-01T14:06:08.933Z [31merror[39m: Exchange kraken not found
+2024-11-01T14:06:08.934Z [31merror[39m: Exchange etoro not found
+2024-11-01T14:06:08.942Z [31merror[39m: Invalid exchange code: luno
+2024-11-01T14:06:08.986Z [31merror[39m: Exchange gemini not found
+2024-11-01T14:06:08.990Z [31merror[39m: Invalid exchange code: bitfinex
+2024-11-01T14:06:10.395Z [31merror[39m: Request failed with status code 400
+2024-11-01T14:07:38.667Z [31merror[39m: Exchange kraken not found
+2024-11-01T14:07:38.668Z [31merror[39m: Exchange etoro not found
+2024-11-01T14:07:38.702Z [31merror[39m: Exchange gemini not found
+2024-11-01T14:07:38.708Z [31merror[39m: Invalid exchange code: bitfinex
+2024-11-01T14:07:39.901Z [31merror[39m: Request failed with status code 400
+2024-11-01T14:15:45.290Z [31merror[39m: Exchange kraken not found
+2024-11-01T14:15:45.291Z [31merror[39m: Exchange etoro not found
+2024-11-01T14:15:45.330Z [31merror[39m: Exchange gemini not found
+2024-11-01T14:15:46.388Z [31merror[39m: Request failed with status code 400
+2024-11-01T14:16:35.240Z [31merror[39m: Exchange kraken not found
+2024-11-01T14:16:35.241Z [31merror[39m: Exchange etoro not found
+2024-11-01T14:16:35.269Z [31merror[39m: Exchange gemini not found
+2024-11-01T14:16:36.228Z [31merror[39m: Request failed with status code 400
+2024-11-01T22:47:42.883Z [31merror[39m: No ticker found
+2024-11-01T22:47:42.906Z [31merror[39m: No ticker found
+2024-11-01T22:47:42.915Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.218Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.222Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.223Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.224Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.225Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.227Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.232Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.234Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.234Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.235Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.402Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.502Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.503Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.510Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.512Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.521Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.525Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.526Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.531Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.531Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.532Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.532Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.533Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.691Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.850Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.852Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.853Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.853Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.853Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.854Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.854Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.855Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.855Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.855Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.856Z [31merror[39m: No ticker found
+2024-11-01T22:47:43.856Z [31merror[39m: No ticker found
+2024-11-01T22:47:44.443Z [31merror[39m: No ticker found
+2024-11-01T22:47:44.446Z [31merror[39m: No ticker found
+2024-11-01T22:47:44.447Z [31merror[39m: No ticker found
+2024-11-01T22:47:45.059Z [31merror[39m: No ticker found
+2024-11-01T22:47:45.317Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.416Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.624Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.626Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.629Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.687Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.688Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.689Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.710Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.712Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.714Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.715Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.715Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.717Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.718Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.719Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.719Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.720Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.720Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.904Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.915Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.917Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.965Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.972Z [31merror[39m: No ticker found
+2024-11-01T22:48:57.983Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.010Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.011Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.037Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.038Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.039Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.040Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.040Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.041Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.041Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.041Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.042Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.197Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.209Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.252Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.607Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.608Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.609Z [31merror[39m: No ticker found
+2024-11-01T22:48:58.952Z [31merror[39m: No ticker found
+2024-11-01T22:48:59.756Z [31merror[39m: No ticker found
+2024-11-01T22:48:59.887Z [31merror[39m: No ticker found
+2024-11-01T22:50:07.974Z [31merror[39m: Exchange kraken not found
+2024-11-01T22:50:07.975Z [31merror[39m: Exchange etoro not found
+2024-11-01T22:50:08.027Z [31merror[39m: Exchange gemini not found
+2024-11-01T22:50:08.820Z [31merror[39m: Request failed with status code 400
+2024-11-01T22:50:56.356Z [31merror[39m: Exchange kraken not found
+2024-11-01T22:50:56.356Z [31merror[39m: Exchange etoro not found
+2024-11-01T22:50:56.378Z [31merror[39m: Exchange gemini not found
+2024-11-01T23:24:40.924Z [31merror[39m: Exchange etoro not found
+2024-11-01T23:24:40.971Z [31merror[39m: Exchange gemini not found
+2024-11-01T23:27:05.783Z [31merror[39m: Exchange etoro not found
+2024-11-01T23:27:05.811Z [31merror[39m: Exchange gemini not found
+2024-11-01T23:28:55.354Z [31merror[39m: Exchange etoro not found
+2024-11-01T23:28:55.369Z [31merror[39m: Exchange gemini not found
+2024-11-02T00:00:22.416Z [31merror[39m: Validation Failed
+2024-11-02T00:03:24.393Z [31merror[39m: Exchange etoro not found
+2024-11-02T00:03:24.430Z [31merror[39m: Exchange gemini not found
+2024-11-02T00:03:25.437Z [31merror[39m: Request failed with status code 403
+2024-11-02T00:06:59.583Z [31merror[39m: Exchange etoro not found
+2024-11-02T00:06:59.588Z [31merror[39m: Exchange gemini not found
+2024-11-02T00:06:59.609Z [31merror[39m: getaddrinfo ENOTFOUND api.luno.com
+2024-11-02T00:06:59.632Z [31merror[39m: getaddrinfo ENOTFOUND api.coinbase.com
+2024-11-02T00:06:59.633Z [31merror[39m: Cannot read properties of undefined (reading 'amount')
+2024-11-02T00:06:59.633Z [31merror[39m: getaddrinfo ENOTFOUND api.coinbase.com
+2024-11-02T00:06:59.666Z [31merror[39m: getaddrinfo ENOTFOUND www.okx.com
+2024-11-02T00:06:59.666Z [31merror[39m: Unable to get OKX Bitcoin price in USD
+2024-11-02T00:06:59.692Z [31merror[39m: getaddrinfo ENOTFOUND api-pub.bitfinex.com
+2024-11-02T00:06:59.692Z [31merror[39m: Unable to get Bitfinex Bitcoin price to USD
+2024-11-02T00:06:59.696Z [31merror[39m: getaddrinfo ENOTFOUND api.coindcx.com
+2024-11-02T00:06:59.711Z [31merror[39m: getaddrinfo ENOTFOUND api.noones.com
+2024-11-02T00:16:41.239Z [31merror[39m: Request failed with status code 403
+2024-11-02T00:17:12.621Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.623Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.624Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.624Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.641Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.663Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.750Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.783Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.788Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.913Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.915Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.916Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.917Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.926Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.927Z [31merror[39m: No ticker found
+2024-11-02T00:17:12.956Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.076Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.160Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.177Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.200Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.208Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.209Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.210Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.211Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.223Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.226Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.244Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.346Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.368Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.371Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.462Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.483Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.493Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.515Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.520Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.527Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.531Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.626Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.648Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.765Z [31merror[39m: No ticker found
+2024-11-02T00:17:13.783Z [31merror[39m: No ticker found
+2024-11-02T00:17:14.002Z [31merror[39m: No ticker found
+2024-11-02T00:17:14.183Z [31merror[39m: No ticker found
+2024-11-02T00:17:14.589Z [31merror[39m: No ticker found

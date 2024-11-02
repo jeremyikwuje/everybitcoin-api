@@ -35,16 +35,19 @@ export const request_blockchain_api = async (
     }
 }
 
-export const get_btc_price = async (currency: string) => {
+export const get_price = async (
+    base: string,
+    quote: string
+) => {
 
     const data = await request_blockchain_api(
-        `https://blockchain.info/tobtc?currency=${currency}&value=1`,
+        `https://blockchain.info/to${base.toLowerCase()}?currency=${quote}&value=1`,
         'GET'
     );
 
     if (data.error) {
         throw new APIError(
-            `Unable to get Bitcoin price to ${currency}`
+            `Unable to get Bitcoin price to ${quote}`
         )
     }
     
@@ -57,5 +60,5 @@ export const get_btc_price = async (currency: string) => {
 }
 
 export const BlockchainMethods = {
-    get_btc_price,
+    get_price,
 }

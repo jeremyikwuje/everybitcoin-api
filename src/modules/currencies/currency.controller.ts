@@ -8,6 +8,7 @@ import {
   get_currency,
   get_all_currencies,
   update_currency,
+  convert_currency,
 } from './currency.service';
 import APIError from '../../utils/api-error';
 
@@ -140,4 +141,32 @@ export default class CurrencyController {
       );
     }
   };
+
+  static convert_currency = async (req: any, res: any) => {
+    try {
+      const {
+        from,
+        to,
+        amount,
+      } = req.body;
+
+      const conversion = await convert_currency(
+        from,
+        to,
+        amount
+      );
+
+      return ApiResponse.success(
+        res,
+        'Successful',
+        conversion,
+      );
+    } catch (error: any) {
+      return ApiResponse.error(
+        res,
+        error.statusCode || BAD_REQUEST,
+        error.message || 'Unable to convert currency',
+      );
+    }
+  }
 }

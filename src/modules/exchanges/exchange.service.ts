@@ -14,7 +14,7 @@ interface exchangeDTO {
 export const get_exchange = async (code: string) => {
   // get exchange from database
   const exchange = await Exchange.findOne({
-    code,
+    code: code.toLowerCase(),
   });
 
   if (!exchange) {

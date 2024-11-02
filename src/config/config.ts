@@ -14,6 +14,10 @@ const Config = {
   db: [
     { name: MongoDBName.AppDB, uri: process.env.APP_DB },
   ],
+  noones: {
+    CLIENT_ID: process.env.NOONES_CLIENT_ID,
+    CLIENT_SECRET: process.env.NOONES_CLIENT_SECRET,
+  },
   exchanges: [
     'binance',
     'bybit',

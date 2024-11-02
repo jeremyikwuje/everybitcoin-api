@@ -2,6 +2,9 @@ import { CONFLICT, NOT_FOUND, NOT_MODIFIED } from 'http-status';
 import APIError from '../../utils/api-error';
 import Currency from './currency.model';
 import logger from '../../logger/logger';
+import { get_ticker } from '../tickers/ticker.service';
+import Money from '../../utils/money';
+import { Currencies } from '../../constants';
 
 interface currencyDTO {
   code?: string;
@@ -11,6 +14,63 @@ interface currencyDTO {
   description?: string;
   icon?: string;
 }
+
+export const convert_currency = async (
+  from: string,
+  to: string,
+  amount: number
+) => {
+
+  let converted_amount = 0;
+  let ticker_symbol = '';
+
+  try {
+    ticker_symbol = `${from}-${to}`.toUpperCase();
+    const ticker = await get_ticker(ticker_symbol);
+
+    const price = Number(ticker.price);
+    converted_amount = Number(amount) * price;
+  } catch (error: any) {
+    try {
+      ticker_symbol = `${to}-${from}`.toUpperCase();
+      const ticker = await get_ticker(ticker_symbol);
+
+      const price = Number(ticker.price);
+      converted_amount = Number(amount) / price;
+    }
+    catch (error: any) {
+      throw new APIError(
+        'No ticker found',
+        NOT_FOUND,
+      );
+    }
+  }
+
+  converted_amount = Money.format_currency_amount(
+    converted_amount,
+    to
+  );
+
+  return {
+    from,
+    to,
+    amount,
+    result: {
+      currency: {
+        value: converted_amount,
+        unit: to,
+      },
+      denomination: {
+        value: Money.to_denomination(converted_amount, to),
+        unit: Currencies.find((c) => c.code === to)?.denomination_short || '',
+      },
+      ticker: ticker_symbol,
+    }
+  };
+}
+  
+  
+
 
 export const add_new_currency = async (currency: currencyDTO) => {
   const get_currency = await Currency.findOne({ code: currency.code });

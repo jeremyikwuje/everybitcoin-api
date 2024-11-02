@@ -3,6 +3,7 @@ import dbConnections from '../../database';
 import { MongoDBName } from '../../config/config';
 
 export const currency_codes = [
+  'BTC', 'SAT',
   'USD', 'EUR', 'GBP', 'NGN', 'AUD', 'JPY', 'AED', 'CNY', 'CAD', 'ZAR',
   'INR', 'RUB', 'BRL', 'TRY', 'KRW', 'SGD', 'CHF', 'SEK', 'NOK', 'MXN',
   'IDR', 'MYR', 'SAR', 'QAR', 'KWD', 'BHD', 'OMR', 'GHS', 'KES', 'UGX',

@@ -11,6 +11,7 @@ import {
 } from './ticker.service';
 import APIError from '../../utils/api-error';
 import { get_exchange } from '../exchanges/exchange.service';
+import { tickerExchangeDTO } from './ticker.enums';
 
 export default class TickerController {
   static activate_ticker = async (req: any, res: any) => {
@@ -227,26 +228,26 @@ export default class TickerController {
       } = req.query;
 
       const {
-        code
+        exchange_code
       } = req.body;
 
       // check if exchange exist
-      await get_exchange(code);
+      await get_exchange(exchange_code);
 
       let ticker = await get_ticker(symbol);
-      let exchanges = ticker.exchanges;
+      let exchanges = ticker.exchanges as tickerExchangeDTO[];
 
       // if exchange code is found
-      if (exchanges.find((ex: any) => ex.code === code)) {
+      if (exchanges.find((ex: any) => ex.code === exchange_code)) {
         throw new APIError(
-            `${code} exchange already exists for this ticker`,
+            `${exchange_code} exchange already exists for this ticker`,
             CONFLICT,
         );
       }
 
       // add exchange to existing
       exchanges.push({
-        code: code,
+        code: exchange_code,
       });
 
       ticker = await update_ticker(symbol, { exchanges: exchanges });
@@ -261,6 +262,93 @@ export default class TickerController {
         res,
         error.statusCode || BAD_REQUEST,
         error.message || 'Unable to add exchange to ticker',
+      );
+    }
+  }
+
+  static update_exchange_in_ticker = async (req: any, res: any) => {
+    try {
+      const {
+        symbol,
+        exchange_code
+      } = req.query;
+
+      const {
+        fields,
+      } = req.body;
+
+      if (Object.entries(fields).length === 0) {
+        throw new APIError(
+          'No field to update',
+          BAD_REQUEST,
+        );
+      }
+
+      let ticker = await get_ticker(symbol);
+      let exchanges = ticker.exchanges as tickerExchangeDTO[];
+
+      // if exchange code is found
+      const index = exchanges.findIndex((ex: any) => ex.code === exchange_code);
+      if (index === -1) {
+        throw new APIError(
+            `${exchange_code} exchange not found for this ticker`,
+            CONFLICT,
+        );
+      }
+
+      // update exchange in existing
+      exchanges[index] = { ...exchanges[index], ...fields };
+
+      ticker = await update_ticker(symbol, { exchanges: exchanges });
+
+      return ApiResponse.success(
+        res,
+        'Successful',
+        { symbol, exchanges: ticker.exchanges }
+      );
+    } catch (error: any) {
+      return ApiResponse.error(
+        res,
+        error.statusCode || BAD_REQUEST,
+        error.message || 'Unable to update exchange in ticker',
+      );
+    }
+  }
+  
+  static remove_exchange_from_ticker = async (req: any, res: any) => {
+    try {
+      const {
+        symbol,
+        exchange_code
+      } = req.query;
+
+      let ticker = await get_ticker(symbol);
+      let exchanges = ticker.exchanges as tickerExchangeDTO[];
+
+      // if exchange code is found
+      const index = exchanges.findIndex((ex: any) => ex.code === exchange_code);
+      if (index === -1) {
+        throw new APIError(
+            `${exchange_code} exchange not found for this ticker`,
+            CONFLICT,
+        );
+      }
+
+      // remove exchange from existing
+      exchanges.splice(index, 1);
+
+      ticker = await update_ticker(symbol, { exchanges: exchanges });
+
+      return ApiResponse.success(
+        res,
+        'Successful',
+        { symbol, exchanges: ticker.exchanges }
+      );
+    } catch (error: any) {
+      return ApiResponse.error(
+        res,
+        error.statusCode || BAD_REQUEST,
+        error.message || 'Unable to remove exchange from ticker',
       );
     }
   }

@@ -5,8 +5,18 @@ import { asyncWrapper } from '../../utils/async-wrapper';
 const router = Router();
 
 router.post(
-  '/update_btc_usd_ticker',
-  asyncWrapper(CronjobController.update_btc_usd_ticker),
+  '/update_exchange_rates_in_tickers',
+  asyncWrapper(CronjobController.update_exchange_rates_in_tickers),
+);
+
+router.post(
+  '/update_prices',
+  asyncWrapper(CronjobController.update_prices),
+);
+
+router.post(
+  '/update_tickers',
+  asyncWrapper(CronjobController.update_tickers),
 );
 
 export default router;

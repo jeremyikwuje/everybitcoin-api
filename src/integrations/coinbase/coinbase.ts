@@ -73,8 +73,8 @@ export const get_prices = async (ticker_symbol: string) => {
     ]);
 
     return {
-        buy: prices[1].price,
-        sell: prices[0].price,
+        buy: Number(prices[1].price),
+        sell: Number(prices[0].price),
     }
 }
 
