@@ -53,6 +53,14 @@ export const convert_currency = async (
     base,
     quote,
   ] = ticker.symbol.split('-');
+  const ticker_price = Money.format_currency_amount(
+    Number(ticker.price),
+    quote,
+  );
+  const ticker_inverse_price = Money.format_currency_amount(
+    1 / Number(ticker.price),
+    base,
+  );
 
   return {
     from,
@@ -72,21 +80,15 @@ export const convert_currency = async (
       ticker: {
         symbol: ticker.symbol,
         price: {
-          value: Money.format_currency_amount(
-            Number(ticker.price),
-            quote,
-          ),
+          value: ticker_price,
           unit: quote,
         },
         inverse_price: {
-          value: Money.format_currency_amount(
-            1 / Number(ticker.price),
-            base,
-          ),
+          value: ticker_inverse_price,
           unit: base,
           denomination: {
             value: Money.to_denomination(
-              1 / Number(ticker.price),
+              ticker_inverse_price,
               base,
             ),
             unit: Currencies.find(
@@ -94,6 +96,7 @@ export const convert_currency = async (
             )?.denomination_short || '',
           },
         },
+        last_updated: ticker.updatedAt,
       },
     },
   };

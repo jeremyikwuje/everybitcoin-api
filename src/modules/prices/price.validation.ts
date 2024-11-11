@@ -1,9 +1,9 @@
 import { Joi } from 'express-validation';
-import { supported_markets } from './price.model';
-import { Currency, RateMarket } from '../../constants';
+import { Currency, supported_markets } from '../../constants';
+import { PriceMarket } from './price.enums';
 
 export const RateValidation = {
-  get_rate: {
+  get_price: {
     query: Joi.object({
       pair: Joi.string().required().lowercase(),
     }),
@@ -11,11 +11,11 @@ export const RateValidation = {
   latest: {
     query: Joi.object({
       base: Joi.string().optional().default(Currency.USD).uppercase(),
-      market: Joi.string().optional().default(RateMarket.Mid).lowercase(),
+      market: Joi.string().optional().default(PriceMarket.Mid).lowercase(),
       provider: Joi.string().optional().lowercase(),
     }),
   },
-  get_rates: {
+  get_prices: {
     query: Joi.object({
       limit: Joi.number().optional().default(10).positive(),
       page: Joi.number().optional().default(1).positive(),
@@ -26,7 +26,7 @@ export const RateValidation = {
       pair: Joi.string().optional().lowercase(),
     }),
   },
-  delete_rates: {
+  delete_prices: {
     query: Joi.object({
       start_date: Joi.number().required(),
       end_date: Joi.number().required(),

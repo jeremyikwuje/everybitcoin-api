@@ -1,42 +1,16 @@
 import httpStatus, { BAD_REQUEST } from 'http-status';
 import { parse } from 'json2csv';
-import ApiResponse, { ErrorType } from '../../utils/api-response';
+import ApiResponse from '../../utils/api-response';
 import APIError from '../../utils/api-error';
 import Rate from './price.model';
-import { get_recent_rate } from './price.service';
-import { get_pairs_rate } from '../pairs/pair.service';
-import { ERROR_MESSAGE } from '../../constants';
+import { get_prices_by_ticker, get_recent_price } from './price.service';
 
-export default class rateController {
-  static latest = async (req: any, res: any) => {
+export default class PriceController {
+  static get_prices = async (req: any, res: any) => {
     try {
       const {
         market,
-        base,
-      } = req.query;
-
-      const rates = await get_pairs_rate(base, market);
-
-      return ApiResponse.success(
-        res,
-        'Successful',
-        rates,
-      );
-    } catch (error: any) {
-      return ApiResponse.error(
-        res,
-        error.statusCode || httpStatus.INTERNAL_SERVER_ERROR,
-        error.errorType || ErrorType.InternalError,
-        error.message || ERROR_MESSAGE,
-      );
-    }
-  };
-
-  static get_rates = async (req: any, res: any) => {
-    try {
-      const {
-        market,
-        pair,
+        ticker,
         page,
         limit,
         start_date,
@@ -50,8 +24,8 @@ export default class rateController {
       if (market) {
         match.market = market;
       }
-      if (pair) {
-        match.pair = pair;
+      if (ticker) {
+        match.ticker = ticker;
       }
       if (start_date) {
         if (start_date > end_date) {
@@ -70,7 +44,7 @@ export default class rateController {
         };
       }
 
-      const rates = await Rate.find(match)
+      const prices = await Rate.find(match)
         .sort('-createdAt')
         .skip(skip)
         .limit(limit)
@@ -80,7 +54,7 @@ export default class rateController {
 
       let csv_string: any = '';
       if (csv && total_count > 0) {
-        const cleanRates = rates.map((doc) => doc.toObject());
+        const cleanRates = prices.map((doc) => doc.toObject());
         csv_string = parse(cleanRates);
       }
 
@@ -89,9 +63,9 @@ export default class rateController {
         'Successful',
         {
           total: total_count,
-          count: rates.length,
+          count: prices.length,
           page,
-          rates,
+          prices,
           csv_string,
         },
       );
@@ -99,25 +73,24 @@ export default class rateController {
       return ApiResponse.error(
         res,
         error.statusCode || httpStatus.INTERNAL_SERVER_ERROR,
-        error.errorType || ErrorType.InternalError,
-        error.message || ERROR_MESSAGE,
+        error.message || 'An error occurred',
       );
     }
   };
 
-  static get_recent_rate = async (req: any, res: any) => {
+  static get_recent_price = async (req: any, res: any) => {
     try {
       const {
-        pair,
+        ticker,
       } = req.query;
 
-      const parallel = await get_recent_rate(pair);
+      const parallel = await get_recent_price(ticker);
 
       return ApiResponse.success(
         res,
         'Successful',
         {
-          pair,
+          ticker,
           parallel,
         },
       );
@@ -125,17 +98,16 @@ export default class rateController {
       return ApiResponse.error(
         res,
         error.statusCode || httpStatus.INTERNAL_SERVER_ERROR,
-        error.errorType || ErrorType.InternalError,
-        error.message || ERROR_MESSAGE,
+        error.message || 'An error occurred',
       );
     }
   };
 
-  static delete_rates = async (req: any, res: any) => {
+  static delete_prices = async (req: any, res: any) => {
     try {
       const {
         market,
-        pair,
+        ticker,
         start_date,
         end_date,
       } = req.query;
@@ -145,8 +117,8 @@ export default class rateController {
       if (market) {
         match.market = market;
       }
-      if (pair) {
-        match.pair = pair;
+      if (ticker) {
+        match.ticker = ticker;
       }
       if (start_date) {
         if (start_date > end_date) {
@@ -165,8 +137,8 @@ export default class rateController {
         };
       }
 
-      const rates = await Rate.deleteMany(match);
-      const total_count = rates.deletedCount;
+      const prices = await Rate.deleteMany(match);
+      const total_count = prices.deletedCount;
 
       return ApiResponse.success(
         res,
@@ -179,8 +151,7 @@ export default class rateController {
       return ApiResponse.error(
         res,
         error.statusCode || httpStatus.INTERNAL_SERVER_ERROR,
-        error.errorType || ErrorType.InternalError,
-        error.message || ERROR_MESSAGE,
+        error.message || 'An error occurred',
       );
     }
   };

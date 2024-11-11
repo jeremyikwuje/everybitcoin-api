@@ -7,27 +7,21 @@ import validateSchema from '../../middlewares/validate-schema.middleware';
 const router = Router();
 
 router.get(
-  '/latest',
-  validateSchema(RateValidation.latest),
-  asyncWrapper(RateController.latest),
+  '/get_prices',
+  validateSchema(RateValidation.get_prices),
+  asyncWrapper(RateController.get_prices),
 );
 
 router.get(
-  '/get_rates',
-  validateSchema(RateValidation.get_rates),
-  asyncWrapper(RateController.get_rates),
-);
-
-router.get(
-  '/get_rate',
-  validateSchema(RateValidation.get_rate),
-  asyncWrapper(RateController.get_recent_rate),
+  '/get_price',
+  validateSchema(RateValidation.get_price),
+  asyncWrapper(RateController.get_recent_price),
 );
 
 router.post(
-  '/delete_rates',
-  validateSchema(RateValidation.delete_rates),
-  asyncWrapper(RateController.delete_rates),
+  '/delete_prices',
+  validateSchema(RateValidation.delete_prices),
+  asyncWrapper(RateController.delete_prices),
 );
 
 export default router;
