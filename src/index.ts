@@ -16,7 +16,7 @@ app.use(json());
 app.use(cors({ origin: '*' }));
 app.use(compression());
 app.use(cookieParser());
-app.use('/app', router);
+app.use('/core', router);
 app.use(errorHandler);
 
 Object.entries(dbConnections).forEach((dbConnection) => {

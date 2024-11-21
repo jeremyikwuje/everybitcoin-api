@@ -1,4 +1,5 @@
 import axios from 'axios';
+import logger from '../../logger/logger';
 
 export type TradeType = 'BUY' | 'SELL'; // 1 is BUY and 0 is SELL
 export type PayType = '14' | ''; // 14 is bank transfer
@@ -109,5 +110,26 @@ export default class Kucoin {
     }
 
     return rate;
+  }
+
+  static async getSpotRates(crypto: Crypto, fiat: Fiat) {
+    try {
+      const endpoint = `https://api.kucoin.com/api/v1/prices?base=${fiat}&currencies=${crypto}`;
+      const req = await axios.get(endpoint);
+      const res = req.data;
+      const rate = res.data[crypto];
+
+      return {
+        buy: rate,
+        sell: rate,
+      };
+    } catch (error) {
+      logger.error(error);
+
+      return {
+        buy: 0,
+        sell: 0
+      };
+    }
   }
 }

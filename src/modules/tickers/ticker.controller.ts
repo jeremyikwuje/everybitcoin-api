@@ -108,14 +108,25 @@ export default class TickerController {
     try {
       const {
         symbol,
+        only_price,
       } = req.query;
 
       const ticker = await get_ticker(symbol);
+      let result: any = ticker;
+
+      if (only_price && only_price === true) {
+        result = {
+          symbol: ticker.symbol,
+          price: ticker.price,
+          price_change: ticker.price_24hr,
+          price_change_percent: ticker.price_change_percent_24hr,
+        };
+      }
 
       return ApiResponse.success(
         res,
         'Successful',
-        ticker,
+        result,
       );
     } catch (error: any) {
       return ApiResponse.error(

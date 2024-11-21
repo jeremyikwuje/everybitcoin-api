@@ -12,4 +12,26 @@ router.get(
   asyncWrapper(MilestoneController.get_milestones),
 );
 
+router.get(
+  '/get_milestone',
+  validateSchema(MilestoneValidation.get_milestone),
+  asyncWrapper(MilestoneController.get_milestone),
+);
+
+router.get(
+  '/get_next_milestone',
+  asyncWrapper(MilestoneController.get_next_milestone),
+);
+
+router.post(
+  '/insert_milestones',
+  asyncWrapper(MilestoneController.insert_milestones),
+);
+
+router.post(
+  '/update_milestone',
+  validateSchema(MilestoneValidation.update_milestone),
+  asyncWrapper(MilestoneController.update_milestone),
+);
+
 export default router;

@@ -25,7 +25,6 @@ async function getAccessToken(): Promise<string> {
       return response.data.access_token;
     }
 
-    console.log(access_token);
     return access_token;
   } catch (error) {
     console.error(`Error in getAccessToken: ${error}`);

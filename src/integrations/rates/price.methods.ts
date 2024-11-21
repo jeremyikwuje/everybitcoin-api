@@ -96,8 +96,6 @@ export const bitnob = async (
       quote = Currency.USD;
     }
 
-    logger.info(`bitnob ${base} ${quote}`);
-
     const response = await request_api(
       'https://api.bitnob.co/exchange-rates/bitnob',
       'GET',
@@ -421,13 +419,13 @@ export const jackocoins = async (
 };
 
 export const kucoin = async (
-  base: string = 'USDT',
+  base: string = 'USD',
   quote: string = Currency.USD,
 ) => {
   try {
-    const rate = await Kucoin.getP2PRates(
-      base,
-      quote,
+    const rate = await Kucoin.getSpotRates(
+      base.toUpperCase(),
+      quote.toUpperCase(),
     );
 
     return rate;
@@ -538,7 +536,7 @@ export const noones = async (
   }
 
   return {
-    buy: rate * 1.01,
+    buy: rate * 1.02,
     sell: rate - (rate * 0.01),
   };
 };

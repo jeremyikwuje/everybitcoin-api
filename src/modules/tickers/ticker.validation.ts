@@ -25,6 +25,7 @@ export const TickerValidation = {
   get_ticker: {
     query: Joi.object({
       symbol: Joi.string().required().valid(...ticker_symbols).uppercase(),
+      only_price: Joi.boolean().optional().default(false),
     }),
   },
   get_all_tickers: {

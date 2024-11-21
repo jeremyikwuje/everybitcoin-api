@@ -9,9 +9,9 @@ const MilestoneSchema = new mongoose.Schema({
     type: String,
     required: true,
     enums: MilestoneType,
-    default: MilestoneType.Price
+    default: MilestoneType.Price,
   },
-  price: { 
+  price: {
     type: Number,
     required: true,
     unique: true,
@@ -31,14 +31,14 @@ const MilestoneSchema = new mongoose.Schema({
   is_future_target: {
     type: Boolean,
     default: false,
-  }
+  },
 }, {
   timestamps: true,
-  collection: 'milestones'
+  collection: 'milestones',
 });
 
 // Create a model using the schema
 export const Milestone = dbConnections[MongoDBName.AppDB].model(
   'milestones',
-  MilestoneSchema
+  MilestoneSchema,
 );

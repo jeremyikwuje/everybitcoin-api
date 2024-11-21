@@ -5,6 +5,7 @@ import logger from '../../logger/logger';
 import { tickerDTO, tickerExchangeDTO } from './ticker.enums';
 import Time from '../../utils/time';
 import { get_exchange_rate } from '../../integrations/rates/changer.method';
+import Config from '../../config/config';
 
 export const add_new_ticker = async (symbol: string) => {
   const ticker = await Ticker.findOne({ symbol });
@@ -260,7 +261,14 @@ export const calculate_averate_price_of_exchanges = async (
   let count = 0;
 
   await Promise.all(exchanges.map(async (exchange: any) => {
+    // if exchange not a trusted exchange
+    const trusted_exchanges = Config.trusted_exchanges;
+    if (!trusted_exchanges.includes(exchange.code)) {
+      return;
+    }
+    
     if (exchange.price_buy > 0 || exchange.price_sell > 0) {
+      console.log(exchange.price_buy, exchange.code);
       total += exchange.price_buy || exchange.price_sell;
       count += 1;
     }
@@ -281,6 +289,7 @@ export const get_ticker_average_price = async (
     const { exchanges } = ticker;
 
     let average = await calculate_averate_price_of_exchanges(exchanges);
+    console.log(average);
 
     if (average <= 0) {
       // get the market changer rate

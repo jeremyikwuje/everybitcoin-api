@@ -44,6 +44,14 @@ const Config = {
     'robinhood',
     'uphold',
   ],
+  trusted_exchanges: [
+    'binance',
+    'coinbase',
+    'bitfinex',
+    'luno',
+    'okx',
+    'kraken',
+  ],
 };
 
 export default Config;
