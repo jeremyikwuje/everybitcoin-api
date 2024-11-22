@@ -3,7 +3,7 @@ import { parse } from 'json2csv';
 import ApiResponse from '../../utils/api-response';
 import APIError from '../../utils/api-error';
 import Rate from './price.model';
-import { get_prices_by_ticker, get_recent_price } from './price.service';
+import { get_recent_price } from './price.service';
 
 export default class PriceController {
   static get_prices = async (req: any, res: any) => {

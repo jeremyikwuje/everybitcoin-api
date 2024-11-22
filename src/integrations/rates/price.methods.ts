@@ -1,5 +1,4 @@
 import axios from 'axios';
-import NodeCache from 'node-cache';
 import { randomInt } from 'node:crypto';
 import { NoonesMethods } from '../noones/noones';
 import { request_api } from '../api-connector';
@@ -14,10 +13,10 @@ import { CountryCodeByCurrency, Currency } from '../../constants';
 import { CoinbaseMethods } from '../coinbase/coinbase';
 import { BlockchainMethods } from '../blockchain/blockchain';
 
-const cache = new NodeCache({
-  stdTTL: 60 * 5, // 1 minute cache
-  checkperiod: 10, // Check for changes every 5 minutes
-});
+// const cache = new NodeCache({
+//   stdTTL: 60 * 5, // 1 minute cache
+//   checkperiod: 10, // Check for changes every 5 minutes
+// });
 
 export const bitfinex = async (
   base: string = Currency.BTC,
@@ -103,7 +102,7 @@ export const bitnob = async (
 
     if (response.error && response.error.length > 0) {
       throw new APIError(
-        `Unable to get Bitnob USD price. Error: ${response.error}`,
+        `Unable to get Bitnob ${base} price. Error: ${response.error}`,
       );
     }
 

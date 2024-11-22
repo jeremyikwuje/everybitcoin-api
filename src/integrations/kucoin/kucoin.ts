@@ -128,7 +128,7 @@ export default class Kucoin {
 
       return {
         buy: 0,
-        sell: 0
+        sell: 0,
       };
     }
   }

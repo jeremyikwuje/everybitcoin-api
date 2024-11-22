@@ -1,4 +1,3 @@
-
 export enum PriceMarket {
   Mid = 'mid',
   Exchange = 'exchange',

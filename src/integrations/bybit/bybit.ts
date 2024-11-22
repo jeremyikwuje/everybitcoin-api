@@ -41,6 +41,8 @@ export const get_ticker_data = async (
   ticker_symbol: string,
   order: ORDER_TYPE = 'spot',
 ) => {
+  logger.info(`Getting ticker data for ${ticker_symbol} on ${order}`);
+
   const splice_ticker = ticker_symbol.split('-');
   const symbol = splice_ticker.length > 1 ? `${splice_ticker[0]}${splice_ticker[1]}` : ticker_symbol;
 

@@ -36,7 +36,7 @@ router.use(
 router.use(
   '/milestones',
   MilestoneRoutes,
-)
+);
 
 router.use(
   '/cronjobs',

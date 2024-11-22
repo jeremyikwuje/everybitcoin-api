@@ -262,11 +262,11 @@ export const calculate_averate_price_of_exchanges = async (
 
   await Promise.all(exchanges.map(async (exchange: any) => {
     // if exchange not a trusted exchange
-    const trusted_exchanges = Config.trusted_exchanges;
+    const { trusted_exchanges } = Config;
     if (!trusted_exchanges.includes(exchange.code)) {
       return;
     }
-    
+
     if (exchange.price_buy > 0 || exchange.price_sell > 0) {
       console.log(exchange.price_buy, exchange.code);
       total += exchange.price_buy || exchange.price_sell;
