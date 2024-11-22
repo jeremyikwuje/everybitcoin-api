@@ -3562,3 +3562,68 @@
 2024-11-21T21:55:02.950Z [31merror[39m: No milestone found
 2024-11-21T21:58:02.122Z [31merror[39m: Request failed with status code 403
 2024-11-21T21:59:01.575Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:03:01.452Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:04:01.516Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:05:01.711Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:06:04.303Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:07:01.923Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:08:02.145Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:09:02.160Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:10:01.206Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:11:03.887Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:12:01.703Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:13:01.847Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:14:02.137Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:15:03.208Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:16:14.834Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:17:02.643Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:18:13.163Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:19:02.572Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:20:01.688Z [31merror[39m: Request failed with status code 403
+2024-11-21T22:21:30.666Z [31merror[39m: Error processing pair code BTC-USD: connection timed out
+2024-11-21T22:21:30.669Z [31merror[39m: No tickers found
+2024-11-21T22:21:30.667Z [31merror[39m: connection timed out
+2024-11-21T22:21:30.670Z [31merror[39m: connection timed out
+2024-11-21T22:21:30.670Z [31merror[39m: connection timed out
+2024-11-21T22:22:30.766Z [31merror[39m: Error processing pair code BTC-USD: connection timed out
+2024-11-21T22:22:30.769Z [31merror[39m: connection timed out
+2024-11-21T22:22:30.770Z [31merror[39m: No tickers found
+2024-11-21T22:22:30.770Z [31merror[39m: connection timed out
+2024-11-21T22:22:30.770Z [31merror[39m: connection timed out
+2024-11-21T22:23:30.885Z [31merror[39m: Error processing pair code BTC-USD: connection timed out
+2024-11-21T22:23:30.889Z [31merror[39m: No tickers found
+2024-11-21T22:23:30.888Z [31merror[39m: connection timed out
+2024-11-21T22:23:30.890Z [31merror[39m: connection timed out
+2024-11-21T22:23:30.906Z [31merror[39m: connection timed out
+2024-11-21T22:24:31.008Z [31merror[39m: Error processing pair code BTC-USD: connection timed out
+2024-11-21T22:25:30.134Z [31merror[39m: Error processing pair code BTC-USD: connection timed out
+2024-11-21T22:25:30.136Z [31merror[39m: No tickers found
+2024-11-21T22:25:30.137Z [31merror[39m: connection timed out
+2024-11-21T22:25:30.138Z [31merror[39m: connection timed out
+2024-11-21T22:25:30.136Z [31merror[39m: connection timed out
+2024-11-21T22:26:30.256Z [31merror[39m: Error processing pair code BTC-USD: connection timed out
+2024-11-21T22:26:30.259Z [31merror[39m: No tickers found
+2024-11-21T22:26:30.259Z [31merror[39m: connection timed out
+2024-11-21T22:26:30.260Z [31merror[39m: connection timed out
+2024-11-21T22:26:30.260Z [31merror[39m: connection timed out
+2024-11-22T02:33:14.591Z [31merror[39m: Error processing pair code BTC-USD: getaddrinfo ENOTFOUND ac-8pfridd-shard-00-00.8lck9ch.mongodb.net
+2024-11-22T02:33:14.606Z [31merror[39m: No tickers found
+2024-11-22T02:33:14.595Z [31merror[39m: getaddrinfo ENOTFOUND ac-8pfridd-shard-00-00.8lck9ch.mongodb.net
+2024-11-22T02:33:14.607Z [31merror[39m: getaddrinfo ENOTFOUND ac-8pfridd-shard-00-00.8lck9ch.mongodb.net
+2024-11-22T02:33:14.607Z [31merror[39m: getaddrinfo ENOTFOUND ac-8pfridd-shard-00-00.8lck9ch.mongodb.net
+2024-11-22T07:35:30.685Z [31merror[39m: Error processing pair code BTC-USD: getaddrinfo ENOTFOUND ac-8pfridd-shard-00-00.8lck9ch.mongodb.net
+2024-11-22T07:35:30.691Z [31merror[39m: getaddrinfo ENOTFOUND ac-8pfridd-shard-00-00.8lck9ch.mongodb.net
+2024-11-22T07:35:30.691Z [31merror[39m: No tickers found
+2024-11-22T07:35:30.722Z [31merror[39m: getaddrinfo ENOTFOUND ac-8pfridd-shard-00-00.8lck9ch.mongodb.net
+2024-11-22T07:35:30.738Z [31merror[39m: getaddrinfo ENOTFOUND ac-8pfridd-shard-00-00.8lck9ch.mongodb.net
+2024-11-22T07:36:07.885Z [31merror[39m: Request failed with status code 403
+2024-11-22T07:37:03.103Z [31merror[39m: Request failed with status code 403
+2024-11-22T07:38:01.536Z [31merror[39m: Request failed with status code 403
+2024-11-22T07:39:01.732Z [31merror[39m: Request failed with status code 403
+2024-11-22T07:40:00.795Z [31merror[39m: Request failed with status code 403
+2024-11-22T07:41:01.378Z [31merror[39m: Request failed with status code 403
+2024-11-22T07:42:01.395Z [31merror[39m: Request failed with status code 403
+2024-11-22T07:43:01.690Z [31merror[39m: Request failed with status code 403
+2024-11-22T07:44:01.805Z [31merror[39m: Request failed with status code 403
+2024-11-22T07:45:03.506Z [31merror[39m: Request failed with status code 403
+2024-11-22T07:46:02.508Z [31merror[39m: Request failed with status code 403
