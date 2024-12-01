@@ -43,10 +43,10 @@ async function start() {
   }
 
   const jobs = [
-    { cronTime: '*/60 * * * * *', fn: () => update_exchange_prices_in_tickers() },
-    { cronTime: '*/70 * * * * *', fn: () => save_prices_from_tickers() },
-    { cronTime: '*/70 * * * * *', fn: () => update_prices_on_tickers() },
-    { cronTime: '*/80 * * * * *', fn: () => set_next_milestone() },
+    { cronTime: '0 */10 * * * *', fn: () => update_exchange_prices_in_tickers() },
+    { cronTime: '0 */11 * * * *', fn: () => save_prices_from_tickers() },
+    { cronTime: '0 */12 * * * *', fn: () => update_prices_on_tickers() },
+    { cronTime: '0 */13 * * * *', fn: () => set_next_milestone() },
   ];
 
   await runCronJobs(jobs);

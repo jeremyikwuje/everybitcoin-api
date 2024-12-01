@@ -3966,3 +3966,265 @@
 2024-11-22T14:00:18.613Z [31merror[39m: read ECONNRESET
 2024-11-22T14:01:01.308Z [31merror[39m: Request failed with status code 403
 2024-11-22T14:04:03.980Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:05:01.082Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:06:04.059Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:07:18.886Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:08:01.690Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:09:01.579Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:10:13.827Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:11:01.644Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:11:16.989Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:11:17.617Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:11:17.620Z [31merror[39m: Unable to get Bitcoin price to USD
+2024-11-22T14:11:21.476Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:11:21.478Z [31merror[39m: Unable to get Bitfinex Bitcoin price to USD
+2024-11-22T14:11:23.821Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:11:23.822Z [31merror[39m: Unable to get OKX Bitcoin price in USD
+2024-11-22T14:11:23.823Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:11:23.824Z [31merror[39m: Cannot read properties of undefined (reading 'amount')
+2024-11-22T14:11:23.841Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:11:26.044Z [31merror[39m: read ECONNRESET
+2024-11-22T14:12:01.044Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:13:01.050Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:14:01.065Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:15:04.160Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:16:26.113Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:17:08.094Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:18:18.370Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:18:19.602Z [31merror[39m: read ECONNRESET
+2024-11-22T14:18:19.604Z [31merror[39m: read ECONNRESET
+2024-11-22T14:18:19.614Z [31merror[39m: read ECONNRESET
+2024-11-22T14:18:19.614Z [31merror[39m: Unable to get OKX Bitcoin price in USD
+2024-11-22T14:19:04.855Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:20:08.973Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:21:01.510Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:22:04.029Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:23:09.444Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:23:22.383Z [31merror[39m: read ECONNRESET
+2024-11-22T14:23:22.384Z [31merror[39m: Unable to get OKX Bitcoin price in USD
+2024-11-22T14:23:43.331Z [31merror[39m: socket hang up
+2024-11-22T14:23:43.332Z [31merror[39m: Unable to get Bitcoin price to USD
+2024-11-22T14:24:07.306Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:24:21.223Z [31merror[39m: read ECONNRESET
+2024-11-22T14:25:13.507Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:26:06.185Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:26:18.065Z [31merror[39m: socket hang up
+2024-11-22T14:26:21.845Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:27:02.211Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:27:18.998Z [31merror[39m: read ECONNRESET
+2024-11-22T14:27:19.006Z [31merror[39m: Unable to get OKX Bitcoin price in USD
+2024-11-22T14:27:19.698Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:27:19.701Z [31merror[39m: Cannot read properties of undefined (reading 'amount')
+2024-11-22T14:28:19.170Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:29:24.744Z [31merror[39m: read ECONNRESET
+2024-11-22T14:29:25.197Z [31merror[39m: read ECONNRESET
+2024-11-22T14:29:25.198Z [31merror[39m: Unable to get OKX Bitcoin price in USD
+2024-11-22T14:29:46.180Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:30:04.657Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:30:19.965Z [31merror[39m: socket hang up
+2024-11-22T14:31:17.176Z [31merror[39m: AggregateError
+2024-11-22T14:31:17.177Z [31merror[39m: Unable to get OKX Bitcoin price in USD
+2024-11-22T14:31:17.178Z [31merror[39m: Error occured while getting Luno price
+2024-11-22T14:31:59.244Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:33:01.653Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:33:20.137Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:33:20.140Z [31merror[39m: Unable to get Bitcoin price to USD
+2024-11-22T14:33:22.111Z [31merror[39m: read ECONNRESET
+2024-11-22T14:33:22.129Z [31merror[39m: read ECONNRESET
+2024-11-22T14:33:22.130Z [31merror[39m: Unable to get OKX Bitcoin price in USD
+2024-11-22T14:33:22.138Z [31merror[39m: read ECONNRESET
+2024-11-22T14:33:22.139Z [31merror[39m: Cannot read properties of undefined (reading 'amount')
+2024-11-22T14:33:22.140Z [31merror[39m: read ECONNRESET
+2024-11-22T14:33:25.203Z [31merror[39m: read ECONNRESET
+2024-11-22T14:35:02.030Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:35:28.125Z [31merror[39m: read ECONNRESET
+2024-11-22T14:35:28.179Z [31merror[39m: read ECONNRESET
+2024-11-22T14:35:28.180Z [31merror[39m: Unable to get Bitfinex Bitcoin price to USD
+2024-11-22T14:35:32.451Z [31merror[39m: read ECONNRESET
+2024-11-22T14:35:32.523Z [31merror[39m: read ECONNRESET
+2024-11-22T14:35:32.523Z [31merror[39m: Unable to get OKX Bitcoin price in USD
+2024-11-22T14:35:33.092Z [31merror[39m: read ECONNRESET
+2024-11-22T14:36:07.391Z [31merror[39m: read ECONNRESET
+2024-11-22T14:36:07.393Z [31merror[39m: Unable to get Bitcoin price to USD
+2024-11-22T14:36:12.650Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:37:14.445Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:37:14.446Z [31merror[39m: Unable to get Bitfinex Bitcoin price to USD
+2024-11-22T14:37:15.960Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:37:16.022Z [31merror[39m: read ECONNRESET
+2024-11-22T14:37:18.875Z [31merror[39m: read ECONNRESET
+2024-11-22T14:38:01.239Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:38:25.703Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:38:25.704Z [31merror[39m: Unable to get Bitcoin price to USD
+2024-11-22T14:38:25.964Z [31merror[39m: read ECONNRESET
+2024-11-22T14:38:25.984Z [31merror[39m: read ECONNRESET
+2024-11-22T14:38:26.265Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:38:27.293Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:39:06.982Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:40:06.612Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:40:17.113Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:40:17.496Z [31merror[39m: read ETIMEDOUT
+2024-11-22T14:40:17.498Z [31merror[39m: Unable to get Bitfinex Bitcoin price to USD
+2024-11-22T14:41:05.341Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:42:02.317Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:43:05.694Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:44:01.726Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:45:01.660Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:46:07.245Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:46:58.412Z [31merror[39m: read ECONNRESET
+2024-11-22T14:47:06.162Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:47:07.813Z [31merror[39m: read ECONNRESET
+2024-11-22T14:47:07.815Z [31merror[39m: Cannot read properties of undefined (reading 'amount')
+2024-11-22T14:47:07.900Z [31merror[39m: read ECONNRESET
+2024-11-22T14:47:07.900Z [31merror[39m: Unable to get OKX Bitcoin price in USD
+2024-11-22T14:47:16.337Z [31merror[39m: read ECONNRESET
+2024-11-22T14:47:23.880Z [31merror[39m: read ECONNRESET
+2024-11-22T14:48:03.151Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:49:02.106Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:50:00.976Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:51:02.014Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:52:01.128Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:53:01.223Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:54:01.487Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:55:01.418Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:56:01.610Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:57:01.789Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:58:00.779Z [31merror[39m: Request failed with status code 403
+2024-11-22T14:59:00.785Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:00:00.859Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:01:00.995Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:02:01.072Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:03:01.680Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:04:01.513Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:05:01.640Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:06:01.403Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:07:02.441Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:08:01.610Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:09:00.912Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:10:01.079Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:11:01.330Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:12:01.005Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:13:01.342Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:14:01.091Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:15:01.328Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:16:01.371Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:17:01.943Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:18:01.760Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:20:01.199Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:21:00.819Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:22:20.191Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:23:01.100Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:24:01.084Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:25:01.348Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:26:01.998Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:27:01.289Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:28:01.795Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:29:01.309Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:30:01.471Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:31:01.503Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:32:02.155Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:33:01.114Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:34:00.833Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:35:01.070Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:36:01.055Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:37:02.079Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:38:01.266Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:39:01.419Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:40:02.137Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:41:01.693Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:42:01.950Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:43:01.629Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:44:01.657Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:45:00.786Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:46:01.029Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:47:01.182Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:48:01.155Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:49:01.508Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:50:01.432Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:51:01.403Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:52:01.444Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:53:01.869Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:54:02.456Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:55:01.628Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:56:00.964Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:57:12.344Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:58:01.242Z [31merror[39m: Request failed with status code 403
+2024-11-22T15:59:01.107Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:00:01.279Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:01:01.182Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:02:01.364Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:03:02.154Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:04:01.572Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:05:01.460Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:06:01.794Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:07:00.710Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:08:00.981Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:09:01.168Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:10:01.097Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:11:01.251Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:12:01.386Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:13:01.358Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:14:03.908Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:15:01.529Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:16:02.928Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:17:02.016Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:18:00.778Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:19:01.458Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:20:01.017Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:21:01.194Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:22:01.409Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:23:01.366Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:24:01.242Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:25:01.212Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:26:01.652Z [31merror[39m: Request failed with status code 403
+2024-11-22T16:27:51.434Z [31merror[39m: Error processing pair code BTC-USD: connection <monitor> to 54.80.213.142:27017 timed out
+2024-11-22T16:27:51.441Z [31merror[39m: No tickers found
+2024-11-22T16:27:51.441Z [31merror[39m: connection <monitor> to 54.80.213.142:27017 timed out
+2024-11-22T16:27:51.442Z [31merror[39m: connection <monitor> to 54.80.213.142:27017 timed out
+2024-11-22T16:27:51.443Z [31merror[39m: connection <monitor> to 54.80.213.142:27017 timed out
+2024-11-22T16:28:30.948Z [31merror[39m: Error processing pair code BTC-USD: connection timed out
+2024-11-22T16:28:30.949Z [31merror[39m: connection timed out
+2024-11-22T16:28:30.953Z [31merror[39m: No tickers found
+2024-11-22T16:28:30.953Z [31merror[39m: connection timed out
+2024-11-22T16:28:30.955Z [31merror[39m: connection timed out
+2024-11-22T16:29:30.020Z [31merror[39m: Error processing pair code BTC-USD: connection timed out
+2024-11-22T16:29:30.025Z [31merror[39m: No tickers found
+2024-11-22T16:29:30.021Z [31merror[39m: connection timed out
+2024-11-22T16:29:30.026Z [31merror[39m: connection timed out
+2024-11-22T16:29:30.026Z [31merror[39m: connection timed out
+2024-11-22T16:30:30.106Z [31merror[39m: Error processing pair code BTC-USD: connection timed out
+2024-11-22T16:30:30.108Z [31merror[39m: No tickers found
+2024-11-22T16:30:30.108Z [31merror[39m: connection timed out
+2024-11-22T16:30:30.109Z [31merror[39m: connection timed out
+2024-11-22T16:30:30.110Z [31merror[39m: connection timed out
+2024-11-22T16:31:33.023Z [31merror[39m: Error connecting to DB app-db: querySrv ETIMEOUT _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-22T16:32:10.069Z [31merror[39m: Error processing pair code BTC-USD: Operation `tickers.findOne()` buffering timed out after 10000ms
+2024-11-22T16:32:10.071Z [31merror[39m: No tickers found
+2024-11-22T16:32:10.071Z [31merror[39m: Operation `tickers.find()` buffering timed out after 10000ms
+2024-11-22T16:32:10.073Z [31merror[39m: Operation `prices.find()` buffering timed out after 10000ms
+2024-11-22T16:32:10.073Z [31merror[39m: Operation `milestones.findOne()` buffering timed out after 10000ms
+2024-11-22T16:33:10.160Z [31merror[39m: Error processing pair code BTC-USD: Operation `tickers.findOne()` buffering timed out after 10000ms
+2024-11-22T16:33:10.164Z [31merror[39m: No tickers found
+2024-11-22T16:33:10.163Z [31merror[39m: Operation `tickers.find()` buffering timed out after 10000ms
+2024-11-22T16:33:10.165Z [31merror[39m: Operation `prices.find()` buffering timed out after 10000ms
+2024-11-22T16:33:10.166Z [31merror[39m: Operation `milestones.findOne()` buffering timed out after 10000ms
+2024-11-22T16:34:10.115Z [31merror[39m: Error processing pair code BTC-USD: Operation `tickers.findOne()` buffering timed out after 10000ms
+2024-11-22T16:34:10.117Z [31merror[39m: Operation `tickers.find()` buffering timed out after 10000ms
+2024-11-22T16:34:10.118Z [31merror[39m: No tickers found
+2024-11-22T16:34:10.119Z [31merror[39m: Operation `prices.find()` buffering timed out after 10000ms
+2024-11-22T16:34:10.120Z [31merror[39m: Operation `milestones.findOne()` buffering timed out after 10000ms
+2024-11-22T16:34:25.145Z [31merror[39m: Error connecting to DB app-db: querySrv ETIMEOUT _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-11-22T16:35:10.215Z [31merror[39m: Error processing pair code BTC-USD: Operation `tickers.findOne()` buffering timed out after 10000ms
+2024-11-22T16:35:10.232Z [31merror[39m: No tickers found
+2024-11-22T16:35:10.231Z [31merror[39m: Operation `tickers.find()` buffering timed out after 10000ms
+2024-11-22T16:35:10.232Z [31merror[39m: Operation `prices.find()` buffering timed out after 10000ms
+2024-11-22T16:35:10.232Z [31merror[39m: Operation `milestones.findOne()` buffering timed out after 10000ms
+2024-11-22T16:36:10.329Z [31merror[39m: Error processing pair code BTC-USD: Operation `tickers.findOne()` buffering timed out after 10000ms
+2024-11-22T16:36:10.331Z [31merror[39m: Operation `tickers.find()` buffering timed out after 10000ms
+2024-11-22T16:36:10.331Z [31merror[39m: No tickers found
+2024-11-22T16:36:10.331Z [31merror[39m: Operation `prices.find()` buffering timed out after 10000ms
+2024-11-22T16:36:10.332Z [31merror[39m: Operation `milestones.findOne()` buffering timed out after 10000ms
+2024-11-22T16:37:11.009Z [31merror[39m: Error processing pair code BTC-USD: Operation `tickers.findOne()` buffering timed out after 10000ms
+2024-11-22T16:37:11.011Z [31merror[39m: Operation `tickers.find()` buffering timed out after 10000ms
+2024-11-22T16:37:11.012Z [31merror[39m: No tickers found
+2024-11-22T16:37:11.013Z [31merror[39m: Operation `prices.find()` buffering timed out after 10000ms
+2024-11-22T16:37:16.021Z [31merror[39m: Error connecting to DB app-db: querySrv ETIMEOUT _mongodb._tcp.palremit0.8lck9ch.mongodb.net
