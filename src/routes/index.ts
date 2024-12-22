@@ -5,6 +5,7 @@ import TickerRoutes from '../modules/tickers/ticker.routes';
 import CurrencyRoutes from '../modules/currencies/currency.routes';
 import CronjobRoutes from '../modules/cronjobs/cronjob.routes';
 import MilestoneRoutes from '../modules/milestones/milestone.routes';
+import PriceRoutes from '../modules/prices/price.routes';
 
 const router = Router();
 
@@ -31,6 +32,11 @@ router.use(
 router.use(
   '/currencies',
   CurrencyRoutes,
+);
+
+router.use(
+  '/prices',
+  PriceRoutes,
 );
 
 router.use(

@@ -1,11 +1,118 @@
 import httpStatus, { BAD_REQUEST } from 'http-status';
 import { parse } from 'json2csv';
-import ApiResponse from '../../utils/api-response';
+import ApiResponse, { ErrorType, SuccessType } from '../../utils/api-response';
 import APIError from '../../utils/api-error';
-import Rate from './price.model';
+import Price from './models/price.model';
 import { get_recent_price } from './price.service';
+import {
+  add_currency_price, currency_price_found, get_currency_price, update_currency_price,
+} from './services/currency.price.service';
 
 export default class PriceController {
+  static latest = async (req: any, res: any) => {
+    const {
+      base,
+      quote,
+    } = req.query;
+
+    const get_price: any = await get_currency_price(base);
+
+    const {
+      quotes,
+      updated_at,
+    } = get_price;
+
+    let result: any = Object.fromEntries(quotes);
+    console.log(result);
+    if (quote) {
+      result = result[quote.toUpperCase()];
+    }
+
+    return ApiResponse.success(
+      res,
+      SuccessType.Retrieved,
+      {
+        base,
+        rates: result,
+        last_updated: updated_at,
+      },
+    );
+  };
+
+  static add_base = async (req: any, res: any) => {
+    const { base, rates } = req.body;
+
+    const data = {
+      base,
+      rates,
+    };
+
+    const base_found = await currency_price_found(base);
+    if (base_found) {
+      throw new APIError(
+        'Base currency already exists',
+        400,
+        ErrorType.BadRequest,
+      );
+    }
+
+    const rate = await add_currency_price(data);
+
+    return ApiResponse.success(
+      res,
+      SuccessType.Created,
+      rate,
+    );
+  };
+
+  static add_quote = async (req: any, res: any) => {
+    try {
+      const {
+        base,
+        quote,
+        rate,
+      } = req.body;
+
+      const get_rate = await get_currency_price(base);
+      let { quotes } = get_rate;
+      if (!quotes) {
+        quotes = {};
+      }
+
+      if (quotes[quote]) {
+        throw new APIError(
+          'Quote already exists for the base currency',
+          400,
+          ErrorType.BadRequest,
+        );
+      }
+
+      quotes = {
+        ...quotes,
+        [quote]: rate,
+      };
+
+      const data = {
+        quotes,
+      };
+
+      const add_quote_rate = await update_currency_price(base, data);
+
+      return ApiResponse.success(
+        res,
+        SuccessType.Created,
+        add_quote_rate,
+      );
+    } catch (error: any) {
+      return ApiResponse.error(
+        res,
+        error.statusCode || 500,
+        error.errorType || ErrorType.InternalError,
+        error.message || 'Error adding quote rate',
+      );
+    }
+  };
+
   static get_prices = async (req: any, res: any) => {
     try {
       const {
@@ -44,17 +151,17 @@ export default class PriceController {
         };
       }
 
-      const prices = await Rate.find(match)
+      const prices = await Price.find(match)
         .sort('-createdAt')
         .skip(skip)
         .limit(limit)
         .select('-_id -__v');
 
-      const total_count = await Rate.countDocuments(match);
+      const total_count = await Price.countDocuments(match);
 
       let csv_string: any = '';
       if (csv && total_count > 0) {
-        const cleanRates = prices.map((doc) => doc.toObject());
+        const cleanRates = prices.map((doc: any) => doc.toObject());
         csv_string = parse(cleanRates);
       }
 
@@ -137,7 +244,7 @@ export default class PriceController {
         };
       }
 
-      const prices = await Rate.deleteMany(match);
+      const prices = await Price.deleteMany(match);
       const total_count = prices.deletedCount;
 
       return ApiResponse.success(

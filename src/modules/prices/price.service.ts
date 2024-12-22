@@ -1,7 +1,7 @@
 import { CONFLICT, NOT_FOUND } from 'http-status';
 import { subDays, subHours, subMonths } from 'date-fns';
 import APIError from '../../utils/api-error';
-import Price from './price.model';
+import Price from './models/price.model';
 import logger from '../../logger/logger';
 import { get_ticker_average_price, update_ticker } from '../tickers/ticker.service';
 import { percentage_difference } from '../../utils/utilities';

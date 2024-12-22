@@ -1,18 +1,22 @@
 import { Joi } from 'express-validation';
-import { Currency, supported_markets } from '../../constants';
+import { supported_markets } from '../../constants';
 import { PriceMarket } from './price.enums';
+import { CurrencyE } from '../currencies/currencies.data';
 
-export const RateValidation = {
+export const PriceValidation = {
+  latest: {
+    query: Joi.object({
+      base: Joi.string().optional().default('BTC').uppercase()
+        .valid(...Object.values(CurrencyE)),
+      quote: Joi.string().optional().uppercase(),
+      market: Joi.string().optional().default(PriceMarket.Parallel).lowercase()
+        .valid(...Object.values(PriceMarket)),
+      provider: Joi.string().optional(),
+    }),
+  },
   get_price: {
     query: Joi.object({
       pair: Joi.string().required().lowercase(),
-    }),
-  },
-  latest: {
-    query: Joi.object({
-      base: Joi.string().optional().default(Currency.USD).uppercase(),
-      market: Joi.string().optional().default(PriceMarket.Mid).lowercase(),
-      provider: Joi.string().optional().lowercase(),
     }),
   },
   get_prices: {
@@ -32,6 +36,19 @@ export const RateValidation = {
       end_date: Joi.number().required(),
       market: Joi.string().valid(...supported_markets).required(),
       pair: Joi.string().optional().lowercase(),
+    }),
+  },
+  add_base: {
+    body: Joi.object({
+      base: Joi.string().required().uppercase().valid(...Object.values(CurrencyE)),
+      rates: Joi.object().optional(),
+    }),
+  },
+  add_quote: {
+    body: Joi.object({
+      base: Joi.string().required().uppercase().valid(...Object.values(CurrencyE)),
+      quote: Joi.string().required().uppercase().valid(...Object.values(CurrencyE)),
+      rate: Joi.number().required(),
     }),
   },
 };

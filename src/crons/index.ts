@@ -10,6 +10,7 @@ import {
   update_prices_on_tickers,
 } from '../modules/prices/price.service';
 import { set_next_milestone } from '../modules/milestones/milestone.service';
+import { add_quote_bulk, update_currency_prices_from_external_api } from '../modules/prices/services/currency.price.service';
 
 interface Job {
   cronTime: string;
@@ -43,12 +44,12 @@ async function start() {
   }
 
   const jobs = [
-    { cronTime: '0 */10 * * * *', fn: () => update_exchange_prices_in_tickers() },
-    { cronTime: '0 */11 * * * *', fn: () => save_prices_from_tickers() },
-    { cronTime: '0 */12 * * * *', fn: () => update_prices_on_tickers() },
-    { cronTime: '0 */13 * * * *', fn: () => set_next_milestone() },
+    { cronTime: '0 */10 * * * *', fn: () => update_currency_prices_from_external_api() },
+    // { cronTime: '0 */10 * * * *', fn: () => update_exchange_prices_in_tickers() },
+    // { cronTime: '0 */11 * * * *', fn: () => save_prices_from_tickers() },
+    // { cronTime: '0 */12 * * * *', fn: () => update_prices_on_tickers() },
+    // { cronTime: '0 */13 * * * *', fn: () => set_next_milestone() },
   ];
-
   await runCronJobs(jobs);
   return true;
 }

@@ -3,7 +3,8 @@ import NodeCache from 'node-cache';
 import logger from '../../logger/logger';
 
 const cache = new NodeCache({
-  stdTTL: 60 * 5, // 1 minute cache
+  stdTTL: 60 * 4 + 30, // 5 minute cache
+  checkperiod: 60 * 5, // 5 minute check
 });
 
 export const get_xe_rate = async (quote: string = 'NGN', base: string = 'USD') => {
@@ -61,7 +62,7 @@ export const get_xe_rates = async (base: string = 'USD') => {
     }
 
     logger.info('Using cached XE rates');
-    return Number(cache.get(key));
+    return cache.get(key);
   } catch (error) {
     logger.error(`Error in XE rates: ${error}`);
     return 0;

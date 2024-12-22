@@ -125,3 +125,5 @@ export const Currencies = [
     denomination_divisor: 1,
   },
 ];
+
+export const ERROR_CODE = 500;

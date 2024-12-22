@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
-import dbConnections from '../../database';
-import { MongoDBName } from '../../config/config';
-import { supported_markets } from '../../constants';
+import dbConnections from '../../../database';
+import { MongoDBName } from '../../../config/config';
+import { supported_markets } from '../../../constants';
 
 // Define the schema for the waitlist
 const PriceSchema = new mongoose.Schema({
