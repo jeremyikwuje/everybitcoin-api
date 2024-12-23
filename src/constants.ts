@@ -126,4 +126,38 @@ export const Currencies = [
   },
 ];
 
-export const ERROR_CODE = 500;
+export const ERROR_CODE = 400;
+export const ERROR_MESSAGE = 'Request error';
+
+export enum Channel {
+  Paystack = 'paystack',
+  Flutterwave = 'flutterwave',
+  Stripe = 'stripe',
+  OpenNode = 'opennode',
+  NowPayments = 'nowpayments',
+  Binance = 'binance',
+}
+
+export enum RequestState {
+  Awaiting = 'awaiting',
+  Created = 'created',
+  Pending = 'pending',
+  Processing = 'processing',
+  Onhold = 'on-hold',
+  Completed = 'completed',
+  Failed = 'failed',
+  Cancelled = 'cancelled',
+  Successful = 'successful',
+}
+
+export interface PaymentChannelResponse {
+  status: RequestState
+  amount: number,
+  channel_reference: string,
+  channel_response: any,
+}
+
+export interface PaymentCheckoutResponse {
+  link: string;
+  reference: string;
+}

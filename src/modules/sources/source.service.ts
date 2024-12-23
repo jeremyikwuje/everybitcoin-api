@@ -28,6 +28,20 @@ export const get_source = async (unique: string) => {
   return source;
 };
 
+export const get_all_sources = async () => {
+  // get all sources
+  const sources = await Source.find();
+  if (!sources) {
+    throw new APIError(
+      'No sources found',
+      httpStatus.NOT_FOUND,
+      ErrorType.NotFound,
+    );
+  }
+
+  return sources;
+};
+
 export const add_source = async (source: ISource) => {
   try {
     const source_found = await Source.findOne({ name: source.name });

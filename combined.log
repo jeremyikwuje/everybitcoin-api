@@ -30631,3 +30631,138 @@
 2024-12-22T04:41:36.732Z [32minfo[39m: Cron started successfully as at Sun Dec 22 2024 06:41:36 GMT+0200 (Eastern European Standard Time)
 2024-12-22T04:41:39.241Z [32minfo[39m: Connected to app-db
 2024-12-22T04:41:40.218Z [32minfo[39m: Closing DB connections
+2024-12-23T19:36:50.996Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T19:36:51.000Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 21:36:51 GMT+0200 (Eastern European Standard Time)
+2024-12-23T19:36:51.002Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-12-23T19:40:00.579Z [32minfo[39m: Updating BTC rates from external api
+2024-12-23T19:40:10.650Z [31merror[39m: Operation `currency_rates.find()` buffering timed out after 10000ms
+2024-12-23T19:40:10.656Z [31merror[39m: Operation `currency_rates.find()` buffering timed out after 10000ms
+2024-12-23T19:42:30.019Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T19:42:30.025Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 21:42:30 GMT+0200 (Eastern European Standard Time)
+2024-12-23T19:42:32.916Z [32minfo[39m: Connected to app-db
+2024-12-23T19:50:00.625Z [32minfo[39m: Updating BTC rates from external api
+2024-12-23T19:50:01.998Z [31merror[39m: Value must be a number
+2024-12-23T19:50:01.999Z [31merror[39m: Value must be a number
+2024-12-23T20:00:00.362Z [32minfo[39m: Updating BTC rates from external api
+2024-12-23T20:00:02.104Z [31merror[39m: Value must be a number
+2024-12-23T20:00:02.105Z [31merror[39m: Value must be a number
+2024-12-23T20:15:21.486Z [32minfo[39m: Connected to app-db
+2024-12-23T20:23:07.333Z [32minfo[39m: Connected to app-db
+2024-12-23T20:30:00.030Z [32minfo[39m: Updating BTC rates from external api
+2024-12-23T20:30:03.144Z [31merror[39m: Value must be a number
+2024-12-23T20:30:03.144Z [31merror[39m: Value must be a number
+2024-12-23T20:39:27.969Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T20:39:27.975Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 22:39:27 GMT+0200 (Eastern European Standard Time)
+2024-12-23T20:39:30.727Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T20:39:30.729Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 22:39:30 GMT+0200 (Eastern European Standard Time)
+2024-12-23T20:40:42.219Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T20:40:42.224Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 22:40:42 GMT+0200 (Eastern European Standard Time)
+2024-12-23T20:40:44.822Z [32minfo[39m: Connected to app-db
+2024-12-23T20:50:00.038Z [32minfo[39m: Updating BTC rates from external api
+2024-12-23T20:50:01.601Z [31merror[39m: Value must be a number
+2024-12-23T20:50:01.617Z [31merror[39m: Value must be a number
+2024-12-23T20:56:59.370Z [32minfo[39m: Connected to app-db
+2024-12-23T21:00:00.637Z [32minfo[39m: Updating BTC rates from external api
+2024-12-23T21:00:03.974Z [31merror[39m: Value must be a number
+2024-12-23T21:00:03.975Z [31merror[39m: Value must be a number
+2024-12-23T21:00:49.571Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:00:49.577Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:00:49 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:00:52.070Z [32minfo[39m: Connected to app-db
+2024-12-23T21:00:59.378Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:00:59.380Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:00:59 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:01:01.686Z [32minfo[39m: Connected to app-db
+2024-12-23T21:01:08.066Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:01:08.068Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:01:08 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:01:10.284Z [32minfo[39m: Connected to app-db
+2024-12-23T21:01:14.601Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:01:14.603Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:01:14 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:01:21.148Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:01:21.150Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:01:21 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:01:23.662Z [32minfo[39m: Connected to app-db
+2024-12-23T21:01:29.693Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:01:29.695Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:01:29 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:01:32.295Z [32minfo[39m: Connected to app-db
+2024-12-23T21:01:36.626Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:01:36.628Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:01:36 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:01:42.645Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:01:42.647Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:01:42 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:01:45.097Z [32minfo[39m: Connected to app-db
+2024-12-23T21:01:51.826Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:01:51.828Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:01:51 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:01:54.242Z [32minfo[39m: Connected to app-db
+2024-12-23T21:02:04.802Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:02:04.805Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:02:04 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:02:48.323Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:02:48.327Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:02:48 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:02:51.368Z [32minfo[39m: Connected to app-db
+2024-12-23T21:02:56.439Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:02:56.441Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:02:56 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:03:02.221Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:03:02.227Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:03:02 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:06:36.593Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:06:36.596Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:06:36 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:06:39.191Z [32minfo[39m: Connected to app-db
+2024-12-23T21:07:09.315Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:07:09.317Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:07:09 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:07:11.505Z [32minfo[39m: Connected to app-db
+2024-12-23T21:07:20.016Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:07:20.019Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:07:20 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:07:22.394Z [32minfo[39m: Connected to app-db
+2024-12-23T21:07:35.691Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:07:35.693Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:07:35 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:07:39.596Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:07:39.600Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:07:39 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:07:42.198Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:07:42.200Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:07:42 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:07:45.861Z [32minfo[39m: Connected to app-db
+2024-12-23T21:09:05.678Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:09:05.680Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:09:05 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:09:08.951Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:09:08.954Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:09:08 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:09:15.635Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:09:15.637Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:09:15 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:09:18.653Z [32minfo[39m: Connected to app-db
+2024-12-23T21:10:00.696Z [32minfo[39m: Updating BTC rates from external api
+2024-12-23T21:10:03.205Z [31merror[39m: Value must be a number
+2024-12-23T21:10:03.206Z [31merror[39m: Value must be a number
+2024-12-23T21:13:02.027Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:13:02.030Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:13:02 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:13:05.448Z [32minfo[39m: Connected to app-db
+2024-12-23T21:13:11.095Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:13:11.097Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:13:11 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:13:13.455Z [32minfo[39m: Connected to app-db
+2024-12-23T21:13:24.634Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:13:24.635Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:13:24 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:13:27.496Z [32minfo[39m: Connected to app-db
+2024-12-23T21:13:38.457Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:13:38.459Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:13:38 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:13:41.145Z [32minfo[39m: Connected to app-db
+2024-12-23T21:13:45.374Z [31merror[39m: Validation Failed
+2024-12-23T21:15:03.531Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:15:03.541Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:15:03 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:15:12.231Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:15:12.233Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:15:12 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:17:42.241Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:17:42.247Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:17:42 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:17:45.979Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:17:45.981Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:17:45 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:17:48.369Z [32minfo[39m: Connected to app-db
+2024-12-23T21:17:53.883Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:17:53.891Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:17:53 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:17:56.311Z [32minfo[39m: Connected to app-db
+2024-12-23T21:18:01.847Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:18:01.849Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:18:01 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:18:04.401Z [32minfo[39m: Connected to app-db
+2024-12-23T21:25:58.707Z [31merror[39m: Validation Failed
+2024-12-23T21:30:00.767Z [32minfo[39m: Updating BTC rates from external api
+2024-12-23T21:30:02.539Z [31merror[39m: Value must be a number
+2024-12-23T21:30:02.540Z [31merror[39m: Value must be a number
+2024-12-23T21:35:28.923Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:35:28.935Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:35:28 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:35:31.500Z [32minfo[39m: Connected to app-db
+2024-12-23T21:38:34.780Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:38:34.785Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:38:34 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:38:37.666Z [32minfo[39m: Connected to app-db
+2024-12-23T21:39:09.552Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-23T21:39:09.554Z [32minfo[39m: Cron started successfully as at Mon Dec 23 2024 23:39:09 GMT+0200 (Eastern European Standard Time)
+2024-12-23T21:39:12.171Z [32minfo[39m: Connected to app-db

@@ -24,6 +24,11 @@ export const SourceValidation = {
       source_id: Joi.string().required(),
     }),
   },
+  get_all_sources: {
+    query: Joi.object({
+      sources: Joi.array().items(Joi.string()).optional(),
+    }),
+  },
   add_source: {
     body: Joi.object(sourceObject),
   },

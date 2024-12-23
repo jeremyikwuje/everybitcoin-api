@@ -12,6 +12,12 @@ router.get(
   asyncWrapper(SourceController.get_source),
 );
 
+router.get(
+  '/get_all_sources',
+  validateSchema(SourceValidation.get_all_sources),
+  asyncWrapper(SourceController.get_all_sources),
+);
+
 router.post(
   '/add_source',
   validateSchema(SourceValidation.add_source),

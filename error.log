@@ -4616,3 +4616,22 @@
 2024-12-22T00:18:01.697Z [31merror[39m: Value must be a number
 2024-12-22T00:19:00.794Z [31merror[39m: Value must be a number
 2024-12-22T00:19:00.794Z [31merror[39m: Value must be a number
+2024-12-23T19:36:51.002Z [31merror[39m: Error connecting to DB app-db: querySrv ECONNREFUSED _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-12-23T19:40:10.650Z [31merror[39m: Operation `currency_rates.find()` buffering timed out after 10000ms
+2024-12-23T19:40:10.656Z [31merror[39m: Operation `currency_rates.find()` buffering timed out after 10000ms
+2024-12-23T19:50:01.998Z [31merror[39m: Value must be a number
+2024-12-23T19:50:01.999Z [31merror[39m: Value must be a number
+2024-12-23T20:00:02.104Z [31merror[39m: Value must be a number
+2024-12-23T20:00:02.105Z [31merror[39m: Value must be a number
+2024-12-23T20:30:03.144Z [31merror[39m: Value must be a number
+2024-12-23T20:30:03.144Z [31merror[39m: Value must be a number
+2024-12-23T20:50:01.601Z [31merror[39m: Value must be a number
+2024-12-23T20:50:01.617Z [31merror[39m: Value must be a number
+2024-12-23T21:00:03.974Z [31merror[39m: Value must be a number
+2024-12-23T21:00:03.975Z [31merror[39m: Value must be a number
+2024-12-23T21:10:03.205Z [31merror[39m: Value must be a number
+2024-12-23T21:10:03.206Z [31merror[39m: Value must be a number
+2024-12-23T21:13:45.374Z [31merror[39m: Validation Failed
+2024-12-23T21:25:58.707Z [31merror[39m: Validation Failed
+2024-12-23T21:30:02.539Z [31merror[39m: Value must be a number
+2024-12-23T21:30:02.540Z [31merror[39m: Value must be a number

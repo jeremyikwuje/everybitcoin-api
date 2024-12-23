@@ -2,7 +2,7 @@ import { ERROR_CODE } from '../../constants';
 import logger from '../../logger/logger';
 import ApiResponse, { ErrorType } from '../../utils/api-response';
 import {
-  add_source, delete_source, get_source, update_source,
+  add_source, delete_source, get_all_sources, get_source, update_source,
 } from './source.service';
 
 export default class FundingController {
@@ -26,6 +26,26 @@ export default class FundingController {
         error.statusCode || ERROR_CODE,
         error.errorType || ErrorType.InternalError,
         error.message || 'Error getting source',
+      );
+    }
+  };
+
+  static get_all_sources = async (req: any, res: any) => {
+    try {
+      const sources = await get_all_sources();
+
+      return ApiResponse.success(
+        res,
+        'Successful',
+        sources,
+      );
+    } catch (error: any) {
+      logger.error(`Error getting all sources: ${error.message}`);
+      return ApiResponse.error(
+        res,
+        error.statusCode || ERROR_CODE,
+        error.errorType || ErrorType.InternalError,
+        error.message || 'Error getting all sources',
       );
     }
   };

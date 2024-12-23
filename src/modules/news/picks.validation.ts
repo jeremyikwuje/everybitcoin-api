@@ -1,5 +1,11 @@
 import { Joi } from 'express-validation';
-import { PickStatus, PickTags, PickVisibility } from './picks.enums';
+import {
+  PickContentType,
+  PickStatus,
+  PickTags,
+  PickType,
+  PickVisibility,
+} from './picks.enums';
 
 export const PickValidation = {
   get_pick: {
@@ -24,20 +30,28 @@ export const PickValidation = {
   },
   add_pick: {
     body: Joi.object({
-      link: Joi.string().required(),
-      title: Joi.string().required(),
-      description: Joi.string().required(),
-      featured_image: Joi.string().required(),
-      type: Joi.string().required(),
-      approval_status: Joi.string().required(),
-      visibility: Joi.string().required(),
-      content_type: Joi.string().required(),
+      link: Joi.string().required().uri().lowercase()
+        .trim(),
+      title: Joi.string().required().trim().max(100),
+      description: Joi.string().required().max(4000).trim(),
+      featured_image: Joi.string().required().uri().lowercase()
+        .trim(),
+      type: Joi.string().required().valid(...Object.values(PickType)).default(PickType.Pick),
+      approval_status: Joi.string()
+        .required()
+        .valid(...Object.values(PickStatus))
+        .default(PickStatus.Pending),
+      visibility: Joi.string()
+        .required()
+        .valid(...Object.values(PickVisibility))
+        .default(PickVisibility.Public),
+      content_type: Joi.string().required().valid(...Object.values(PickContentType)),
       tags: Joi.array().items(Joi.string()).optional().valid(...Object.values(PickTags))
         .default([PickTags.Bitcoin]),
       source: Joi.string().required(),
-      source_name: Joi.string().required(),
-      published_by: Joi.string().required(),
-      is_published: Joi.boolean(),
+      source_name: Joi.string().required().max(100),
+      published_by: Joi.string().required().hex().length(24),
+      is_published: Joi.boolean().default(true),
     }),
   },
   update_pick: {

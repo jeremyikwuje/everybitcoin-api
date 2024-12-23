@@ -99,3 +99,13 @@ export function percentage_difference(
 
   return percentage;
 }
+
+export function cent_to_dollar(amount: number | string): number {
+  const value = parseFloat(`${amount}`);
+  return value / 100;
+}
+
+export function dollar_to_cent(amount: number | string): number {
+  const value = parseFloat(`${amount}`);
+  return value * 100;
+}
