@@ -7,6 +7,7 @@ import {
   delete_author_reply_from_pick,
   delete_pick,
   delete_reply_from_pick,
+  get_link_meta,
   get_pick,
   get_pick_reply,
   reply_pick,
@@ -70,10 +71,9 @@ export default class PickController {
         match.approval_status = approval_status;
       }
 
-      const picks = await Pick.find(match)
-        .populate('source').sort('-created_at').skip(skip)
+      const picks = await Pick.find(match).sort('-created_at').skip(skip)
         .limit(limit);
-      const total = await Pick.countDocuments(picks);
+      const total = await Pick.countDocuments(match);
 
       return ApiResponse.success(
         res,
@@ -118,7 +118,7 @@ export default class PickController {
   };
 
   static add_pick = async (req: any, res: any) => {
-    const { user } = req.user;
+    const { user } = req;
     try {
       const {
         link,
@@ -144,7 +144,7 @@ export default class PickController {
         content_type,
         tags,
         visibility,
-        published_by: user._id,
+        picked_by: user._id.toString(),
         approval_status: PickStatus.Pending,
       });
 
@@ -167,7 +167,7 @@ export default class PickController {
     try {
       const {
         user,
-      } = req.user;
+      } = req;
 
       const {
         pick_id,
@@ -215,7 +215,7 @@ export default class PickController {
           picked_by: user._id,
         }, {
           ...update,
-        });
+        }, { new: true });
       }
 
       if (!pick) {
@@ -239,7 +239,7 @@ export default class PickController {
 
   static delete_pick = async (req: any, res: any) => {
     try {
-      const { user } = req.user;
+      const { user } = req;
       const {
         pick_id,
         is_admin,
@@ -276,26 +276,32 @@ export default class PickController {
 
   static like = async (req: any, res: any) => {
     try {
-      const { user } = req.user;
+      const { user } = req;
       const {
         pick_id,
       } = req.query;
 
       // use nodecache to prevent multiple likes
-      const key = `pick_like_${pick_id}_${user._id}`;
-      if (cache.get(key)) {
-        return ApiResponse.error(
-          res,
-          ERROR_CODE,
-          ErrorType.Duplicate,
-          'You have already liked this pick',
+      let pick = await get_pick(pick_id);
+      if (pick.liked_by?.includes(user._id)) {
+        pick.likes -= 1;
+        pick.liked_by = pick.liked_by?.filter(
+          (id: string) => id.toString() !== user._id.toString(),
         );
+
+        console.log('pick', pick.liked_by);
+      } else {
+        pick.likes += 1;
+        pick.liked_by?.push(user._id);
       }
 
-      const pick = await get_pick(pick_id);
-      pick.likes += 1;
-      await update_pick(pick_id, {
+      if (pick.likes < 0) {
+        pick.likes = 0;
+      }
+
+      pick = await update_pick(pick_id, {
         likes: pick.likes,
+        liked_by: pick.liked_by || [],
       });
 
       return ApiResponse.success(
@@ -313,67 +319,32 @@ export default class PickController {
     }
   };
 
-  static cancel_like = async (req: any, res: any) => {
-    try {
-      const { user } = req.user;
-      const {
-        pick_id,
-      } = req.query;
-
-      // use nodecache to prevent multiple likes
-      const key = `pick_unlike_${pick_id}_${user._id}`;
-      if (cache.get(key)) {
-        return ApiResponse.error(
-          res,
-          ERROR_CODE,
-          ErrorType.Duplicate,
-          'You have already cancel like for this pick',
-        );
-      }
-
-      const pick = await get_pick(pick_id);
-      pick.likes -= 1;
-      await update_pick(pick_id, {
-        likes: pick.likes,
-      });
-
-      return ApiResponse.success(
-        res,
-        SuccessType.Updated,
-        pick,
-      );
-    } catch (error: any) {
-      return ApiResponse.error(
-        res,
-        error.statusCode || ERROR_CODE,
-        error.errorType || ErrorType.InternalError,
-        error.message || 'Failed to unlike pick',
-      );
-    }
-  };
-
   static dislike = async (req: any, res: any) => {
     try {
-      const { user } = req.user;
+      const { user } = req;
       const {
         pick_id,
       } = req.query;
 
       // use nodecache to prevent multiple likes
-      const key = `pick_dislike_${pick_id}_${user._id}`;
-      if (cache.get(key)) {
-        return ApiResponse.error(
-          res,
-          ERROR_CODE,
-          ErrorType.Duplicate,
-          'You have already dislike this pick',
+      let pick = await get_pick(pick_id);
+      if (pick.disliked_by?.includes(user._id)) {
+        pick.dislikes -= 1;
+        pick.disliked_by = pick.disliked_by?.filter(
+          (id: string) => id.toString() !== user._id.toString(),
         );
+      } else {
+        pick.dislikes += 1;
+        pick.disliked_by?.push(user._id);
       }
 
-      const pick = await get_pick(pick_id);
-      pick.dislikes += 1;
-      await update_pick(pick_id, {
+      if (pick.dislikes < 0) {
+        pick.dislikes = 0;
+      }
+
+      pick = await update_pick(pick_id, {
         dislikes: pick.dislikes,
+        disliked_by: pick.disliked_by || [],
       });
 
       return ApiResponse.success(
@@ -386,46 +357,7 @@ export default class PickController {
         res,
         error.statusCode || ERROR_CODE,
         error.errorType || ErrorType.InternalError,
-        error.message || 'Failed to dislike pick',
-      );
-    }
-  };
-
-  static cancel_dislike = async (req: any, res: any) => {
-    try {
-      const { user } = req.user;
-      const {
-        pick_id,
-      } = req.query;
-
-      // use nodecache to prevent multiple likes
-      const key = `pick_dislike_cancel_${pick_id}_${user._id}`;
-      if (cache.get(key)) {
-        return ApiResponse.error(
-          res,
-          ERROR_CODE,
-          ErrorType.Duplicate,
-          'You have already cancel dislike for this pick',
-        );
-      }
-
-      const pick = await get_pick(pick_id);
-      pick.dislikes -= 1;
-      await update_pick(pick_id, {
-        dislikes: pick.dislikes,
-      });
-
-      return ApiResponse.success(
-        res,
-        SuccessType.Updated,
-        pick,
-      );
-    } catch (error: any) {
-      return ApiResponse.error(
-        res,
-        error.statusCode || ERROR_CODE,
-        error.errorType || ErrorType.InternalError,
-        error.message || 'Failed to undislike pick',
+        error.message || 'Failed to like pick',
       );
     }
   };
@@ -437,20 +369,24 @@ export default class PickController {
         unique_click,
       } = req.query;
 
-      // use nodecache to prevent multiple likes
-      const key = `pick_click_${pick_id}_${unique_click}`;
-      if (cache.get(key)) {
-        return ApiResponse.error(
-          res,
-          ERROR_CODE,
-          ErrorType.Duplicate,
-          'You have already clicked this pick',
-        );
+      if (unique_click) {
+        // use nodecache to prevent multiple likes
+        const key = `pick_click_${pick_id}_${unique_click}`;
+        if (cache.get(key)) {
+          return ApiResponse.error(
+            res,
+            ERROR_CODE,
+            ErrorType.Duplicate,
+            'You have already clicked this pick',
+          );
+        }
+
+        cache.set(key, true);
       }
 
-      const pick = await get_pick(pick_id);
+      let pick = await get_pick(pick_id);
       pick.clicks += 1;
-      await update_pick(pick_id, {
+      pick = await update_pick(pick_id, {
         clicks: pick.clicks,
       });
 
@@ -471,9 +407,9 @@ export default class PickController {
 
   static reply = async (req: any, res: any) => {
     try {
-      const { user } = req.user;
+      const { user } = req;
+      const { pick_id } = req.query;
       const {
-        pick_id,
         body,
       } = req.body;
 
@@ -500,7 +436,7 @@ export default class PickController {
 
   static update_reply = async (req: any, res: any) => {
     try {
-      const { user } = req.user;
+      const { user } = req;
       const {
         reply_id,
         is_admin,
@@ -540,7 +476,7 @@ export default class PickController {
 
   static delete_reply = async (req: any, res: any) => {
     try {
-      const { user } = req.user;
+      const { user } = req;
       const {
         reply_id,
         is_admin,
@@ -610,26 +546,30 @@ export default class PickController {
 
   static like_reply = async (req: any, res: any) => {
     try {
-      const { user } = req.user;
+      const { user } = req;
       const {
         reply_id,
       } = req.query;
 
       // use nodecache to prevent multiple likes
-      const key = `pick_like_reply_${reply_id}_${user._id}`;
-      if (cache.get(key)) {
-        return ApiResponse.error(
-          res,
-          ERROR_CODE,
-          ErrorType.Duplicate,
-          'You have already like this reply',
+      let reply = await get_pick_reply(reply_id);
+      if (reply.liked_by?.includes(user._id)) {
+        reply.likes -= 1;
+        reply.liked_by = reply.liked_by?.filter(
+          (id: string) => id.toString() !== user._id.toString(),
         );
+      } else {
+        reply.likes += 1;
+        reply.liked_by?.push(user._id);
       }
 
-      const reply = await get_pick_reply(reply_id);
-      reply.likes += 1;
-      await update_pick_reply(reply_id, {
+      if (reply.likes < 0) {
+        reply.likes = 0;
+      }
+
+      reply = await update_pick_reply(reply_id, {
         likes: reply.likes,
+        liked_by: reply.liked_by || [],
       });
 
       return ApiResponse.success(
@@ -647,28 +587,32 @@ export default class PickController {
     }
   };
 
-  static cancel_like_reply = async (req: any, res: any) => {
+  static dislike_reply = async (req: any, res: any) => {
     try {
-      const { user } = req.user;
+      const { user } = req;
       const {
         reply_id,
       } = req.query;
 
       // use nodecache to prevent multiple likes
-      const key = `pick_unlike_reply_${reply_id}_${user._id}`;
-      if (cache.get(key)) {
-        return ApiResponse.error(
-          res,
-          ERROR_CODE,
-          ErrorType.Duplicate,
-          'You have already cancel like for this reply',
+      let reply = await get_pick_reply(reply_id);
+      if (reply.disliked_by?.includes(user._id)) {
+        reply.dislikes -= 1;
+        reply.disliked_by = reply.disliked_by?.filter(
+          (id: string) => id.toString() !== user._id.toString(),
         );
+      } else {
+        reply.dislikes += 1;
+        reply.disliked_by?.push(user._id);
       }
 
-      const reply = await get_pick_reply(reply_id);
-      reply.likes -= 1;
-      await update_pick_reply(reply_id, {
-        likes: reply.likes,
+      if (reply.dislikes < 0) {
+        reply.dislikes = 0;
+      }
+
+      reply = await update_pick_reply(reply_id, {
+        dislikes: reply.dislikes,
+        disliked_by: reply.disliked_by || [],
       });
 
       return ApiResponse.success(
@@ -681,7 +625,37 @@ export default class PickController {
         res,
         error.statusCode || ERROR_CODE,
         error.errorType || ErrorType.InternalError,
-        error.message || 'Failed to unlike reply',
+        error.message || 'Failed to like reply',
+      );
+    }
+  };
+
+  static get_pick_link_meta = async (req: any, res: any) => {
+    try {
+      const { link } = req.body;
+
+      const meta = await get_link_meta(link);
+      console.log(meta);
+
+      const payload = {
+        link,
+        title: meta.title,
+        description: meta.description,
+        image: meta.image,
+        favicon: meta.favicon,
+      };
+
+      return ApiResponse.success(
+        res,
+        SuccessType.Retrieved,
+        payload,
+      );
+    } catch (error: any) {
+      return ApiResponse.error(
+        res,
+        error.statusCode || ERROR_CODE,
+        error.errorType || ErrorType.InternalError,
+        error.message || 'Failed to retrieve link meta',
       );
     }
   };

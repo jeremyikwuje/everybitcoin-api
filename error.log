@@ -4635,3 +4635,139 @@
 2024-12-23T21:25:58.707Z [31merror[39m: Validation Failed
 2024-12-23T21:30:02.539Z [31merror[39m: Value must be a number
 2024-12-23T21:30:02.540Z [31merror[39m: Value must be a number
+2024-12-24T07:49:55.087Z [31merror[39m: Error connecting to DB app-db: querySrv ETIMEOUT _mongodb._tcp.palremit0.8lck9ch.mongodb.net
+2024-12-24T07:50:10.098Z [31merror[39m: Operation `currency_rates.find()` buffering timed out after 10000ms
+2024-12-24T07:50:10.099Z [31merror[39m: Operation `currency_rates.find()` buffering timed out after 10000ms
+2024-12-24T07:51:27.871Z [31merror[39m: Cannot read properties of undefined (reading '_id')
+2024-12-24T07:52:37.129Z [31merror[39m: No account found
+2024-12-24T07:52:48.982Z [31merror[39m: Pricing record not found
+2024-12-24T07:53:04.393Z [31merror[39m: Validation Failed
+2024-12-24T07:53:16.429Z [31merror[39m: No account found
+2024-12-24T07:53:16.475Z [31merror[39m: Error: No account found
+    at /Users/jeremy/source/apps/everybitcoin/everybitcoin-api/src/modules/auth/auth.controller.ts:208:13
+    at Generator.throw (<anonymous>)
+    at rejected (/Users/jeremy/source/apps/everybitcoin/everybitcoin-api/src/modules/auth/auth.controller.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2024-12-24T07:58:38.928Z [31merror[39m: Validation Failed
+2024-12-24T08:00:01.941Z [31merror[39m: Value must be a number
+2024-12-24T08:00:01.942Z [31merror[39m: Value must be a number
+2024-12-24T08:02:12.538Z [31merror[39m: Error adding source: Unable to add source: Source already exists
+2024-12-24T08:02:26.361Z [31merror[39m: Validation Failed
+2024-12-24T08:02:55.734Z [31merror[39m: Validation Failed
+2024-12-24T08:03:03.302Z [31merror[39m: Validation Failed
+2024-12-24T08:03:47.931Z [31merror[39m: Validation Failed
+2024-12-24T08:06:12.566Z [31merror[39m: Validation Failed
+2024-12-24T08:06:15.032Z [31merror[39m: Validation Failed
+2024-12-24T08:06:25.710Z [31merror[39m: Validation Failed
+2024-12-24T08:07:13.597Z [31merror[39m: Validation Failed
+2024-12-24T08:07:19.433Z [31merror[39m: Validation Failed
+2024-12-24T08:07:24.486Z [31merror[39m: Validation Failed
+2024-12-24T08:07:48.032Z [31merror[39m: Validation Failed
+2024-12-24T08:08:29.798Z [31merror[39m: Validation Failed
+2024-12-24T08:08:36.587Z [31merror[39m: Validation Failed
+2024-12-24T08:08:42.045Z [31merror[39m: TypeError: Cannot destructure property 'user' of 'req.user' as it is undefined.
+    at /Users/jeremy/source/apps/everybitcoin/everybitcoin-api/src/modules/picks/picks.controller.ts:121:13
+    at Generator.next (<anonymous>)
+    at /Users/jeremy/source/apps/everybitcoin/everybitcoin-api/src/modules/picks/picks.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/jeremy/source/apps/everybitcoin/everybitcoin-api/src/modules/picks/picks.controller.ts:4:12)
+    at PickController.add_pick (/Users/jeremy/source/apps/everybitcoin/everybitcoin-api/src/modules/picks/picks.controller.ts:120:50)
+    at /Users/jeremy/source/apps/everybitcoin/everybitcoin-api/src/utils/async-wrapper.ts:5:22
+    at Layer.handle [as handle_request] (/Users/jeremy/source/apps/everybitcoin/everybitcoin-api/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jeremy/source/apps/everybitcoin/everybitcoin-api/node_modules/express/lib/router/route.js:149:13)
+    at /Users/jeremy/source/apps/everybitcoin/everybitcoin-api/node_modules/express-validation/lib/index.js:44:9
+2024-12-24T08:10:02.180Z [31merror[39m: Value must be a number
+2024-12-24T08:10:02.182Z [31merror[39m: Value must be a number
+2024-12-24T08:15:24.505Z [31merror[39m: Invalid access
+2024-12-24T08:20:02.137Z [31merror[39m: Value must be a number
+2024-12-24T08:20:02.138Z [31merror[39m: Value must be a number
+2024-12-24T08:25:20.106Z [31merror[39m: Invalid access
+2024-12-24T08:26:11.281Z [31merror[39m: Invalid access
+2024-12-24T08:30:02.167Z [31merror[39m: Value must be a number
+2024-12-24T08:30:02.168Z [31merror[39m: Value must be a number
+2024-12-24T08:36:14.547Z [31merror[39m: The key argument has to be of type `string` or `number`. Found: `undefined`
+2024-12-24T08:40:02.317Z [31merror[39m: Value must be a number
+2024-12-24T08:40:02.318Z [31merror[39m: Value must be a number
+2024-12-24T08:50:01.586Z [31merror[39m: Value must be a number
+2024-12-24T08:50:01.586Z [31merror[39m: Value must be a number
+2024-12-24T09:10:01.696Z [31merror[39m: Value must be a number
+2024-12-24T09:10:01.699Z [31merror[39m: Value must be a number
+2024-12-24T09:20:02.383Z [31merror[39m: Value must be a number
+2024-12-24T09:20:02.384Z [31merror[39m: Value must be a number
+2024-12-24T09:29:54.356Z [31merror[39m: Validation Failed
+2024-12-24T09:30:01.895Z [31merror[39m: Value must be a number
+2024-12-24T09:30:01.895Z [31merror[39m: Value must be a number
+2024-12-24T09:40:01.608Z [31merror[39m: Value must be a number
+2024-12-24T09:40:01.609Z [31merror[39m: Value must be a number
+2024-12-24T09:50:03.328Z [31merror[39m: Value must be a number
+2024-12-24T09:50:03.329Z [31merror[39m: Value must be a number
+2024-12-24T10:00:01.903Z [31merror[39m: Value must be a number
+2024-12-24T10:00:01.904Z [31merror[39m: Value must be a number
+2024-12-24T10:10:02.478Z [31merror[39m: Value must be a number
+2024-12-24T10:10:02.480Z [31merror[39m: Value must be a number
+2024-12-24T10:20:02.445Z [31merror[39m: Value must be a number
+2024-12-24T10:20:02.445Z [31merror[39m: Value must be a number
+2024-12-24T10:30:03.041Z [31merror[39m: Value must be a number
+2024-12-24T10:30:03.043Z [31merror[39m: Value must be a number
+2024-12-24T10:40:02.006Z [31merror[39m: Value must be a number
+2024-12-24T10:40:02.006Z [31merror[39m: Value must be a number
+2024-12-24T10:50:01.887Z [31merror[39m: Value must be a number
+2024-12-24T10:50:01.888Z [31merror[39m: Value must be a number
+2024-12-24T11:00:02.377Z [31merror[39m: Value must be a number
+2024-12-24T11:00:02.378Z [31merror[39m: Value must be a number
+2024-12-24T11:10:03.767Z [31merror[39m: Value must be a number
+2024-12-24T11:10:03.767Z [31merror[39m: Value must be a number
+2024-12-24T11:20:02.221Z [31merror[39m: Value must be a number
+2024-12-24T11:20:02.222Z [31merror[39m: Value must be a number
+2024-12-24T11:30:01.692Z [31merror[39m: Value must be a number
+2024-12-24T11:30:01.692Z [31merror[39m: Value must be a number
+2024-12-24T11:40:04.675Z [31merror[39m: Value must be a number
+2024-12-24T11:40:04.675Z [31merror[39m: Value must be a number
+2024-12-24T11:50:02.059Z [31merror[39m: Value must be a number
+2024-12-24T11:50:02.059Z [31merror[39m: Value must be a number
+2024-12-24T12:00:02.085Z [31merror[39m: Value must be a number
+2024-12-24T12:00:02.086Z [31merror[39m: Value must be a number
+2024-12-24T12:50:03.370Z [31merror[39m: Value must be a number
+2024-12-24T12:50:03.370Z [31merror[39m: Value must be a number
+2024-12-24T13:00:02.439Z [31merror[39m: Value must be a number
+2024-12-24T13:00:02.439Z [31merror[39m: Value must be a number
+2024-12-24T13:10:02.144Z [31merror[39m: Value must be a number
+2024-12-24T13:10:02.144Z [31merror[39m: Value must be a number
+2024-12-24T13:20:02.558Z [31merror[39m: Value must be a number
+2024-12-24T13:20:02.559Z [31merror[39m: Value must be a number
+2024-12-24T13:30:01.575Z [31merror[39m: Value must be a number
+2024-12-24T13:30:01.576Z [31merror[39m: Value must be a number
+2024-12-24T13:40:01.860Z [31merror[39m: Value must be a number
+2024-12-24T13:40:01.860Z [31merror[39m: Value must be a number
+2024-12-24T13:50:02.434Z [31merror[39m: Value must be a number
+2024-12-24T13:50:02.434Z [31merror[39m: Value must be a number
+2024-12-24T14:00:02.250Z [31merror[39m: Value must be a number
+2024-12-24T14:00:02.250Z [31merror[39m: Value must be a number
+2024-12-24T14:10:01.979Z [31merror[39m: Value must be a number
+2024-12-24T14:10:01.980Z [31merror[39m: Value must be a number
+2024-12-24T14:20:01.666Z [31merror[39m: Value must be a number
+2024-12-24T14:20:01.667Z [31merror[39m: Value must be a number
+2024-12-24T14:30:01.461Z [31merror[39m: Value must be a number
+2024-12-24T14:30:01.462Z [31merror[39m: Value must be a number
+2024-12-24T15:50:03.364Z [31merror[39m: Value must be a number
+2024-12-24T15:50:03.364Z [31merror[39m: Value must be a number
+2024-12-24T15:53:15.431Z [31merror[39m: Validation Failed
+2024-12-24T16:00:01.568Z [31merror[39m: Value must be a number
+2024-12-24T16:00:01.569Z [31merror[39m: Value must be a number
+2024-12-24T16:40:02.341Z [31merror[39m: Value must be a number
+2024-12-24T16:40:02.342Z [31merror[39m: Value must be a number
+2024-12-24T16:50:04.418Z [31merror[39m: Value must be a number
+2024-12-24T16:50:04.419Z [31merror[39m: Value must be a number
+2024-12-24T16:52:42.773Z [31merror[39m: Validation Failed
+2024-12-24T16:54:26.227Z [31merror[39m: Operation `users.findOne()` buffering timed out after 10000ms
+2024-12-24T16:55:08.089Z [31merror[39m: Error connecting to DB app-db: Connection to ac-8pfridd-shard-00-02.8lck9ch.mongodb.net:27017 interrupted due to server monitor timeout
+2024-12-24T16:57:15.331Z [31merror[39m: Operation `users.findOne()` buffering timed out after 10000ms
+2024-12-24T17:06:58.585Z [31merror[39m: Validation Failed
+2024-12-24T17:20:02.533Z [31merror[39m: Value must be a number
+2024-12-24T17:20:02.534Z [31merror[39m: Value must be a number
+2024-12-25T09:30:02.625Z [31merror[39m: Value must be a number
+2024-12-25T09:30:02.626Z [31merror[39m: Value must be a number
+2024-12-25T09:50:04.133Z [31merror[39m: Value must be a number
+2024-12-25T09:50:04.133Z [31merror[39m: Value must be a number
+2024-12-25T10:10:03.067Z [31merror[39m: Value must be a number
+2024-12-25T10:10:03.068Z [31merror[39m: Value must be a number

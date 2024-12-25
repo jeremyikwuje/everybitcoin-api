@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 import httpStatus from 'http-status';
+import * as cheerio from 'cheerio';
 
 import APIError from '../../utils/api-error';
 import { ErrorType } from '../../utils/api-response';
@@ -263,5 +264,30 @@ export const delete_author_reply_from_pick = async (reply_id: string, author: st
       httpStatus.NOT_IMPLEMENTED,
       ErrorType.InternalError,
     );
+  }
+};
+
+export const get_link_meta = async (link: string) => {
+  try {
+    const response = await fetch(link);
+    const html = await response.text();
+    const $ = cheerio.load(html);
+
+    const title = $('head > title').text() || '';
+    const description = $('meta[name="description"]').attr('content') || '';
+    const favicon = $('link[rel="icon"]').attr('href') || $('link[rel="shortcut icon"]').attr('href') || '';
+    const ogImage = $('meta[property="og:image"]').attr('content') || '';
+
+    const meta: any = {
+      title,
+      description,
+      favicon: favicon.startsWith('http') ? favicon : new URL(favicon, link).href,
+      image: ogImage,
+    };
+
+    return meta;
+  } catch (error) {
+    console.error('Error fetching link meta:', error);
+    return null;
   }
 };

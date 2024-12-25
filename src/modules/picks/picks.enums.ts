@@ -37,7 +37,9 @@ export interface IPickUpdate {
   is_published?: boolean;
   picked_by?: string;
   likes?: number;
+  liked_by?: string[];
   dislikes?: number;
+  disliked_by?: string[];
   clicks?: number;
   replies?: number;
   reports?: number;
@@ -56,7 +58,7 @@ export interface IPickCreate {
   tags: string[];
   source: string;
   source_name: string;
-  published_by: string;
+  picked_by: string;
   is_published?: boolean;
 }
 
@@ -82,7 +84,9 @@ export interface IReplyCreate {
 export interface IReplyUpdate {
   body?: string;
   likes?: number;
+  liked_by?: string[];
   dislikes?: number;
+  disliked_by?: string[];
   is_flagged?: boolean;
 }
 

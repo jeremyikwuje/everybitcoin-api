@@ -8,6 +8,12 @@ import {
 } from './picks.enums';
 
 export const PickValidation = {
+  get_pick_link_meta: {
+    body: Joi.object({
+      link: Joi.string().required().uri().lowercase()
+        .trim(),
+    }),
+  },
   get_pick: {
     query: Joi.object({
       pick_id: Joi.string().required(),
@@ -38,7 +44,7 @@ export const PickValidation = {
         .trim(),
       type: Joi.string().required().valid(...Object.values(PickType)).default(PickType.Pick),
       approval_status: Joi.string()
-        .required()
+        .optional()
         .valid(...Object.values(PickStatus))
         .default(PickStatus.Pending),
       visibility: Joi.string()
@@ -50,8 +56,7 @@ export const PickValidation = {
         .default([PickTags.Bitcoin]),
       source: Joi.string().required(),
       source_name: Joi.string().required().max(100),
-      published_by: Joi.string().required().hex().length(24),
-      is_published: Joi.boolean().default(true),
+      is_published: Joi.boolean().optional().default(true),
     }),
   },
   update_pick: {
@@ -78,7 +83,7 @@ export const PickValidation = {
   click: {
     query: Joi.object({
       pick_id: Joi.string().required(),
-      unique_click: Joi.string().required(),
+      unique_click: Joi.string().optional(),
     }),
   },
   like: {
@@ -99,10 +104,12 @@ export const PickValidation = {
       is_sorted: Joi.boolean().default(true),
     }),
   },
-  reply: {
+  reply_pick: {
+    query: Joi.object({
+      pick_id: Joi.string().required(),
+    }),
     body: Joi.object({
-      pick: Joi.string().required(),
-      body: Joi.string().required(),
+      body: Joi.string().required().max(280).min(3),
     }),
   },
   like_reply: {

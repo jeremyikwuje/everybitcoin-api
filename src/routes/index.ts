@@ -6,11 +6,13 @@ import CurrencyRoutes from '../modules/currencies/currency.routes';
 import CronjobRoutes from '../modules/cronjobs/cronjob.routes';
 import MilestoneRoutes from '../modules/milestones/milestone.routes';
 import PriceRoutes from '../modules/prices/price.routes';
-import PickRoutes from '../modules/news/picks.routes';
+import PickRoutes from '../modules/picks/picks.routes';
 import SourceRoutes from '../modules/sources/source.routes';
 import FundingRoutes from '../modules/funding/funding.routes';
 import UserRoutes from '../modules/users/user.routes';
 import AuthRoutes from '../modules/auth/auth.routes';
+import Pricing from '../modules/pricing/pricing.routes';
+import { user_middleware } from '../middlewares/user.middleware';
 
 const router = Router();
 
@@ -71,12 +73,18 @@ router.use(
 
 router.use(
   '/users',
+  user_middleware,
   UserRoutes,
 );
 
 router.use(
   '/auth',
   AuthRoutes,
+);
+
+router.use(
+  '/pricing',
+  Pricing,
 );
 
 export default router;

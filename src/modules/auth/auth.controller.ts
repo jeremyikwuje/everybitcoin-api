@@ -108,9 +108,11 @@ export default class AuthControlelr {
 
       // prepare jwt payload
       const payload = {
-        id: user.id,
+        id: user._id.toString(),
         email: user.email,
       };
+
+      console.log('payload', payload);
 
       // encode jwt
       const encode_jwt = jwt.sign(payload, Config.jwtSecret);
