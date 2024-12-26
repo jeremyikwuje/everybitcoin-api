@@ -4,7 +4,7 @@ import ApiResponse, { ErrorType } from '../utils/api-response';
 import logger from '../logger/logger';
 import Config from '../config/config';
 import { get_user } from '../modules/users/user.service';
-import { generate_SHA256 } from '../utils/utilities';
+import { generate_sha_256 } from '../utils/utilities';
 import APIError from '../utils/api-error';
 
 const node_cache = new NodeCache({ stdTTL: 100, checkperiod: 300 });
@@ -29,7 +29,7 @@ export const apiMiddleware = async (
       req.user = cache;
     } else {
       // get the user from db
-      const hashed_api_key = generate_SHA256(api_key);
+      const hashed_api_key = generate_sha_256(api_key);
       req.user = await get_user(hashed_api_key);
       if (!req.user) {
         throw new APIError(
@@ -51,7 +51,7 @@ export const apiMiddleware = async (
     }
     if (req.user.usage.credit < Config.default_cost_per_request) {
       throw new APIError(
-        `You have low credits. Please visit ${Config.app_url}/credits to buy more credits.`,
+        `You have low credits. Please visit ${Config.publicUrl}/credits to buy more credits.`,
         FORBIDDEN,
         ErrorType.NoCredit,
       );

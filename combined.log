@@ -31345,3 +31345,298 @@
 2024-12-25T10:13:44.218Z [32minfo[39m: Server running on port http://localhost:4000
 2024-12-25T10:13:44.219Z [32minfo[39m: Cron started successfully as at Wed Dec 25 2024 12:13:44 GMT+0200 (Eastern European Standard Time)
 2024-12-25T10:13:46.937Z [32minfo[39m: Connected to app-db
+2024-12-25T10:20:00.701Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T10:20:03.458Z [31merror[39m: Value must be a number
+2024-12-25T10:20:03.459Z [31merror[39m: Value must be a number
+2024-12-25T19:00:00.373Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T19:00:30.386Z [31merror[39m: getaddrinfo ENOTFOUND ac-8pfridd-shard-00-00.8lck9ch.mongodb.net
+2024-12-25T19:00:30.387Z [31merror[39m: getaddrinfo ENOTFOUND ac-8pfridd-shard-00-00.8lck9ch.mongodb.net
+2024-12-25T19:12:28.571Z [32minfo[39m: Connected to app-db
+2024-12-25T19:12:32.036Z [32minfo[39m: Connected to app-db
+2024-12-25T19:18:55.357Z [32minfo[39m: Connected to app-db
+2024-12-25T19:20:00.188Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T19:20:30.198Z [31merror[39m: connection <monitor> to 54.225.32.117:27017 timed out
+2024-12-25T19:20:30.200Z [31merror[39m: connection <monitor> to 54.225.32.117:27017 timed out
+2024-12-25T19:30:00.982Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T19:30:30.994Z [31merror[39m: connection timed out
+2024-12-25T19:30:30.995Z [31merror[39m: connection timed out
+2024-12-25T19:40:00.896Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T19:40:30.909Z [31merror[39m: connection timed out
+2024-12-25T19:40:30.919Z [31merror[39m: connection timed out
+2024-12-25T19:50:00.566Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T19:50:30.575Z [31merror[39m: connection timed out
+2024-12-25T19:50:30.576Z [31merror[39m: connection timed out
+2024-12-25T19:52:44.736Z [32minfo[39m: Connected to app-db
+2024-12-25T20:00:00.334Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T20:00:02.020Z [31merror[39m: Value must be a number
+2024-12-25T20:00:02.020Z [31merror[39m: Value must be a number
+2024-12-25T20:10:00.066Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T20:10:02.024Z [31merror[39m: Value must be a number
+2024-12-25T20:10:02.024Z [31merror[39m: Value must be a number
+2024-12-25T20:20:00.922Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T20:20:02.669Z [31merror[39m: Value must be a number
+2024-12-25T20:20:02.671Z [31merror[39m: Value must be a number
+2024-12-25T20:30:00.638Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T20:30:02.391Z [31merror[39m: Value must be a number
+2024-12-25T20:30:02.392Z [31merror[39m: Value must be a number
+2024-12-25T20:40:00.388Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T20:40:10.354Z [32minfo[39m: Connected to app-db
+2024-12-25T20:40:20.026Z [31merror[39m: Value must be a number
+2024-12-25T20:40:20.028Z [31merror[39m: Value must be a number
+2024-12-25T20:50:00.158Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T20:50:01.990Z [31merror[39m: Value must be a number
+2024-12-25T20:50:01.991Z [31merror[39m: Value must be a number
+2024-12-25T21:00:00.925Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T21:00:02.835Z [31merror[39m: Value must be a number
+2024-12-25T21:00:02.836Z [31merror[39m: Value must be a number
+2024-12-25T21:10:00.442Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T21:10:01.948Z [31merror[39m: Value must be a number
+2024-12-25T21:10:01.948Z [31merror[39m: Value must be a number
+2024-12-25T21:17:41.560Z [32minfo[39m: Connected to app-db
+2024-12-25T21:20:00.370Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T21:20:03.524Z [31merror[39m: Value must be a number
+2024-12-25T21:20:03.525Z [31merror[39m: Value must be a number
+2024-12-25T21:21:41.174Z [32minfo[39m: Connected to app-db
+2024-12-25T21:23:18.916Z [32minfo[39m: Connected to app-db
+2024-12-25T21:24:51.221Z [32minfo[39m: Connected to app-db
+2024-12-25T21:26:28.514Z [32minfo[39m: Connected to app-db
+2024-12-25T21:29:53.109Z [32minfo[39m: Connected to app-db
+2024-12-25T21:30:00.616Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T21:30:15.442Z [31merror[39m: Value must be a number
+2024-12-25T21:30:15.505Z [31merror[39m: Value must be a number
+2024-12-25T21:40:00.063Z [32minfo[39m: Updating BTC rates from external api
+2024-12-25T21:40:02.092Z [31merror[39m: Value must be a number
+2024-12-25T21:40:02.093Z [31merror[39m: Value must be a number
+2024-12-25T22:20:42.448Z [32minfo[39m: Connected to app-db
+2024-12-25T23:10:51.234Z [32minfo[39m: Connected to app-db
+2024-12-25T23:44:12.713Z [32minfo[39m: Connected to app-db
+2024-12-26T00:16:13.733Z [32minfo[39m: Connected to app-db
+2024-12-26T00:47:45.705Z [32minfo[39m: Connected to app-db
+2024-12-26T01:22:05.768Z [32minfo[39m: Connected to app-db
+2024-12-26T01:56:40.011Z [32minfo[39m: Connected to app-db
+2024-12-26T02:27:38.857Z [32minfo[39m: Connected to app-db
+2024-12-26T02:59:25.706Z [32minfo[39m: Connected to app-db
+2024-12-26T03:33:34.860Z [32minfo[39m: Connected to app-db
+2024-12-26T03:49:46.876Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-26T03:49:46.878Z [32minfo[39m: Cron started successfully as at Thu Dec 26 2024 05:49:46 GMT+0200 (Eastern European Standard Time)
+2024-12-26T03:49:49.500Z [32minfo[39m: Connected to app-db
+2024-12-26T03:50:00.899Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T03:50:16.551Z [31merror[39m: Client network socket disconnected before secure TLS connection was established
+2024-12-26T03:50:46.822Z [31merror[39m: Error in XE rates: Error: Client network socket disconnected before secure TLS connection was established
+2024-12-26T03:50:46.824Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.827Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.827Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.828Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.828Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.829Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.829Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.829Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.830Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.830Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.830Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.830Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.830Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.830Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.830Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.830Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.831Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.831Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.831Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.831Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.831Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.831Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.831Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:50:46.837Z [31merror[39m: Value must be a number
+2024-12-26T03:54:18.907Z [32minfo[39m: Connected to app-db
+2024-12-26T04:00:00.747Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T04:00:02.665Z [31merror[39m: Value must be a number
+2024-12-26T04:00:02.666Z [31merror[39m: Value must be a number
+2024-12-26T04:10:00.666Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T04:10:02.640Z [31merror[39m: Value must be a number
+2024-12-26T04:10:02.641Z [31merror[39m: Value must be a number
+2024-12-26T04:20:00.491Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T04:20:02.136Z [31merror[39m: Value must be a number
+2024-12-26T04:20:02.137Z [31merror[39m: Value must be a number
+2024-12-26T04:30:00.278Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T04:30:01.637Z [31merror[39m: Value must be a number
+2024-12-26T04:30:01.637Z [31merror[39m: Value must be a number
+2024-12-26T04:40:00.121Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T04:40:01.661Z [31merror[39m: Value must be a number
+2024-12-26T04:40:01.662Z [31merror[39m: Value must be a number
+2024-12-26T04:50:00.155Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T04:50:01.802Z [31merror[39m: Value must be a number
+2024-12-26T04:50:01.803Z [31merror[39m: Value must be a number
+2024-12-26T05:00:00.070Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T05:00:01.595Z [31merror[39m: Value must be a number
+2024-12-26T05:00:01.596Z [31merror[39m: Value must be a number
+2024-12-26T05:10:00.175Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T05:10:02.371Z [31merror[39m: Value must be a number
+2024-12-26T05:10:02.372Z [31merror[39m: Value must be a number
+2024-12-26T05:20:00.947Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T05:20:02.808Z [31merror[39m: Value must be a number
+2024-12-26T05:20:02.809Z [31merror[39m: Value must be a number
+2024-12-26T05:30:00.536Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T05:30:01.953Z [31merror[39m: Value must be a number
+2024-12-26T05:30:01.953Z [31merror[39m: Value must be a number
+2024-12-26T05:40:00.728Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T05:40:01.876Z [31merror[39m: Value must be a number
+2024-12-26T05:40:01.877Z [31merror[39m: Value must be a number
+2024-12-26T05:50:00.378Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T05:50:02.243Z [31merror[39m: Value must be a number
+2024-12-26T05:50:02.244Z [31merror[39m: Value must be a number
+2024-12-26T06:00:00.067Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T06:00:01.244Z [31merror[39m: Value must be a number
+2024-12-26T06:00:01.245Z [31merror[39m: Value must be a number
+2024-12-26T06:10:00.752Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T06:10:02.184Z [31merror[39m: Value must be a number
+2024-12-26T06:10:02.185Z [31merror[39m: Value must be a number
+2024-12-26T06:20:00.698Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T06:20:02.037Z [31merror[39m: Value must be a number
+2024-12-26T06:20:02.038Z [31merror[39m: Value must be a number
+2024-12-26T06:30:00.388Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T06:30:01.642Z [31merror[39m: Value must be a number
+2024-12-26T06:30:01.643Z [31merror[39m: Value must be a number
+2024-12-26T06:40:00.416Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T06:40:01.996Z [31merror[39m: Value must be a number
+2024-12-26T06:40:01.997Z [31merror[39m: Value must be a number
+2024-12-26T06:50:00.964Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T06:50:02.010Z [31merror[39m: Value must be a number
+2024-12-26T06:50:02.010Z [31merror[39m: Value must be a number
+2024-12-26T07:00:00.602Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T07:00:02.303Z [31merror[39m: Value must be a number
+2024-12-26T07:00:02.303Z [31merror[39m: Value must be a number
+2024-12-26T07:10:00.295Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T07:10:01.969Z [31merror[39m: Value must be a number
+2024-12-26T07:10:01.970Z [31merror[39m: Value must be a number
+2024-12-26T07:20:00.035Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T07:20:01.136Z [31merror[39m: Value must be a number
+2024-12-26T07:20:01.136Z [31merror[39m: Value must be a number
+2024-12-26T07:30:00.644Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T07:30:02.097Z [31merror[39m: Value must be a number
+2024-12-26T07:30:02.097Z [31merror[39m: Value must be a number
+2024-12-26T07:40:00.263Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T07:40:01.552Z [31merror[39m: Value must be a number
+2024-12-26T07:40:01.553Z [31merror[39m: Value must be a number
+2024-12-26T07:50:00.953Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T07:50:02.253Z [31merror[39m: Value must be a number
+2024-12-26T07:50:02.253Z [31merror[39m: Value must be a number
+2024-12-26T08:00:00.572Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T08:00:01.749Z [31merror[39m: Value must be a number
+2024-12-26T08:00:01.749Z [31merror[39m: Value must be a number
+2024-12-26T08:10:00.338Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T08:10:01.986Z [31merror[39m: Value must be a number
+2024-12-26T08:10:01.986Z [31merror[39m: Value must be a number
+2024-12-26T08:20:00.953Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T08:20:02.390Z [31merror[39m: Value must be a number
+2024-12-26T08:20:02.390Z [31merror[39m: Value must be a number
+2024-12-26T08:30:00.783Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T08:30:02.087Z [31merror[39m: Value must be a number
+2024-12-26T08:30:02.088Z [31merror[39m: Value must be a number
+2024-12-26T08:40:00.547Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T08:40:01.895Z [31merror[39m: Value must be a number
+2024-12-26T08:40:01.896Z [31merror[39m: Value must be a number
+2024-12-26T08:42:03.435Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-26T08:42:03.440Z [32minfo[39m: Cron started successfully as at Thu Dec 26 2024 10:42:03 GMT+0200 (Eastern European Standard Time)
+2024-12-26T08:42:07.362Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-26T08:42:07.364Z [32minfo[39m: Cron started successfully as at Thu Dec 26 2024 10:42:07 GMT+0200 (Eastern European Standard Time)
+2024-12-26T08:42:09.666Z [32minfo[39m: Connected to app-db
+2024-12-26T08:50:00.018Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T08:50:01.704Z [31merror[39m: Value must be a number
+2024-12-26T08:50:01.705Z [31merror[39m: Value must be a number
+2024-12-26T09:00:00.765Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T09:00:02.425Z [31merror[39m: Value must be a number
+2024-12-26T09:00:02.426Z [31merror[39m: Value must be a number
+2024-12-26T09:10:00.656Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T09:10:04.216Z [31merror[39m: Value must be a number
+2024-12-26T09:10:04.218Z [31merror[39m: Value must be a number
+2024-12-26T09:20:00.238Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T09:20:01.524Z [31merror[39m: Value must be a number
+2024-12-26T09:20:01.525Z [31merror[39m: Value must be a number
+2024-12-26T09:30:00.064Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T09:30:01.498Z [31merror[39m: Value must be a number
+2024-12-26T09:30:01.499Z [31merror[39m: Value must be a number
+2024-12-26T09:40:00.881Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T09:40:02.556Z [31merror[39m: Value must be a number
+2024-12-26T09:40:02.556Z [31merror[39m: Value must be a number
+2024-12-26T09:50:00.788Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T09:50:03.448Z [31merror[39m: Value must be a number
+2024-12-26T09:50:03.449Z [31merror[39m: Value must be a number
+2024-12-26T10:00:00.442Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T10:00:01.736Z [31merror[39m: Value must be a number
+2024-12-26T10:00:01.737Z [31merror[39m: Value must be a number
+2024-12-26T10:10:00.210Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T10:10:01.832Z [31merror[39m: Value must be a number
+2024-12-26T10:10:01.832Z [31merror[39m: Value must be a number
+2024-12-26T10:20:00.891Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T10:20:02.186Z [31merror[39m: Value must be a number
+2024-12-26T10:20:02.186Z [31merror[39m: Value must be a number
+2024-12-26T10:30:00.498Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T10:30:01.906Z [31merror[39m: Value must be a number
+2024-12-26T10:30:01.907Z [31merror[39m: Value must be a number
+2024-12-26T10:40:00.414Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T10:40:02.190Z [31merror[39m: Value must be a number
+2024-12-26T10:40:02.191Z [31merror[39m: Value must be a number
+2024-12-26T10:50:00.388Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T10:50:01.816Z [31merror[39m: Value must be a number
+2024-12-26T10:50:01.818Z [31merror[39m: Value must be a number
+2024-12-26T11:00:00.006Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T11:00:01.481Z [31merror[39m: Value must be a number
+2024-12-26T11:00:01.481Z [31merror[39m: Value must be a number
+2024-12-26T11:10:00.588Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T11:10:02.633Z [31merror[39m: Value must be a number
+2024-12-26T11:10:02.633Z [31merror[39m: Value must be a number
+2024-12-26T11:20:00.270Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T11:20:02.347Z [31merror[39m: Value must be a number
+2024-12-26T11:20:02.348Z [31merror[39m: Value must be a number
+2024-12-26T11:30:00.032Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T11:30:02.202Z [31merror[39m: Value must be a number
+2024-12-26T11:30:02.202Z [31merror[39m: Value must be a number
+2024-12-26T11:40:00.822Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T11:40:02.590Z [31merror[39m: Value must be a number
+2024-12-26T11:40:02.591Z [31merror[39m: Value must be a number
+2024-12-26T11:50:00.486Z [32minfo[39m: Updating BTC rates from external api
+2024-12-26T11:50:02.111Z [31merror[39m: Value must be a number
+2024-12-26T11:50:02.111Z [31merror[39m: Value must be a number
+2024-12-26T11:50:45.447Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-26T11:50:45.449Z [32minfo[39m: Cron started successfully as at Thu Dec 26 2024 13:50:45 GMT+0200 (Eastern European Standard Time)
+2024-12-26T11:50:50.335Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-26T11:50:50.337Z [32minfo[39m: Cron started successfully as at Thu Dec 26 2024 13:50:50 GMT+0200 (Eastern European Standard Time)
+2024-12-26T11:50:52.587Z [32minfo[39m: Connected to app-db
+2024-12-26T11:51:12.860Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-26T11:51:12.862Z [32minfo[39m: Cron started successfully as at Thu Dec 26 2024 13:51:12 GMT+0200 (Eastern European Standard Time)
+2024-12-26T11:51:15.131Z [32minfo[39m: Connected to app-db
+2024-12-26T11:51:58.133Z [32minfo[39m: Server running on port http://localhost:4000
+2024-12-26T11:51:58.136Z [32minfo[39m: Cron started successfully as at Thu Dec 26 2024 13:51:58 GMT+0200 (Eastern European Standard Time)
+2024-12-26T11:52:00.375Z [32minfo[39m: Connected to app-db
