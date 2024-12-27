@@ -33109,3 +33109,4 @@
 2024-12-27T14:42:01.081Z [31merror[39m: Value must be a number
 2024-12-27T14:42:19.075Z [32minfo[39m: Server running on port http://localhost:4000
 2024-12-27T14:42:19.081Z [32minfo[39m: Cron started successfully as at Fri Dec 27 2024 16:42:19 GMT+0200 (Eastern European Standard Time)
+2024-12-27T14:42:25.252Z [32minfo[39m: Connected to app-db
