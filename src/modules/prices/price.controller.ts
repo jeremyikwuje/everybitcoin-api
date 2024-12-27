@@ -74,7 +74,8 @@ export default class PriceController {
       } = req.body;
 
       const get_rate = await get_currency_price(base);
-      let { quotes } = get_rate;
+      let { quotes }: any = get_rate;
+
       if (!quotes) {
         quotes = {};
       }
@@ -87,10 +88,7 @@ export default class PriceController {
         );
       }
 
-      quotes = {
-        ...quotes,
-        [quote]: rate,
-      };
+      quotes.set(quote.toUpperCase(), rate);
 
       const data = {
         quotes,
@@ -107,8 +105,8 @@ export default class PriceController {
       return ApiResponse.error(
         res,
         error.statusCode || 500,
-        error.errorType || ErrorType.InternalError,
-        error.message || 'Error adding quote rate',
+        error.message || 'Unable to add quote',
+        error.errorCode || ErrorType.InternalError,
       );
     }
   };

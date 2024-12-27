@@ -13,6 +13,9 @@ export const CurrencyValidation = {
       name: Joi.string().required(),
       symbol: Joi.string().required(),
       description: Joi.string().required(),
+      decimals: Joi.number().optional().integer().min(0)
+        .max(18),
+      icon: Joi.string().optional(),
     }),
   },
   deactivate_currency: {
@@ -40,6 +43,7 @@ export const CurrencyValidation = {
         description: Joi.string().optional(),
         symbol: Joi.string().optional(),
         icon: Joi.string().optional(),
+        is_active: Joi.boolean().optional(),
       }).required(),
     }),
   },

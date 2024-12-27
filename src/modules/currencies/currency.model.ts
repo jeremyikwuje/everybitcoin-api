@@ -30,7 +30,7 @@ const CurrencySchema = new mongoose.Schema({
   denomination: {
     code: {
       type: String,
-      required: true,
+      required: false,
       trim: true,
     },
     symbol: {
@@ -40,22 +40,22 @@ const CurrencySchema = new mongoose.Schema({
     },
     name: {
       type: String,
-      required: true,
+      required: false,
       trim: true,
     },
     singular: {
       type: String,
-      required: true,
+      required: false,
       trim: true,
     },
     plural: {
       type: String,
-      required: true,
+      required: false,
       trim: true,
     },
     divisor: {
       type: Number,
-      required: true,
+      required: false,
       default: 2,
     },
   },

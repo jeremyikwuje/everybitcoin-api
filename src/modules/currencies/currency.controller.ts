@@ -18,6 +18,8 @@ export default class CurrencyController {
         name,
         symbol,
         description,
+        decimals,
+        icon,
       } = req.body;
 
       const new_currency = await add_new_currency({
@@ -25,6 +27,8 @@ export default class CurrencyController {
         name,
         symbol,
         description,
+        decimals,
+        icon,
       });
 
       return ApiResponse.success(res, 'Successful', new_currency);

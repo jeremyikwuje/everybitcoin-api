@@ -5,6 +5,8 @@ import logger from '../../logger/logger';
 import { get_ticker } from '../tickers/ticker.service';
 import Money from '../../utils/money';
 import { Currencies } from '../../constants';
+import { CurrenciesE } from './currencies.data';
+import { ErrorType } from '../../utils/api-response';
 
 interface currencyDTO {
   code?: string;
@@ -13,6 +15,8 @@ interface currencyDTO {
   name?: string;
   description?: string;
   icon?: string;
+  decimals?: number;
+  denomination?: any;
 }
 
 export const convert_currency = async (
@@ -119,25 +123,35 @@ export const get_currency = async (code: string) => {
 };
 
 export const add_new_currency = async (currency: currencyDTO) => {
-  const existing_currency = await Currency.findOne({ code: currency.code });
-  if (existing_currency) {
+  try {
+    const existing_currency = await Currency.findOne({ code: currency.code });
+    if (existing_currency) {
+      throw new APIError(
+        'currency already exists',
+        CONFLICT,
+        ErrorType.Duplicate,
+      );
+    }
+
+    // add new currency to database
+    const new_currency = await Currency.create(currency);
+
+    if (!new_currency) {
+      throw new APIError(
+        'Unable to create new currency',
+        CONFLICT,
+      );
+    }
+
+    return new_currency;
+  } catch (error: any) {
+    logger.error(error);
     throw new APIError(
-      'currency already exists',
-      CONFLICT,
+      `Unable to create new currency: ${error.message}`,
+      error.statusCode || 500,
+      error.errorType || ErrorType.InternalError,
     );
   }
-
-  // add new currency to database
-  const new_currency = await Currency.create(currency);
-
-  if (!new_currency) {
-    throw new APIError(
-      'Unable to create new currency',
-      CONFLICT,
-    );
-  }
-
-  return new_currency;
 };
 
 export const update_currency = async (code: string, entry: currencyDTO) => {
@@ -267,4 +281,32 @@ export const deactivate_currencies = async (currency_codes: []) => {
   }
 
   return currencies;
+};
+
+export const add_currency_bulk = async () => {
+  logger.info('Adding currencies');
+  const currencies = Object.values(CurrenciesE);
+
+  const add_currencies = currencies.map(async (currency) => {
+    try {
+      await add_new_currency({
+        name: currency.name,
+        code: currency.code,
+        symbol: currency.symbol,
+        description: currency.description,
+        icon: currency.icon_code,
+        decimals: currency.decimals,
+        denomination: currency.denomination,
+        is_active: true,
+      });
+
+      return true;
+    } catch (error: any) {
+      return false;
+    }
+  });
+
+  const c = await Promise.all(add_currencies);
+
+  return c;
 };

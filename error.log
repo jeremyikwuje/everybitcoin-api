@@ -4959,3 +4959,860 @@
 2024-12-26T11:40:02.591Z [31merror[39m: Value must be a number
 2024-12-26T11:50:02.111Z [31merror[39m: Value must be a number
 2024-12-26T11:50:02.111Z [31merror[39m: Value must be a number
+2024-12-26T12:00:02.441Z [31merror[39m: Value must be a number
+2024-12-26T12:00:02.442Z [31merror[39m: Value must be a number
+2024-12-26T12:10:02.412Z [31merror[39m: Value must be a number
+2024-12-26T12:10:02.412Z [31merror[39m: Value must be a number
+2024-12-26T12:20:02.073Z [31merror[39m: Value must be a number
+2024-12-26T12:20:02.074Z [31merror[39m: Value must be a number
+2024-12-26T18:40:02.887Z [31merror[39m: Value must be a number
+2024-12-26T18:40:02.887Z [31merror[39m: Value must be a number
+2024-12-26T18:50:06.199Z [31merror[39m: Value must be a number
+2024-12-26T18:50:06.298Z [31merror[39m: Value must be a number
+2024-12-26T19:00:01.669Z [31merror[39m: Value must be a number
+2024-12-26T19:00:01.669Z [31merror[39m: Value must be a number
+2024-12-26T19:10:02.636Z [31merror[39m: Value must be a number
+2024-12-26T19:10:02.637Z [31merror[39m: Value must be a number
+2024-12-26T19:20:02.386Z [31merror[39m: Value must be a number
+2024-12-26T19:20:02.387Z [31merror[39m: Value must be a number
+2024-12-26T19:30:02.261Z [31merror[39m: Value must be a number
+2024-12-26T19:30:02.261Z [31merror[39m: Value must be a number
+2024-12-26T19:40:03.070Z [31merror[39m: Value must be a number
+2024-12-26T19:40:03.070Z [31merror[39m: Value must be a number
+2024-12-26T19:50:02.361Z [31merror[39m: Value must be a number
+2024-12-26T19:50:02.361Z [31merror[39m: Value must be a number
+2024-12-26T20:00:03.187Z [31merror[39m: Value must be a number
+2024-12-26T20:00:03.188Z [31merror[39m: Value must be a number
+2024-12-26T20:10:01.787Z [31merror[39m: Value must be a number
+2024-12-26T20:10:01.787Z [31merror[39m: Value must be a number
+2024-12-26T20:20:03.236Z [31merror[39m: Value must be a number
+2024-12-26T20:20:03.236Z [31merror[39m: Value must be a number
+2024-12-26T20:30:02.334Z [31merror[39m: Value must be a number
+2024-12-26T20:30:02.334Z [31merror[39m: Value must be a number
+2024-12-26T20:40:02.472Z [31merror[39m: Value must be a number
+2024-12-26T20:40:02.473Z [31merror[39m: Value must be a number
+2024-12-26T20:50:01.997Z [31merror[39m: Value must be a number
+2024-12-26T20:50:01.998Z [31merror[39m: Value must be a number
+2024-12-27T04:30:01.651Z [31merror[39m: Value must be a number
+2024-12-27T04:30:01.652Z [31merror[39m: Value must be a number
+2024-12-27T04:40:02.179Z [31merror[39m: Value must be a number
+2024-12-27T04:40:02.179Z [31merror[39m: Value must be a number
+2024-12-27T04:50:02.057Z [31merror[39m: Value must be a number
+2024-12-27T04:50:02.058Z [31merror[39m: Value must be a number
+2024-12-27T05:00:01.542Z [31merror[39m: Value must be a number
+2024-12-27T05:00:01.543Z [31merror[39m: Value must be a number
+2024-12-27T05:10:02.313Z [31merror[39m: Value must be a number
+2024-12-27T05:10:02.313Z [31merror[39m: Value must be a number
+2024-12-27T05:20:02.688Z [31merror[39m: Value must be a number
+2024-12-27T05:20:02.688Z [31merror[39m: Value must be a number
+2024-12-27T05:30:01.687Z [31merror[39m: Value must be a number
+2024-12-27T05:30:01.688Z [31merror[39m: Value must be a number
+2024-12-27T05:40:02.273Z [31merror[39m: Value must be a number
+2024-12-27T05:40:02.274Z [31merror[39m: Value must be a number
+2024-12-27T05:50:01.588Z [31merror[39m: Value must be a number
+2024-12-27T05:50:01.589Z [31merror[39m: Value must be a number
+2024-12-27T06:00:02.520Z [31merror[39m: Value must be a number
+2024-12-27T06:00:02.520Z [31merror[39m: Value must be a number
+2024-12-27T06:10:01.891Z [31merror[39m: Value must be a number
+2024-12-27T06:10:01.892Z [31merror[39m: Value must be a number
+2024-12-27T06:20:04.732Z [31merror[39m: Value must be a number
+2024-12-27T06:20:04.733Z [31merror[39m: Value must be a number
+2024-12-27T06:30:05.387Z [31merror[39m: Value must be a number
+2024-12-27T06:30:05.387Z [31merror[39m: Value must be a number
+2024-12-27T06:40:02.454Z [31merror[39m: Value must be a number
+2024-12-27T06:40:02.454Z [31merror[39m: Value must be a number
+2024-12-27T06:50:05.334Z [31merror[39m: Value must be a number
+2024-12-27T06:50:05.335Z [31merror[39m: Value must be a number
+2024-12-27T07:00:05.818Z [31merror[39m: Value must be a number
+2024-12-27T07:00:05.819Z [31merror[39m: Value must be a number
+2024-12-27T07:10:05.861Z [31merror[39m: Value must be a number
+2024-12-27T07:10:05.862Z [31merror[39m: Value must be a number
+2024-12-27T07:20:02.075Z [31merror[39m: Value must be a number
+2024-12-27T07:20:02.076Z [31merror[39m: Value must be a number
+2024-12-27T07:30:06.209Z [31merror[39m: Value must be a number
+2024-12-27T07:30:06.211Z [31merror[39m: Value must be a number
+2024-12-27T07:40:11.010Z [31merror[39m: Value must be a number
+2024-12-27T07:40:11.011Z [31merror[39m: Value must be a number
+2024-12-27T07:50:05.530Z [31merror[39m: Value must be a number
+2024-12-27T07:50:05.530Z [31merror[39m: Value must be a number
+2024-12-27T08:00:05.196Z [31merror[39m: Value must be a number
+2024-12-27T08:00:05.197Z [31merror[39m: Value must be a number
+2024-12-27T08:10:06.712Z [31merror[39m: Value must be a number
+2024-12-27T08:10:06.714Z [31merror[39m: Value must be a number
+2024-12-27T08:20:02.673Z [31merror[39m: Value must be a number
+2024-12-27T08:20:02.673Z [31merror[39m: Value must be a number
+2024-12-27T08:30:05.364Z [31merror[39m: Value must be a number
+2024-12-27T08:30:05.364Z [31merror[39m: Value must be a number
+2024-12-27T08:40:02.255Z [31merror[39m: Value must be a number
+2024-12-27T08:40:02.255Z [31merror[39m: Value must be a number
+2024-12-27T09:21:01.137Z [31merror[39m: currency already exists
+2024-12-27T09:23:00.959Z [31merror[39m: currency already exists
+2024-12-27T09:23:23.819Z [31merror[39m: currency already exists
+2024-12-27T09:25:00.852Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.895Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.896Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.896Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.902Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.903Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.903Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.904Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.904Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.906Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.907Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.907Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.913Z [31merror[39m: currency already exists
+2024-12-27T09:25:20.914Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.415Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.429Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.429Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.430Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.462Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.462Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.462Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.463Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.463Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.463Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.463Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.464Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.464Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.942Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.954Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.955Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.955Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.966Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.975Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.981Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.982Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.983Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.983Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.991Z [31merror[39m: currency already exists
+2024-12-27T09:25:21.991Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.001Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.472Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.474Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.496Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.497Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.497Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.497Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.509Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.510Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.510Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.511Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.513Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.513Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.523Z [31merror[39m: currency already exists
+2024-12-27T09:25:22.993Z [31merror[39m: currency already exists
+2024-12-27T09:25:23.004Z [31merror[39m: currency already exists
+2024-12-27T09:25:23.018Z [31merror[39m: currency already exists
+2024-12-27T09:25:23.634Z [31merror[39m: currency already exists
+2024-12-27T09:25:23.671Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.903Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.909Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.910Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.911Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.911Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.912Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.912Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.913Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.913Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.914Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.914Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.914Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.915Z [31merror[39m: currency already exists
+2024-12-27T09:25:40.915Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.392Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.442Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.443Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.453Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.453Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.453Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.453Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.454Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.454Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.454Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.454Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.454Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.471Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.471Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.471Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.904Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.954Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.956Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.960Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.961Z [31merror[39m: currency already exists
+2024-12-27T09:25:41.962Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.037Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.043Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.050Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.058Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.059Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.060Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.069Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.070Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.071Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.420Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.452Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.452Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.468Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.468Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.469Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.552Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.553Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.557Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.557Z [31merror[39m: currency already exists
+2024-12-27T09:25:42.557Z [31merror[39m: currency already exists
+2024-12-27T09:25:43.656Z [31merror[39m: currency already exists
+2024-12-27T09:25:43.658Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.954Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.955Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.956Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.960Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.962Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.964Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.964Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.965Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.966Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.967Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.967Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.968Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.969Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.969Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.970Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.970Z [31merror[39m: currency already exists
+2024-12-27T09:26:00.971Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.469Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.469Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.469Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.478Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.478Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.478Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.478Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.479Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.479Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.479Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.479Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.479Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.479Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.485Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.485Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.485Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.486Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.971Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.985Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.986Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.993Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.994Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.994Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.994Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.995Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.995Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.995Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.995Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.995Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.995Z [31merror[39m: currency already exists
+2024-12-27T09:26:01.996Z [31merror[39m: currency already exists
+2024-12-27T09:26:02.001Z [31merror[39m: currency already exists
+2024-12-27T09:26:02.001Z [31merror[39m: currency already exists
+2024-12-27T09:26:02.001Z [31merror[39m: currency already exists
+2024-12-27T09:26:02.493Z [31merror[39m: currency already exists
+2024-12-27T09:26:02.495Z [31merror[39m: currency already exists
+2024-12-27T09:26:02.496Z [31merror[39m: currency already exists
+2024-12-27T09:26:02.502Z [31merror[39m: currency already exists
+2024-12-27T09:26:03.945Z [31merror[39m: currency already exists
+2024-12-27T09:26:04.130Z [31merror[39m: currency already exists
+2024-12-27T09:26:20.998Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.000Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.001Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.002Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.003Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.004Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.005Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.008Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.009Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.009Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.010Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.010Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.011Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.011Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.011Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.012Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.012Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.013Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.014Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.512Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.512Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.512Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.513Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.516Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.528Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.529Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.529Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.529Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.529Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.530Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.530Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.534Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.534Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.534Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.534Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.539Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.539Z [31merror[39m: currency already exists
+2024-12-27T09:26:21.539Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.006Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.016Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.017Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.017Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.028Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.033Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.034Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.034Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.035Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.051Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.052Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.052Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.053Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.053Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.054Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.055Z [31merror[39m: currency already exists
+2024-12-27T09:26:22.059Z [31merror[39m: currency already exists
+2024-12-27T09:26:23.768Z [31merror[39m: currency already exists
+2024-12-27T09:26:23.860Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.023Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.024Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.024Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.025Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.026Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.026Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.027Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.027Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.027Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.028Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.028Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.030Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.031Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.031Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.032Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.032Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.034Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.035Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.036Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.037Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.038Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.558Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.558Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.559Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.561Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.561Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.561Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.569Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.576Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.576Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.576Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.576Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.577Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.577Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.577Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.577Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.578Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.605Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.605Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.605Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.605Z [31merror[39m: currency already exists
+2024-12-27T09:26:41.608Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.098Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.099Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.101Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.101Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.105Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.106Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.106Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.109Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.109Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.121Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.122Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.122Z [31merror[39m: currency already exists
+2024-12-27T09:26:42.123Z [31merror[39m: currency already exists
+2024-12-27T09:26:45.081Z [31merror[39m: currency already exists
+2024-12-27T09:26:45.084Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.017Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.019Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.022Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.023Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.024Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.026Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.026Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.027Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.027Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.031Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.033Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.034Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.034Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.035Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.035Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.036Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.036Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.037Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.038Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.038Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.039Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.039Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.040Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.521Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.521Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.526Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.527Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.527Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.527Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.528Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.528Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.528Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.534Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.534Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.535Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.535Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.535Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.535Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.556Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.560Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.571Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.571Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.572Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.572Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.576Z [31merror[39m: currency already exists
+2024-12-27T09:27:01.581Z [31merror[39m: currency already exists
+2024-12-27T09:27:02.018Z [31merror[39m: currency already exists
+2024-12-27T09:27:02.036Z [31merror[39m: currency already exists
+2024-12-27T09:27:02.038Z [31merror[39m: currency already exists
+2024-12-27T09:27:02.039Z [31merror[39m: currency already exists
+2024-12-27T09:27:02.039Z [31merror[39m: currency already exists
+2024-12-27T09:27:02.040Z [31merror[39m: currency already exists
+2024-12-27T09:27:02.041Z [31merror[39m: currency already exists
+2024-12-27T09:27:02.041Z [31merror[39m: currency already exists
+2024-12-27T09:27:02.042Z [31merror[39m: currency already exists
+2024-12-27T09:27:03.862Z [31merror[39m: currency already exists
+2024-12-27T09:27:03.864Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.089Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.090Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.090Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.091Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.092Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.092Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.093Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.094Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.095Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.096Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.096Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.097Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.097Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.098Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.098Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.098Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.099Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.099Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.099Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.099Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.099Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.099Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.101Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.101Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.101Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.594Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.603Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.608Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.610Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.611Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.611Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.612Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.612Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.612Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.613Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.614Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.614Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.614Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.614Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.614Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.614Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.614Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.618Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.621Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.621Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.621Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.622Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.622Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.622Z [31merror[39m: currency already exists
+2024-12-27T09:27:21.622Z [31merror[39m: currency already exists
+2024-12-27T09:27:22.104Z [31merror[39m: currency already exists
+2024-12-27T09:27:22.105Z [31merror[39m: currency already exists
+2024-12-27T09:27:22.116Z [31merror[39m: currency already exists
+2024-12-27T09:27:22.143Z [31merror[39m: currency already exists
+2024-12-27T09:27:22.143Z [31merror[39m: currency already exists
+2024-12-27T09:27:24.866Z [31merror[39m: currency already exists
+2024-12-27T09:27:25.080Z [31merror[39m: currency already exists
+2024-12-27T09:30:02.513Z [31merror[39m: Value must be a number
+2024-12-27T09:30:02.514Z [31merror[39m: Value must be a number
+2024-12-27T09:40:02.622Z [31merror[39m: Value must be a number
+2024-12-27T09:40:02.622Z [31merror[39m: Value must be a number
+2024-12-27T09:50:02.079Z [31merror[39m: Value must be a number
+2024-12-27T09:50:02.079Z [31merror[39m: Value must be a number
+2024-12-27T10:00:05.177Z [31merror[39m: Value must be a number
+2024-12-27T10:00:05.178Z [31merror[39m: Value must be a number
+2024-12-27T10:10:06.066Z [31merror[39m: Value must be a number
+2024-12-27T10:10:06.067Z [31merror[39m: Value must be a number
+2024-12-27T10:13:06.704Z [31merror[39m: Validation Failed
+2024-12-27T10:15:06.008Z [31merror[39m: Validation Failed
+2024-12-27T10:16:12.654Z [31merror[39m: Validation Failed
+2024-12-27T10:17:27.606Z [31merror[39m: Validation Failed
+2024-12-27T10:20:33.468Z [31merror[39m: Value must be a number
+2024-12-27T10:20:33.469Z [31merror[39m: Value must be a number
+2024-12-27T10:24:02.130Z [31merror[39m: Value must be a number
+2024-12-27T10:24:02.132Z [31merror[39m: Value must be a number
+2024-12-27T10:25:03.601Z [31merror[39m: Value must be a number
+2024-12-27T10:25:03.601Z [31merror[39m: Value must be a number
+2024-12-27T10:26:02.245Z [31merror[39m: Value must be a number
+2024-12-27T10:26:02.245Z [31merror[39m: Value must be a number
+2024-12-27T10:27:02.402Z [31merror[39m: Value must be a number
+2024-12-27T10:27:02.404Z [31merror[39m: Value must be a number
+2024-12-27T10:28:08.519Z [31merror[39m: Value must be a number
+2024-12-27T10:28:08.521Z [31merror[39m: Value must be a number
+2024-12-27T10:29:01.902Z [31merror[39m: Value must be a number
+2024-12-27T10:29:01.903Z [31merror[39m: Value must be a number
+2024-12-27T10:30:02.148Z [31merror[39m: Value must be a number
+2024-12-27T10:30:02.149Z [31merror[39m: Value must be a number
+2024-12-27T11:08:01.466Z [31merror[39m: Value must be a number
+2024-12-27T11:08:01.466Z [31merror[39m: Value must be a number
+2024-12-27T11:09:04.421Z [31merror[39m: Value must be a number
+2024-12-27T11:09:04.423Z [31merror[39m: Value must be a number
+2024-12-27T11:10:35.351Z [31merror[39m: Value must be a number
+2024-12-27T11:10:35.351Z [31merror[39m: Value must be a number
+2024-12-27T11:11:00.538Z [31merror[39m: Value must be a number
+2024-12-27T11:11:00.539Z [31merror[39m: Value must be a number
+2024-12-27T11:12:00.894Z [31merror[39m: Value must be a number
+2024-12-27T11:12:00.894Z [31merror[39m: Value must be a number
+2024-12-27T11:14:05.204Z [31merror[39m: Value must be a number
+2024-12-27T11:14:05.205Z [31merror[39m: Value must be a number
+2024-12-27T11:15:01.938Z [31merror[39m: Value must be a number
+2024-12-27T11:15:01.938Z [31merror[39m: Value must be a number
+2024-12-27T11:17:01.616Z [31merror[39m: Value must be a number
+2024-12-27T11:17:01.617Z [31merror[39m: Value must be a number
+2024-12-27T11:18:00.955Z [31merror[39m: Value must be a number
+2024-12-27T11:18:00.956Z [31merror[39m: Value must be a number
+2024-12-27T11:24:01.735Z [31merror[39m: Value must be a number
+2024-12-27T11:24:01.737Z [31merror[39m: Value must be a number
+2024-12-27T11:27:01.622Z [31merror[39m: Value must be a number
+2024-12-27T11:27:01.623Z [31merror[39m: Value must be a number
+2024-12-27T11:28:01.414Z [31merror[39m: Value must be a number
+2024-12-27T11:28:01.415Z [31merror[39m: Value must be a number
+2024-12-27T11:29:01.375Z [31merror[39m: Value must be a number
+2024-12-27T11:29:01.376Z [31merror[39m: Value must be a number
+2024-12-27T11:30:01.819Z [31merror[39m: Value must be a number
+2024-12-27T11:30:01.819Z [31merror[39m: Value must be a number
+2024-12-27T11:31:01.258Z [31merror[39m: Value must be a number
+2024-12-27T11:31:01.258Z [31merror[39m: Value must be a number
+2024-12-27T11:32:02.148Z [31merror[39m: Value must be a number
+2024-12-27T11:32:02.148Z [31merror[39m: Value must be a number
+2024-12-27T11:33:01.611Z [31merror[39m: Value must be a number
+2024-12-27T11:33:01.611Z [31merror[39m: Value must be a number
+2024-12-27T11:34:00.548Z [31merror[39m: Value must be a number
+2024-12-27T11:34:00.548Z [31merror[39m: Value must be a number
+2024-12-27T11:35:00.964Z [31merror[39m: Value must be a number
+2024-12-27T11:35:00.965Z [31merror[39m: Value must be a number
+2024-12-27T11:36:00.872Z [31merror[39m: Value must be a number
+2024-12-27T11:36:00.872Z [31merror[39m: Value must be a number
+2024-12-27T11:37:01.841Z [31merror[39m: Value must be a number
+2024-12-27T11:37:01.842Z [31merror[39m: Value must be a number
+2024-12-27T11:38:00.989Z [31merror[39m: Value must be a number
+2024-12-27T11:38:00.989Z [31merror[39m: Value must be a number
+2024-12-27T11:51:02.184Z [31merror[39m: Value must be a number
+2024-12-27T11:51:02.185Z [31merror[39m: Value must be a number
+2024-12-27T12:01:05.578Z [31merror[39m: Value must be a number
+2024-12-27T12:01:05.578Z [31merror[39m: Value must be a number
+2024-12-27T12:02:01.755Z [31merror[39m: Value must be a number
+2024-12-27T12:02:01.755Z [31merror[39m: Value must be a number
+2024-12-27T12:03:01.562Z [31merror[39m: Value must be a number
+2024-12-27T12:03:01.562Z [31merror[39m: Value must be a number
+2024-12-27T12:04:01.709Z [31merror[39m: Value must be a number
+2024-12-27T12:04:01.709Z [31merror[39m: Value must be a number
+2024-12-27T12:05:01.758Z [31merror[39m: Value must be a number
+2024-12-27T12:05:01.759Z [31merror[39m: Value must be a number
+2024-12-27T12:06:03.278Z [31merror[39m: Value must be a number
+2024-12-27T12:06:03.279Z [31merror[39m: Value must be a number
+2024-12-27T12:07:01.096Z [31merror[39m: Value must be a number
+2024-12-27T12:07:01.096Z [31merror[39m: Value must be a number
+2024-12-27T12:08:01.078Z [31merror[39m: Value must be a number
+2024-12-27T12:08:01.078Z [31merror[39m: Value must be a number
+2024-12-27T12:09:01.135Z [31merror[39m: Value must be a number
+2024-12-27T12:09:01.135Z [31merror[39m: Value must be a number
+2024-12-27T12:10:01.064Z [31merror[39m: Value must be a number
+2024-12-27T12:10:01.064Z [31merror[39m: Value must be a number
+2024-12-27T12:11:01.840Z [31merror[39m: Value must be a number
+2024-12-27T12:11:01.841Z [31merror[39m: Value must be a number
+2024-12-27T12:12:01.201Z [31merror[39m: Value must be a number
+2024-12-27T12:12:01.201Z [31merror[39m: Value must be a number
+2024-12-27T12:28:04.985Z [31merror[39m: Value must be a number
+2024-12-27T12:28:04.986Z [31merror[39m: Value must be a number
+2024-12-27T12:29:01.102Z [31merror[39m: Value must be a number
+2024-12-27T12:29:01.102Z [31merror[39m: Value must be a number
+2024-12-27T12:30:01.136Z [31merror[39m: Value must be a number
+2024-12-27T12:30:01.136Z [31merror[39m: Value must be a number
+2024-12-27T12:31:01.390Z [31merror[39m: Value must be a number
+2024-12-27T12:31:01.391Z [31merror[39m: Value must be a number
+2024-12-27T12:32:01.414Z [31merror[39m: Value must be a number
+2024-12-27T12:32:01.414Z [31merror[39m: Value must be a number
+2024-12-27T12:33:01.860Z [31merror[39m: Value must be a number
+2024-12-27T12:33:01.860Z [31merror[39m: Value must be a number
+2024-12-27T12:34:01.580Z [31merror[39m: Value must be a number
+2024-12-27T12:34:01.580Z [31merror[39m: Value must be a number
+2024-12-27T12:35:01.608Z [31merror[39m: Value must be a number
+2024-12-27T12:35:01.608Z [31merror[39m: Value must be a number
+2024-12-27T12:36:01.580Z [31merror[39m: Value must be a number
+2024-12-27T12:36:01.580Z [31merror[39m: Value must be a number
+2024-12-27T12:37:01.693Z [31merror[39m: Value must be a number
+2024-12-27T12:37:01.693Z [31merror[39m: Value must be a number
+2024-12-27T12:38:02.676Z [31merror[39m: Value must be a number
+2024-12-27T12:38:02.676Z [31merror[39m: Value must be a number
+2024-12-27T12:39:00.797Z [31merror[39m: Value must be a number
+2024-12-27T12:39:00.797Z [31merror[39m: Value must be a number
+2024-12-27T12:40:01.040Z [31merror[39m: Value must be a number
+2024-12-27T12:40:01.040Z [31merror[39m: Value must be a number
+2024-12-27T12:41:01.215Z [31merror[39m: Value must be a number
+2024-12-27T12:41:01.215Z [31merror[39m: Value must be a number
+2024-12-27T12:42:01.201Z [31merror[39m: Value must be a number
+2024-12-27T12:42:01.201Z [31merror[39m: Value must be a number
+2024-12-27T12:43:01.793Z [31merror[39m: Value must be a number
+2024-12-27T12:43:01.793Z [31merror[39m: Value must be a number
+2024-12-27T12:44:01.149Z [31merror[39m: Value must be a number
+2024-12-27T12:44:01.149Z [31merror[39m: Value must be a number
+2024-12-27T12:45:01.283Z [31merror[39m: Value must be a number
+2024-12-27T12:45:01.283Z [31merror[39m: Value must be a number
+2024-12-27T12:46:01.593Z [31merror[39m: Value must be a number
+2024-12-27T12:46:01.594Z [31merror[39m: Value must be a number
+2024-12-27T12:47:01.878Z [31merror[39m: Value must be a number
+2024-12-27T12:47:01.878Z [31merror[39m: Value must be a number
+2024-12-27T12:48:02.408Z [31merror[39m: Value must be a number
+2024-12-27T12:48:02.409Z [31merror[39m: Value must be a number
+2024-12-27T12:49:00.803Z [31merror[39m: Value must be a number
+2024-12-27T12:49:00.803Z [31merror[39m: Value must be a number
+2024-12-27T12:50:01.216Z [31merror[39m: Value must be a number
+2024-12-27T12:50:01.216Z [31merror[39m: Value must be a number
+2024-12-27T12:51:01.119Z [31merror[39m: Value must be a number
+2024-12-27T12:51:01.119Z [31merror[39m: Value must be a number
+2024-12-27T12:52:01.151Z [31merror[39m: Value must be a number
+2024-12-27T12:52:01.151Z [31merror[39m: Value must be a number
+2024-12-27T12:53:01.645Z [31merror[39m: Value must be a number
+2024-12-27T12:53:01.645Z [31merror[39m: Value must be a number
+2024-12-27T12:54:01.296Z [31merror[39m: Value must be a number
+2024-12-27T12:54:01.296Z [31merror[39m: Value must be a number
+2024-12-27T12:55:01.326Z [31merror[39m: Value must be a number
+2024-12-27T12:55:01.326Z [31merror[39m: Value must be a number
+2024-12-27T12:56:01.396Z [31merror[39m: Value must be a number
+2024-12-27T12:56:01.396Z [31merror[39m: Value must be a number
+2024-12-27T12:57:01.465Z [31merror[39m: Value must be a number
+2024-12-27T12:57:01.465Z [31merror[39m: Value must be a number
+2024-12-27T12:58:02.489Z [31merror[39m: Value must be a number
+2024-12-27T12:58:02.489Z [31merror[39m: Value must be a number
+2024-12-27T12:59:01.666Z [31merror[39m: Value must be a number
+2024-12-27T12:59:01.667Z [31merror[39m: Value must be a number
+2024-12-27T13:00:01.678Z [31merror[39m: Value must be a number
+2024-12-27T13:00:01.678Z [31merror[39m: Value must be a number
+2024-12-27T13:01:01.820Z [31merror[39m: Value must be a number
+2024-12-27T13:01:01.820Z [31merror[39m: Value must be a number
+2024-12-27T13:02:00.940Z [31merror[39m: Value must be a number
+2024-12-27T13:02:00.941Z [31merror[39m: Value must be a number
+2024-12-27T13:03:01.987Z [31merror[39m: Value must be a number
+2024-12-27T13:03:01.988Z [31merror[39m: Value must be a number
+2024-12-27T13:04:01.362Z [31merror[39m: Value must be a number
+2024-12-27T13:04:01.363Z [31merror[39m: Value must be a number
+2024-12-27T13:05:01.694Z [31merror[39m: Value must be a number
+2024-12-27T13:05:01.694Z [31merror[39m: Value must be a number
+2024-12-27T13:06:01.421Z [31merror[39m: Value must be a number
+2024-12-27T13:06:01.421Z [31merror[39m: Value must be a number
+2024-12-27T13:07:01.377Z [31merror[39m: Value must be a number
+2024-12-27T13:07:01.377Z [31merror[39m: Value must be a number
+2024-12-27T13:08:02.495Z [31merror[39m: Value must be a number
+2024-12-27T13:08:02.496Z [31merror[39m: Value must be a number
+2024-12-27T13:09:00.918Z [31merror[39m: Value must be a number
+2024-12-27T13:09:00.919Z [31merror[39m: Value must be a number
+2024-12-27T13:10:01.040Z [31merror[39m: Value must be a number
+2024-12-27T13:10:01.040Z [31merror[39m: Value must be a number
+2024-12-27T13:11:01.125Z [31merror[39m: Value must be a number
+2024-12-27T13:11:01.125Z [31merror[39m: Value must be a number
+2024-12-27T13:12:01.249Z [31merror[39m: Value must be a number
+2024-12-27T13:12:01.249Z [31merror[39m: Value must be a number
+2024-12-27T13:13:01.730Z [31merror[39m: Value must be a number
+2024-12-27T13:13:01.730Z [31merror[39m: Value must be a number
+2024-12-27T13:14:01.237Z [31merror[39m: Value must be a number
+2024-12-27T13:14:01.237Z [31merror[39m: Value must be a number
+2024-12-27T13:15:01.319Z [31merror[39m: Value must be a number
+2024-12-27T13:15:01.319Z [31merror[39m: Value must be a number
+2024-12-27T13:16:01.709Z [31merror[39m: Value must be a number
+2024-12-27T13:16:01.709Z [31merror[39m: Value must be a number
+2024-12-27T13:17:01.920Z [31merror[39m: Value must be a number
+2024-12-27T13:17:01.920Z [31merror[39m: Value must be a number
+2024-12-27T13:18:02.766Z [31merror[39m: Value must be a number
+2024-12-27T13:18:02.766Z [31merror[39m: Value must be a number
+2024-12-27T13:19:01.510Z [31merror[39m: Value must be a number
+2024-12-27T13:19:01.510Z [31merror[39m: Value must be a number
+2024-12-27T13:20:01.783Z [31merror[39m: Value must be a number
+2024-12-27T13:20:01.783Z [31merror[39m: Value must be a number
+2024-12-27T13:21:01.794Z [31merror[39m: Value must be a number
+2024-12-27T13:21:01.794Z [31merror[39m: Value must be a number
+2024-12-27T13:22:01.234Z [31merror[39m: Value must be a number
+2024-12-27T13:22:01.234Z [31merror[39m: Value must be a number
+2024-12-27T13:23:01.745Z [31merror[39m: Value must be a number
+2024-12-27T13:23:01.746Z [31merror[39m: Value must be a number
+2024-12-27T13:24:00.940Z [31merror[39m: Value must be a number
+2024-12-27T13:24:00.940Z [31merror[39m: Value must be a number
+2024-12-27T13:25:01.024Z [31merror[39m: Value must be a number
+2024-12-27T13:25:01.024Z [31merror[39m: Value must be a number
+2024-12-27T13:26:01.374Z [31merror[39m: Value must be a number
+2024-12-27T13:26:01.374Z [31merror[39m: Value must be a number
+2024-12-27T13:27:01.381Z [31merror[39m: Value must be a number
+2024-12-27T13:27:01.381Z [31merror[39m: Value must be a number
+2024-12-27T13:28:02.491Z [31merror[39m: Value must be a number
+2024-12-27T13:28:02.491Z [31merror[39m: Value must be a number
+2024-12-27T13:29:01.386Z [31merror[39m: Value must be a number
+2024-12-27T13:29:01.386Z [31merror[39m: Value must be a number
+2024-12-27T13:30:01.439Z [31merror[39m: Value must be a number
+2024-12-27T13:30:01.439Z [31merror[39m: Value must be a number
+2024-12-27T13:31:01.618Z [31merror[39m: Value must be a number
+2024-12-27T13:31:01.618Z [31merror[39m: Value must be a number
+2024-12-27T13:32:01.586Z [31merror[39m: Value must be a number
+2024-12-27T13:32:01.587Z [31merror[39m: Value must be a number
+2024-12-27T13:33:02.609Z [31merror[39m: Value must be a number
+2024-12-27T13:33:02.609Z [31merror[39m: Value must be a number
+2024-12-27T13:34:02.498Z [31merror[39m: Value must be a number
+2024-12-27T13:34:02.499Z [31merror[39m: Value must be a number
+2024-12-27T13:35:00.891Z [31merror[39m: Value must be a number
+2024-12-27T13:35:00.891Z [31merror[39m: Value must be a number
+2024-12-27T13:36:01.377Z [31merror[39m: Value must be a number
+2024-12-27T13:36:01.377Z [31merror[39m: Value must be a number
+2024-12-27T13:37:01.225Z [31merror[39m: Value must be a number
+2024-12-27T13:37:01.226Z [31merror[39m: Value must be a number
+2024-12-27T13:38:02.255Z [31merror[39m: Value must be a number
+2024-12-27T13:38:02.256Z [31merror[39m: Value must be a number
+2024-12-27T13:39:01.382Z [31merror[39m: Value must be a number
+2024-12-27T13:39:01.383Z [31merror[39m: Value must be a number
+2024-12-27T13:40:01.183Z [31merror[39m: Value must be a number
+2024-12-27T13:40:01.184Z [31merror[39m: Value must be a number
+2024-12-27T13:41:01.581Z [31merror[39m: Value must be a number
+2024-12-27T13:41:01.581Z [31merror[39m: Value must be a number
+2024-12-27T13:42:01.342Z [31merror[39m: Value must be a number
+2024-12-27T13:42:01.342Z [31merror[39m: Value must be a number
+2024-12-27T13:43:02.444Z [31merror[39m: Value must be a number
+2024-12-27T13:43:02.445Z [31merror[39m: Value must be a number
+2024-12-27T13:44:02.128Z [31merror[39m: Value must be a number
+2024-12-27T13:44:02.128Z [31merror[39m: Value must be a number
+2024-12-27T13:45:01.655Z [31merror[39m: Value must be a number
+2024-12-27T13:45:01.655Z [31merror[39m: Value must be a number
+2024-12-27T13:46:01.778Z [31merror[39m: Value must be a number
+2024-12-27T13:46:01.778Z [31merror[39m: Value must be a number
+2024-12-27T13:47:01.852Z [31merror[39m: Value must be a number
+2024-12-27T13:47:01.852Z [31merror[39m: Value must be a number
+2024-12-27T13:48:01.449Z [31merror[39m: Value must be a number
+2024-12-27T13:48:01.449Z [31merror[39m: Value must be a number
+2024-12-27T13:49:01.100Z [31merror[39m: Value must be a number
+2024-12-27T13:49:01.100Z [31merror[39m: Value must be a number
+2024-12-27T13:50:01.276Z [31merror[39m: Value must be a number
+2024-12-27T13:50:01.277Z [31merror[39m: Value must be a number
+2024-12-27T13:51:01.082Z [31merror[39m: Value must be a number
+2024-12-27T13:51:01.083Z [31merror[39m: Value must be a number
+2024-12-27T13:52:01.142Z [31merror[39m: Value must be a number
+2024-12-27T13:52:01.142Z [31merror[39m: Value must be a number
+2024-12-27T13:53:01.846Z [31merror[39m: Value must be a number
+2024-12-27T13:53:01.846Z [31merror[39m: Value must be a number
+2024-12-27T13:54:01.279Z [31merror[39m: Value must be a number
+2024-12-27T13:54:01.279Z [31merror[39m: Value must be a number
+2024-12-27T13:55:01.452Z [31merror[39m: Value must be a number
+2024-12-27T13:55:01.452Z [31merror[39m: Value must be a number
+2024-12-27T13:56:01.674Z [31merror[39m: Value must be a number
+2024-12-27T13:56:01.674Z [31merror[39m: Value must be a number
+2024-12-27T13:57:01.536Z [31merror[39m: Value must be a number
+2024-12-27T13:57:01.537Z [31merror[39m: Value must be a number
+2024-12-27T13:58:02.250Z [31merror[39m: Value must be a number
+2024-12-27T13:58:02.250Z [31merror[39m: Value must be a number
+2024-12-27T14:00:00.876Z [31merror[39m: Value must be a number
+2024-12-27T14:00:00.877Z [31merror[39m: Value must be a number
+2024-12-27T14:01:01.186Z [31merror[39m: Value must be a number
+2024-12-27T14:01:01.186Z [31merror[39m: Value must be a number
+2024-12-27T14:02:01.954Z [31merror[39m: Value must be a number
+2024-12-27T14:02:01.954Z [31merror[39m: Value must be a number
+2024-12-27T14:03:02.031Z [31merror[39m: Value must be a number
+2024-12-27T14:03:02.031Z [31merror[39m: Value must be a number
+2024-12-27T14:04:01.528Z [31merror[39m: Value must be a number
+2024-12-27T14:04:01.528Z [31merror[39m: Value must be a number
+2024-12-27T14:05:01.532Z [31merror[39m: Value must be a number
+2024-12-27T14:05:01.532Z [31merror[39m: Value must be a number
+2024-12-27T14:06:01.383Z [31merror[39m: Value must be a number
+2024-12-27T14:06:01.383Z [31merror[39m: Value must be a number
+2024-12-27T14:07:01.414Z [31merror[39m: Value must be a number
+2024-12-27T14:07:01.414Z [31merror[39m: Value must be a number
+2024-12-27T14:08:02.917Z [31merror[39m: Value must be a number
+2024-12-27T14:08:02.918Z [31merror[39m: Value must be a number
+2024-12-27T14:09:01.563Z [31merror[39m: Value must be a number
+2024-12-27T14:09:01.563Z [31merror[39m: Value must be a number
+2024-12-27T14:10:01.729Z [31merror[39m: Value must be a number
+2024-12-27T14:10:01.729Z [31merror[39m: Value must be a number
+2024-12-27T14:11:01.706Z [31merror[39m: Value must be a number
+2024-12-27T14:11:01.706Z [31merror[39m: Value must be a number
+2024-12-27T14:12:01.733Z [31merror[39m: Value must be a number
+2024-12-27T14:12:01.734Z [31merror[39m: Value must be a number
+2024-12-27T14:13:01.587Z [31merror[39m: Value must be a number
+2024-12-27T14:13:01.587Z [31merror[39m: Value must be a number
+2024-12-27T14:14:02.592Z [31merror[39m: Value must be a number
+2024-12-27T14:14:02.592Z [31merror[39m: Value must be a number
+2024-12-27T14:15:01.033Z [31merror[39m: Value must be a number
+2024-12-27T14:15:01.033Z [31merror[39m: Value must be a number
+2024-12-27T14:16:01.077Z [31merror[39m: Value must be a number
+2024-12-27T14:16:01.077Z [31merror[39m: Value must be a number
+2024-12-27T14:17:01.232Z [31merror[39m: Value must be a number
+2024-12-27T14:17:01.232Z [31merror[39m: Value must be a number
+2024-12-27T14:18:02.833Z [31merror[39m: Value must be a number
+2024-12-27T14:18:02.833Z [31merror[39m: Value must be a number
+2024-12-27T14:19:01.356Z [31merror[39m: Value must be a number
+2024-12-27T14:19:01.357Z [31merror[39m: Value must be a number
+2024-12-27T14:20:01.810Z [31merror[39m: Value must be a number
+2024-12-27T14:20:01.810Z [31merror[39m: Value must be a number
+2024-12-27T14:21:01.829Z [31merror[39m: Value must be a number
+2024-12-27T14:21:01.829Z [31merror[39m: Value must be a number
+2024-12-27T14:22:01.601Z [31merror[39m: Value must be a number
+2024-12-27T14:22:01.601Z [31merror[39m: Value must be a number
+2024-12-27T14:23:02.428Z [31merror[39m: Value must be a number
+2024-12-27T14:23:02.428Z [31merror[39m: Value must be a number
+2024-12-27T14:24:00.854Z [31merror[39m: Value must be a number
+2024-12-27T14:24:00.854Z [31merror[39m: Value must be a number
+2024-12-27T14:25:00.848Z [31merror[39m: Value must be a number
+2024-12-27T14:25:00.849Z [31merror[39m: Value must be a number
+2024-12-27T14:26:01.515Z [31merror[39m: Value must be a number
+2024-12-27T14:26:01.515Z [31merror[39m: Value must be a number
+2024-12-27T14:27:00.971Z [31merror[39m: Value must be a number
+2024-12-27T14:27:00.971Z [31merror[39m: Value must be a number
+2024-12-27T14:28:01.860Z [31merror[39m: Value must be a number
+2024-12-27T14:28:01.860Z [31merror[39m: Value must be a number
+2024-12-27T14:29:01.261Z [31merror[39m: Value must be a number
+2024-12-27T14:29:01.261Z [31merror[39m: Value must be a number
+2024-12-27T14:30:01.381Z [31merror[39m: Value must be a number
+2024-12-27T14:30:01.381Z [31merror[39m: Value must be a number
+2024-12-27T14:31:01.425Z [31merror[39m: Value must be a number
+2024-12-27T14:31:01.425Z [31merror[39m: Value must be a number
+2024-12-27T14:32:01.617Z [31merror[39m: Value must be a number
+2024-12-27T14:32:01.617Z [31merror[39m: Value must be a number
+2024-12-27T14:33:02.710Z [31merror[39m: Value must be a number
+2024-12-27T14:33:02.711Z [31merror[39m: Value must be a number
+2024-12-27T14:34:01.545Z [31merror[39m: Value must be a number
+2024-12-27T14:34:01.545Z [31merror[39m: Value must be a number
+2024-12-27T14:35:01.519Z [31merror[39m: Value must be a number
+2024-12-27T14:35:01.519Z [31merror[39m: Value must be a number
+2024-12-27T14:36:01.862Z [31merror[39m: Value must be a number
+2024-12-27T14:36:01.863Z [31merror[39m: Value must be a number
+2024-12-27T14:37:02.268Z [31merror[39m: Value must be a number
+2024-12-27T14:37:02.268Z [31merror[39m: Value must be a number
+2024-12-27T14:38:01.531Z [31merror[39m: Value must be a number
+2024-12-27T14:38:01.532Z [31merror[39m: Value must be a number
+2024-12-27T14:39:00.971Z [31merror[39m: Value must be a number
+2024-12-27T14:39:00.972Z [31merror[39m: Value must be a number
+2024-12-27T14:40:01.721Z [31merror[39m: Value must be a number
+2024-12-27T14:40:01.721Z [31merror[39m: Value must be a number
+2024-12-27T14:41:01.162Z [31merror[39m: Value must be a number
+2024-12-27T14:41:01.162Z [31merror[39m: Value must be a number
+2024-12-27T14:42:01.081Z [31merror[39m: Value must be a number
+2024-12-27T14:42:01.081Z [31merror[39m: Value must be a number

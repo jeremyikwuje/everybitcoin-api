@@ -123,6 +123,8 @@ export const update_currency_prices_from_external_api = async () => {
           let quote_price = +latest_quote_price * +bitcoin_price_usd;
           if (base === quote[0]) {
             quote_price = 1;
+          } else if (quote[0] === CurrencyE.SAT) {
+            quote_price = 100000000;
           }
 
           const last_quote_price = quote[1] || 0;
