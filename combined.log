@@ -45669,3 +45669,11 @@
 2025-01-01T11:38:01.027Z [32minfo[39m: Using cached XE rates
 2025-01-01T11:38:01.038Z [31merror[39m: Value must be a number
 2025-01-01T11:38:01.038Z [31merror[39m: Value must be a number
+2025-01-01T11:38:51.075Z [32minfo[39m: Server running on port http://localhost:4000
+2025-01-01T11:38:51.080Z [32minfo[39m: Cron started successfully as at Wed Jan 01 2025 13:38:51 GMT+0200 (Eastern European Standard Time)
+2025-01-01T11:38:54.854Z [32minfo[39m: Connected to app-db
+2025-01-01T11:39:00.083Z [32minfo[39m: Updating BTC rates from external api
+2025-01-01T11:39:02.321Z [31merror[39m: Value must be a number
+2025-01-01T11:39:02.322Z [31merror[39m: Value must be a number
+2025-01-01T11:39:29.978Z [32minfo[39m: Server running on port http://localhost:4000
+2025-01-01T11:39:29.981Z [32minfo[39m: Cron started successfully as at Wed Jan 01 2025 13:39:29 GMT+0200 (Eastern European Standard Time)
