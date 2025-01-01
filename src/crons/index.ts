@@ -47,10 +47,10 @@ async function start() {
   const jobs = [
     { cronTime: '0 */1 * * * *', fn: () => update_currency_prices_from_external_api() },
     // { cronTime: '*/20 * * * * *', fn: () => add_currency_bulk() },
-    { cronTime: '0 */10 * * * *', fn: () => update_exchange_prices_in_tickers() },
-    { cronTime: '0 */11 * * * *', fn: () => save_prices_from_tickers() },
-    { cronTime: '0 */12 * * * *', fn: () => update_prices_on_tickers() },
-    { cronTime: '0 */13 * * * *', fn: () => set_next_milestone() },
+    // { cronTime: '0 */10 * * * *', fn: () => update_exchange_prices_in_tickers() },
+    // { cronTime: '0 */11 * * * *', fn: () => save_prices_from_tickers() },
+    // { cronTime: '0 */12 * * * *', fn: () => update_prices_on_tickers() },
+    // { cronTime: '0 */13 * * * *', fn: () => set_next_milestone() },
   ];
   await runCronJobs(jobs);
   return true;
